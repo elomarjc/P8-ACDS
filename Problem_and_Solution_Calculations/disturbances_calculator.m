@@ -54,7 +54,7 @@ fprintf("Worst aerodynamic torque: %.2f nNm\n",max_aerodynamic_torque*1e9);
 fprintf("\n----------------------------------------------------------\n");
 fprintf("Magnetic drag:\n");
 %earths_max_magnetic_field = 60e-6; % T source: Wertz, fig 5.1 at around 400km. Remember to multiply by 2, as at the pole is x2 the equator(graph)
-magnetic_field_at_orbit = 2*earth_magnetic_moment/(pass_satellite_radius)^3 % T
+magnetic_field_at_orbit = earth_average_magnetic_field_surface*(earth_radius/pass_satellite_radius)^3 % T
 max_magnetic_torque = satellite_magnetic_moment*magnetic_field_at_orbit;
 fprintf("Worst magnetic torque: %.2f nNm\n",max_magnetic_torque*1e9);
 fprintf("It is presummed that it can be predicted and thus removed up to 90%% by magnetorquers\nEquivalent torque: %.2f nNm\n",0.1*max_magnetic_torque*1e9);

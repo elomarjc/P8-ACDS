@@ -46,7 +46,7 @@ target_area = [60,46]*1e3; % m
 
 % Extra data:
 earth_radius = 6371*1e3; %m
-earth_magnetic_moment =  7.96*1e15; % T m^3
+earth_average_magnetic_field_surface =  50e-6; % T
 percentage_seen = 0.2; % USED FOR SETTLING TIME FROM NADIR TO TARGET TRACKING REQUIREMENT
 detumbler_maximum_detumbling_speed = 2; % Hz source: Attitude Determination and Control System for AAUSAT 3
 detumbler_end_detumbling_speed = 9.1e-3; % rad/s, (0.3 deg/s in each axis), source: AAUSAT6 Master thesis 2015
@@ -81,7 +81,7 @@ simulation_angular_speed_to_nadir_s =  pass_angular_speed*pass_satellite_radius*
 simulation_angular_acceleration_to_nadir_t =  diff(simulation_angular_speed_to_nadir_s); % rad/s^2, second derivative of simulation_angle_to_nadir_s
 
 % Torque and energy
-simulation_torque_required_t = simulation_angular_acceleration_to_nadir_t*min(max(satellite_inertia_matrix));
+simulation_torque_required_t = simulation_angular_acceleration_to_nadir_t*max(max(satellite_inertia_matrix));
 simulation_energy_t = int(simulation_torque_required_t,t,0,t);
 
 % Transform into function handles
@@ -164,7 +164,8 @@ fprintf("#########################################################\n");
 fprintf("Target tracking requirement:\n");
 
 camera_field_of_view_per_pixel = 2*atan(camera_pixel_size/2/camera_focal_length); % rad, field of view of the camera per pixel
-camera_field_of_view = camera_resolution*camera_field_of_view_per_pixel; % rad, field of view of the camera in general
+%camera_field_of_view = camera_resolution*camera_field_of_view_per_pixel; % rad, field of view of the camera in general
+camera_field_of_view = atan(21/500)*ones(2,1);
 fprintf("Camera FoV: %.2f by %.2f degrees.\n",camera_field_of_view(1)*180/pi,camera_field_of_view(2)*180/pi); 
 
 
@@ -173,8 +174,10 @@ fprintf("Minimum camera area: %.2f x %.2f km.\t %s area: %.2f x %.2f km\n",pass_
 
 
 % Margin of error, considering that aalborg must be contained inside the picture: Longest aalborg dimension vs smallest camera dimension
-pass_slack_area_plus_minus = (min(pass_area)-max(target_area)) / 2; % m, leftover distance to each side of the picture to still have the whole target in frame
-requirement_angle_accuracy = pass_slack_area_plus_minus/min(pass_area)*min(camera_field_of_view); % rad, the derived angle accuracy required at the top of the path.
+%pass_slack_area_plus_minus = (min(pass_area)-max(target_area)) / 2; % m, leftover distance to each side of the picture to still have the whole target in frame
+pass_slack_area_plus_minus = (21000-7000)/2;
+%requirement_angle_accuracy = pass_slack_area_plus_minus/min(pass_area)*min(camera_field_of_view); % rad, the derived angle accuracy required at the top of the path.
+requirement_angle_accuracy = pass_slack_area_plus_minus/min(21000)*min(camera_field_of_view);
     % Note that this is a function of the distance between the satellite and the surface (simulation_distance_target_to_satellite_s) so this angle is actually bigger when not on top.
 fprintf("Worst scenario pointing requirement (right over %s): %.2f degrees.\n",target_name, requirement_angle_accuracy*180/pi);
 
