@@ -33,7 +33,7 @@ I_p = [0.0088, 0, 0;
 
 % System description
 A_sys = [[inv(I_p)*(skew3(I_p*w_0)-skew3(w_0)*I_p), zeros(3);
-         -1/2*skew3(q_0)                         , 1/2*skew3(w_0)],zeros(6,3);
+         -1/2*(skew3(q_0)+eye(3))                         , 1/2*skew3(w_0)],zeros(6,3);
          zeros(3),eye(3),zeros(3)];
 B_sys =[-inv(I_p);zeros(6,3)];
 C_sys = [eye(9)];
@@ -77,7 +77,7 @@ if system_ang == 1 % system for P8-ACDS
     for k_ang=1:N
         I_delta = diag(inv(I)*corners(k_ang,:)');
         A{k_ang}  =  [[inv(I_delta)*(skew3(I_delta*w_0)-skew3(w_0)*I_delta), zeros(3);
-         -1/2*skew3(q_0)                         , 1/2*skew3(w_0)],zeros(6,3);
+         -1/2*(skew3(q_0)+eye(3))                         , 1/2*skew3(w_0)],zeros(6,3);
          zeros(3),eye(3),zeros(3)];
         B1{k_ang} = ones(9,3);
         B2{k_ang} = [-inv(I_delta);zeros(6,3)];
