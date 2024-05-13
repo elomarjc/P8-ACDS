@@ -1,0 +1,4495 @@
+Model {
+  Name			  "animation_test"
+  Version		  8.7
+  MdlSubVersion		  1
+  SavedCharacterEncoding  "UTF-8"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.16"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  LastSavedArchitecture	  "glnxa64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Array {
+      Type		      "Simulink.WindowInfo"
+      Dimension		      2
+      Object {
+	$ObjectID		2
+	IsActive		[1]
+	Location		[0.0, 0.0, 1920.0, 1050.0]
+	Object {
+	  $PropName		  "ModelBrowserInfo"
+	  $ObjectID		  3
+	  $ClassName		  "Simulink.ModelBrowserInfo"
+	  Visible		  [0]
+	  DockPosition		  "Left"
+	  Width			  [50]
+	  Height		  [50]
+	  Filter		  [9]
+	}
+	Object {
+	  $PropName		  "ExplorerBarInfo"
+	  $ObjectID		  4
+	  $ClassName		  "Simulink.ExplorerBarInfo"
+	  Visible		  [1]
+	}
+	Object {
+	  $PropName		  "EditorsInfo"
+	  $ObjectID		  5
+	  $ClassName		  "Simulink.EditorInfo"
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1"
+	  Extents		  [1886.0, 867.0]
+	  ZoomFactor		  [1.046134663341646]
+	  Offset		  [-295.2221813542908, 17.6174016686532]
+	}
+      }
+      Object {
+	$ObjectID		6
+	IsActive		[0]
+	Location		[0.0, 0.0, 1920.0, 1050.0]
+	Object {
+	  $PropName		  "ModelBrowserInfo"
+	  $ObjectID		  7
+	  $ClassName		  "Simulink.ModelBrowserInfo"
+	  Visible		  [0]
+	  DockPosition		  "Left"
+	  Width			  [50]
+	  Height		  [50]
+	  Filter		  [9]
+	}
+	Object {
+	  $PropName		  "ExplorerBarInfo"
+	  $ObjectID		  8
+	  $ClassName		  "Simulink.ExplorerBarInfo"
+	  Visible		  [1]
+	}
+	Object {
+	  $PropName		  "EditorsInfo"
+	  $ObjectID		  9
+	  $ClassName		  "Simulink.EditorInfo"
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1886.0, 867.0]
+	  ZoomFactor		  [1.3642276422764228]
+	  Offset		  [-271.233611442193, 25.640398532649481]
+	}
+      }
+      PropName		      "WindowsInfo"
+    }
+  }
+  Created		  "Mon Nov 30 23:17:23 2009"
+  Creator		  "kasperv"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "jn"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Feb 29 00:06:51 2016"
+  RTWModifiedTimeStamp	  206361776
+  ModelVersionFormat	  "1.%<AutoIncrement:16>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  off
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    10
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "animation_test"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "animation_test"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      11
+      Version		      "1.16.01"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  12
+	  Version		  "1.16.01"
+	  StartTime		  "0.0"
+	  StopTime		  "5830.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  13
+	  Version		  "1.16.01"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  14
+	  Version		  "1.16.01"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  15
+	  Version		  "1.16.01"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "Warning"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  16
+	  Version		  "1.16.01"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  17
+	  Version		  "1.16.01"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  18
+	  Version		  "1.16.01"
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  19
+	  Version		  "1.16.01"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      20
+	      Version		      "1.16.01"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      21
+	      Version		      "1.16.01"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"PortableWordSizes"
+		Cell			"PurelyIntegerCode"
+		Cell			"GenerateAllocFcn"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  22
+	  Version		  "1.16.01"
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovMetricSettings	  "dw"
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "Off"
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 400, 210, 1280, 840 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    11
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    23
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+      DisallowConstTsAndPrmTs off
+      PortDimensions	      "1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "double"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      Unit		      "inherit"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      Unit		      "inherit"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      GeneratePreprocessorConditionals off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SaveFormat	      "Array"
+      Save2DSignal	      "Inherit from input (this choice will be removed - see release notes)"
+      FixptAsFi		      off
+      NumInputs		      "1"
+      SampleTime	      "0"
+    }
+  }
+  System {
+    Name		    "animation_test"
+    Location		    [0, 0, 1920, 1050]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "136"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "28"
+    Block {
+      BlockType		      Reference
+      Name		      "AAUSAT-II Animation"
+      SID		      "27"
+      Ports		      [5]
+      Position		      [675, 411, 800, 619]
+      ZOrder		      -1
+      LibraryVersion	      "1.1054"
+      SourceBlock	      "aausat3_lib/Other Model Utilities/AAUSAT-II Animation"
+      SourceType	      "AAUSAT-II Animation"
+      ContentPreviewEnabled   off
+      u1		      "[-20000000 20000000 -20000000 20000000 -20000000 20000000]"
+      u2		      "4"
+      u3		      "300000"
+      u20		      on
+      u18		      "15"
+      u4		      "6378000"
+      u11		      "300"
+      u12		      on
+      u13		      "'earth301.jpg'"
+      u17		      "180"
+      u5		      "Fly alongside"
+      u6		      "[70000000 70000000 70000000]"
+      u7		      "8"
+      u9		      on
+      u10		      off
+      u16		      off
+      u14		      on
+      u15		      on
+      u8		      on
+      u19		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "AAUSAT3"
+      SID		      "1"
+      Ports		      [2]
+      Position		      [465, 113, 780, 357]
+      ZOrder		      -2
+      AncestorBlock	      "aausat3_lib/AAUSAT3"
+      LibraryVersion	      "*1.313"
+      ShowPortLabels	      "none"
+      RequestExecContextInheritance off
+      Variant		      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		24
+	$ClassName		"Simulink.Mask"
+	Display			"image(imread('sat.jpg'));\ncolor('w');\nport_label('input', 1, 'N_mt(S)');\nport_label('input', 2, 'TLE');"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  19
+	  Object {
+	    $ObjectID		    25
+	    Type		    "edit"
+	    Name		    "r_com_s"
+	    Prompt		    "Center of Mass:"
+	    Value		    "[0.0493,0.0972,0.0549]"
+	  }
+	  Object {
+	    $ObjectID		    26
+	    Type		    "edit"
+	    Name		    "sat_temp_start"
+	    Prompt		    "Start Temperature of the Satellite [K]:"
+	    Value		    "293.15"
+	  }
+	  Object {
+	    $ObjectID		    27
+	    Type		    "edit"
+	    Name		    "mass_sc"
+	    Prompt		    "Mass of the Satellite [kg]:"
+	    Value		    "0.7924"
+	  }
+	  Object {
+	    $ObjectID		    28
+	    Type		    "edit"
+	    Name		    "Dim"
+	    Prompt		    "Dimension of the Satellite [x,y,z][m];"
+	    Value		    "[0.1,0.2,0.1]"
+	  }
+	  Object {
+	    $ObjectID		    29
+	    Type		    "edit"
+	    Name		    "inertia_c"
+	    Prompt		    "Inertia Matrix of the Satellite:"
+	    Value		    "[0.001653,0.003145,0.003314]"
+	  }
+	  Object {
+	    $ObjectID		    30
+	    Type		    "edit"
+	    Name		    "init_jd"
+	    Prompt		    "Initial time [JD]:"
+	    Value		    "0"
+	  }
+	  Object {
+	    $ObjectID		    31
+	    Type		    "edit"
+	    Name		    "q_s_c"
+	    Prompt		    "Controller Reference Frame (S->C):"
+	    Value		    "[-0.1926 -0.1883 -0.6821 0.6799\n]"
+	  }
+	  Object {
+	    $ObjectID		    32
+	    Type		    "edit"
+	    Name		    "q_init_I_S"
+	    Prompt		    "Initial Attitude (I->S):"
+	    Value		    "[0 0 0 1] "
+	  }
+	  Object {
+	    $ObjectID		    33
+	    Type		    "edit"
+	    Name		    "w_init_s"
+	    Prompt		    "Initial Angular Rate (S):"
+	    Value		    "[0.1,0.1,0.1]*0"
+	  }
+	  Object {
+	    $ObjectID		    34
+	    Type		    "edit"
+	    Name		    "Cd"
+	    Prompt		    "Atmospheric Drag Coefficient [-]:"
+	    Value		    "2"
+	  }
+	  Object {
+	    $ObjectID		    35
+	    Type		    "edit"
+	    Name		    "rho"
+	    Prompt		    "Atmospheric Density [kg/m^3]:"
+	    Value		    "5e-14"
+	  }
+	  Object {
+	    $ObjectID		    36
+	    Type		    "edit"
+	    Name		    "solar_m_flux"
+	    Prompt		    "Solar Momentum Flux [kg/ms^2]:"
+	    Value		    "4.5565e-6"
+	  }
+	  Object {
+	    $ObjectID		    37
+	    Type		    "edit"
+	    Name		    "solar_absorb_coeff"
+	    Prompt		    "Solar Absorbtion Coefficient [-]:"
+	    Value		    "1.5"
+	  }
+	  Object {
+	    $ObjectID		    38
+	    Type		    "edit"
+	    Name		    "theta_e"
+	    Prompt		    "Max. Angle of Theta [deg](eclipse: theta>r_earth/norm(R_SA)):"
+	    Value		    "65"
+	  }
+	  Object {
+	    $ObjectID		    39
+	    Type		    "edit"
+	    Name		    "refldata"
+	    Prompt		    "Reflectivity Data (REFL Struct):"
+	    Value		    "load('lib/AlbedoToolbox-1.0/refl_data/2005/ga050101-051231')"
+	  }
+	  Object {
+	    $ObjectID		    40
+	    Type		    "edit"
+	    Name		    "redfac"
+	    Prompt		    "Reduction Factor:"
+	    Value		    "1"
+	  }
+	  Object {
+	    $ObjectID		    41
+	    Type		    "edit"
+	    Name		    "Ts"
+	    Prompt		    "Albedo Sampling Time [s]:"
+	    Value		    "1"
+	  }
+	  Object {
+	    $ObjectID		    42
+	    Type		    "checkbox"
+	    Name		    "enable_sensor_emulation"
+	    Prompt		    "Enable Sensor Emulation."
+	    Value		    "on"
+	  }
+	  Object {
+	    $ObjectID		    43
+	    Type		    "checkbox"
+	    Name		    "enable_env_disturbance"
+	    Prompt		    "Enable Environment Disturbance."
+	    Value		    "on"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
+      System {
+	Name			"AAUSAT3"
+	Location		[0, 0, 1920, 1050]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"105"
+	SIDHighWatermark	"1896"
+	SIDPrevWatermark	"1895"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Magnetorquer N_mt(S)"
+	  SID			  "1:1187"
+	  Position		  [600, 668, 630, 682]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "TLE"
+	  SID			  "1:1295"
+	  Position		  [50, 203, 80, 217]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Center of mass R_com(S)"
+	  SID			  "1:1191"
+	  Position		  [30, 655, 100, 675]
+	  ZOrder		  -3
+	  ShowName		  off
+	  Value			  "r_com_s"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Controller frame (S->C)"
+	  SID			  "1:1194"
+	  Position		  [580, 598, 640, 612]
+	  ZOrder		  -4
+	  NamePlacement		  "alternate"
+	  Value			  "q_s_c"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Controller frame (S->C)1"
+	  SID			  "1:1195"
+	  Position		  [30, 725, 100, 745]
+	  ZOrder		  -5
+	  ShowName		  off
+	  Value			  "q_s_c"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Enable env disturbance"
+	  SID			  "1:1253"
+	  Position		  [80, 399, 215, 421]
+	  ZOrder		  -6
+	  Value			  "enable_env_disturbance"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Environment Disturbances"
+	  SID			  "1:1895"
+	  Ports			  [11, 2, 1]
+	  Position		  [140, 443, 350, 817]
+	  ZOrder		  -7
+	  AncestorBlock		  "aausat3_lib/Disturbances/Environment Disturbances"
+	  LibraryVersion	  "*1.313"
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    44
+	    $ClassName		    "Simulink.Mask"
+	    Description		    "Torque and force from the environment affecting the satellite."
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      13
+	      Object {
+		$ObjectID		45
+		Type			"edit"
+		Name			"Dim"
+		Prompt			"Satellite Dimension [x,y,z][m]:"
+		Value			"Dim"
+	      }
+	      Object {
+		$ObjectID		46
+		Type			"edit"
+		Name			"sola_m_flux"
+		Prompt			"Solar Momentum Flux [kg/ms^2]:"
+		Value			"solar_m_flux"
+	      }
+	      Object {
+		$ObjectID		47
+		Type			"edit"
+		Name			"solar_absorb_coeff"
+		Prompt			"Solar Absorbtion Coefficient [-]:"
+		Value			"solar_absorb_coeff"
+	      }
+	      Object {
+		$ObjectID		48
+		Type			"edit"
+		Name			"rho"
+		Prompt			"Atmospheric Density [kg/m^3]:"
+		Value			"rho"
+	      }
+	      Object {
+		$ObjectID		49
+		Type			"edit"
+		Name			"Cd"
+		Prompt			"Atmospheric Drag Coefficient [-]:"
+		Value			"Cd"
+	      }
+	      Object {
+		$ObjectID		50
+		Type			"edit"
+		Name			"G"
+		Prompt			"Gravitational Constant [m^3/kgs^2]:"
+		Value			"6.672e-11"
+	      }
+	      Object {
+		$ObjectID		51
+		Type			"edit"
+		Name			"M_sun"
+		Prompt			"Mass of the Sun [kg]:"
+		Value			"1.989e30"
+	      }
+	      Object {
+		$ObjectID		52
+		Type			"edit"
+		Name			"M_earth"
+		Prompt			"Mass of the Earth [kg]:"
+		Value			"5.9742e24"
+	      }
+	      Object {
+		$ObjectID		53
+		Type			"edit"
+		Name			"M_moon"
+		Prompt			"Mass of the Moon [kg]:"
+		Value			"0.073483e24"
+	      }
+	      Object {
+		$ObjectID		54
+		Type			"checkbox"
+		Name			"enable_rad_dist"
+		Prompt			"Enable Radiation Disturbanceses."
+		Value			"on"
+	      }
+	      Object {
+		$ObjectID		55
+		Type			"checkbox"
+		Name			"enable_atmospheric_dist"
+		Prompt			"Enable Atmospheric Disturbanceses."
+		Value			"on"
+	      }
+	      Object {
+		$ObjectID		56
+		Type			"checkbox"
+		Name			"enable_gravity_dist"
+		Prompt			"Enable Gravity Disturbanceses."
+		Value			"on"
+	      }
+	      Object {
+		$ObjectID		57
+		Type			"checkbox"
+		Name			"enable_mag_residual_dist"
+		Prompt			"Enable Magnetic Residual Disturbance"
+		Value			"on"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "Environment Disturbances"
+	    Location		    [12, 45, 1303, 945]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "1899"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Moon positon R_m(I)"
+	      SID		      "1:1895:1008"
+	      Position		      [85, 398, 115, 412]
+	      ZOrder		      -1
+	      NamePlacement	      "alternate"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		Name			"R_m(I)\n"
+		PropagatedSignals	"R_m(I)\n\n"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sun position R_s(I)"
+	      SID		      "1:1895:1009"
+	      Position		      [90, 83, 120, 97]
+	      ZOrder		      -2
+	      NamePlacement	      "alternate"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		Name			"R_s(I)\n"
+		PropagatedSignals	"R_s(I)\n"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Inertia I_f(C)"
+	      SID		      "1:1895:1010"
+	      Position		      [85, 488, 115, 502]
+	      ZOrder		      -3
+	      NamePlacement	      "alternate"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Orbit position R_sc(I)"
+	      SID		      "1:1895:1011"
+	      Position		      [90, 103, 120, 117]
+	      ZOrder		      -4
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Attitude q(I -> S)"
+	      SID		      "1:1895:1012"
+	      Position		      [85, 258, 115, 272]
+	      ZOrder		      -5
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Orbit velocity V_sc(I)"
+	      SID		      "1:1895:1013"
+	      Position		      [85, 293, 115, 307]
+	      ZOrder		      -6
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "R_CoM(S)"
+	      SID		      "1:1895:1014"
+	      Position		      [85, 208, 115, 222]
+	      ZOrder		      -7
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Mass of Spacecraft"
+	      SID		      "1:1895:1015"
+	      Position		      [85, 578, 115, 592]
+	      ZOrder		      -8
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q(S->C)"
+	      SID		      "1:1895:1016"
+	      Position		      [85, 548, 115, 562]
+	      ZOrder		      -9
+	      NamePlacement	      "alternate"
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "eclipse"
+	      SID		      "1:1895:1017"
+	      Position		      [90, 163, 120, 177]
+	      ZOrder		      -10
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Magnetic field B(E)"
+	      SID		      "1:1895:1645"
+	      Position		      [85, 748, 115, 762]
+	      ZOrder		      -11
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "1:1895:1035"
+	      Ports		      []
+	      Position		      [575, 25, 595, 45]
+	      ZOrder		      -12
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Atmospheric"
+	      SID		      "1:1895:1032"
+	      Ports		      [3, 2, 1]
+	      Position		      [330, 250, 440, 350]
+	      ZOrder		      -13
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Disturbances/Atmospheric"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      Dim		      "Dim"
+	      Cd		      "Cd"
+	      rho		      "rho"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "1:1895:1036"
+	      Position		      [160, 34, 245, 66]
+	      ZOrder		      -14
+	      Value		      "enable_rad_dist"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "1:1895:1039"
+	      Position		      [135, 220, 255, 250]
+	      ZOrder		      -15
+	      Value		      "enable_atmospheric_dist"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "1:1895:1038"
+	      Position		      [150, 354, 250, 386]
+	      ZOrder		      -16
+	      Value		      "enable_gravity_dist"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      SID		      "1:1895:1643"
+	      Position		      [115, 620, 260, 650]
+	      ZOrder		      -17
+	      Value		      "enable_mag_residual_dist"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Gravity"
+	      SID		      "1:1895:1894"
+	      Ports		      [7, 2, 1]
+	      Position		      [330, 394, 450, 606]
+	      ZOrder		      -18
+	      AncestorBlock	      "aausat3_lib/Disturbances/Gravity"
+	      LibraryVersion	      "*1.313"
+	      RequestExecContextInheritance off
+	      Variant		      off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		58
+		$ClassName		"Simulink.Mask"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  8
+		  Object {
+		    $ObjectID		    59
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gravitational Constant [m^3/kgs^2]:"
+		    Value		    "G"
+		  }
+		  Object {
+		    $ObjectID		    60
+		    Type		    "edit"
+		    Name		    "M_sun"
+		    Prompt		    "Mass of the Sun [kg]:"
+		    Value		    "M_sun"
+		  }
+		  Object {
+		    $ObjectID		    61
+		    Type		    "edit"
+		    Name		    "M_moon"
+		    Prompt		    "Mass of the Moon [kg]:"
+		    Value		    "M_moon"
+		  }
+		  Object {
+		    $ObjectID		    62
+		    Type		    "edit"
+		    Name		    "M_earth"
+		    Prompt		    "Mass of the Earth [kg]:"
+		    Value		    "M_earth"
+		  }
+		  Object {
+		    $ObjectID		    63
+		    Type		    "checkbox"
+		    Name		    "enable_moon_G"
+		    Prompt		    "Enable the Gravity of the Moon."
+		    Value		    "on"
+		  }
+		  Object {
+		    $ObjectID		    64
+		    Type		    "checkbox"
+		    Name		    "enable_sun_G"
+		    Prompt		    "Enable the Gravity of the Sun."
+		    Value		    "on"
+		  }
+		  Object {
+		    $ObjectID		    65
+		    Type		    "checkbox"
+		    Name		    "enable_zharm_earth"
+		    Prompt		    "Enable the Earth Zonal Harmonics."
+		    Value		    "on"
+		  }
+		  Object {
+		    $ObjectID		    66
+		    Type		    "checkbox"
+		    Name		    "enable_gravity_torque"
+		    Prompt		    "Enable Torque From Gravity."
+		    Value		    "on"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"Gravity"
+		Location		[648, 45, 1549, 1094]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"1899"
+		Block {
+		  BlockType		  Inport
+		  Name			  "R_m(I)"
+		  SID			  "1:1895:1894:1714"
+		  Position		  [20, 168, 50, 182]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "R_s(I)"
+		  SID			  "1:1895:1894:1715"
+		  Position		  [85, 353, 115, 367]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "R_sc(I)"
+		  SID			  "1:1895:1894:1716"
+		  Position		  [15, 443, 45, 457]
+		  ZOrder		  -3
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "I(C)"
+		  SID			  "1:1895:1894:1717"
+		  Position		  [15, 608, 45, 622]
+		  ZOrder		  -4
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "q(I -> S)"
+		  SID			  "1:1895:1894:1718"
+		  Position		  [15, 678, 45, 692]
+		  ZOrder		  -5
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "q(C->S)"
+		  SID			  "1:1895:1894:1719"
+		  Position		  [15, 643, 45, 657]
+		  ZOrder		  -6
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "M_sat"
+		  SID			  "1:1895:1894:1720"
+		  Position		  [120, 253, 150, 267]
+		  ZOrder		  -7
+		  Port			  "7"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  EnablePort
+		  Name			  "Enable"
+		  SID			  "1:1895:1894:1722"
+		  Ports			  []
+		  Position		  [95, 45, 115, 65]
+		  ZOrder		  -8
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "1:1895:1894:1723"
+		  Position		  [365, 34, 485, 66]
+		  ZOrder		  -9
+		  BlockMirror		  on
+		  Value			  "enable_moon_G"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "1:1895:1894:1724"
+		  Position		  [365, 214, 480, 246]
+		  ZOrder		  -10
+		  BlockMirror		  on
+		  NamePlacement		  "alternate"
+		  Value			  "enable_sun_G"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  "1:1895:1894:1725"
+		  Position		  [365, 384, 490, 416]
+		  ZOrder		  -11
+		  BlockMirror		  on
+		  NamePlacement		  "alternate"
+		  Value			  "enable_zharm_earth"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  SID			  "1:1895:1894:1726"
+		  Position		  [365, 529, 480, 561]
+		  ZOrder		  -12
+		  BlockMirror		  on
+		  NamePlacement		  "alternate"
+		  Value			  "enable_gravity_torque"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Gravity Gradient Torque"
+		  SID			  "1:1895:1894:1893"
+		  Ports			  [5, 2, 1]
+		  Position		  [240, 566, 355, 734]
+		  ZOrder		  -13
+		  LibraryVersion	  "1.597"
+		  SourceBlock		  "aausat3_lib/Disturbances/Gravity Gradient Torque"
+		  SourceType		  ""
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  G			  "G"
+		  M_earth		  "M_earth"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Gravity Moon"
+		  SID			  "1:1895:1894:1892"
+		  Ports			  [5, 2, 1]
+		  Position		  [240, 67, 350, 183]
+		  ZOrder		  -14
+		  LibraryVersion	  "1.597"
+		  SourceBlock		  "aausat3_lib/Disturbances/Gravity Moon"
+		  SourceType		  ""
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  G			  "G"
+		  M_moon		  "M_moon"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Gravity Sun"
+		  SID			  "1:1895:1894:1891"
+		  Ports			  [5, 2, 1]
+		  Position		  [240, 252, 350, 368]
+		  ZOrder		  -15
+		  LibraryVersion	  "1.597"
+		  SourceBlock		  "aausat3_lib/Disturbances/Gravity Sun"
+		  SourceType		  ""
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  G			  "G"
+		  M_sun			  "M_sun"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  SID			  "1:1895:1894:1731"
+		  Ports			  [4, 1]
+		  Position		  [510, 27, 525, 703]
+		  ZOrder		  -16
+		  ShowName		  off
+		  Inputs		  "++++"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum1"
+		  SID			  "1:1895:1894:1732"
+		  Ports			  [2, 1]
+		  Position		  [65, 165, 85, 185]
+		  ZOrder		  -17
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum2"
+		  SID			  "1:1895:1894:1733"
+		  Ports			  [2, 1]
+		  Position		  [135, 350, 155, 370]
+		  ZOrder		  -18
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum3"
+		  SID			  "1:1895:1894:1734"
+		  Ports			  [4, 1]
+		  Position		  [605, 104, 620, 731]
+		  ZOrder		  -19
+		  ShowName		  off
+		  Inputs		  "++++"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace"
+		  SID			  "1:1895:1894:1896"
+		  Ports			  [1]
+		  Position		  [380, 110, 440, 140]
+		  ZOrder		  -20
+		  VariableName		  "N_moon"
+		  MaxDataPoints		  "inf"
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace1"
+		  SID			  "1:1895:1894:1897"
+		  Ports			  [1]
+		  Position		  [400, 295, 460, 325]
+		  ZOrder		  -21
+		  VariableName		  "N_sun"
+		  MaxDataPoints		  "inf"
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace2"
+		  SID			  "1:1895:1894:1898"
+		  Ports			  [1]
+		  Position		  [410, 455, 470, 485]
+		  ZOrder		  -22
+		  VariableName		  "N_zonal"
+		  MaxDataPoints		  "inf"
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace3"
+		  SID			  "1:1895:1894:1899"
+		  Ports			  [1]
+		  Position		  [400, 635, 460, 665]
+		  ZOrder		  -23
+		  VariableName		  "N_earth"
+		  MaxDataPoints		  "inf"
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Zonal Harmonics\n Earth"
+		  SID			  "1:1895:1894:1825"
+		  Ports			  [5, 2, 1]
+		  Position		  [235, 422, 355, 518]
+		  ZOrder		  -24
+		  LibraryVersion	  "1.597"
+		  SourceBlock		  "aausat3_lib/Disturbances/Zonal Harmonics\n Earth"
+		  SourceType		  "SubSystem"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "N_gr(S)"
+		  SID			  "1:1895:1894:1736"
+		  Position		  [680, 413, 710, 427]
+		  ZOrder		  -25
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "F_gr(I)"
+		  SID			  "1:1895:1894:1737"
+		  Position		  [680, 358, 710, 372]
+		  ZOrder		  -26
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Gravity Gradient Torque"
+		  SrcPort		  2
+		  Points		  [120, 0; 0, -75]
+		  DstBlock		  "Sum"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Gravity Gradient Torque"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  Branch {
+		    ZOrder		    3
+		    Points		    [185, 0; 0, 40]
+		    DstBlock		    "Sum3"
+		    DstPort		    4
+		  }
+		  Branch {
+		    ZOrder		    4
+		    DstBlock		    "To Workspace3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Sum1"
+		  SrcPort		  1
+		  DstBlock		  "Gravity Moon"
+		  DstPort		  5
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Sum2"
+		  SrcPort		  1
+		  DstBlock		  "Gravity Sun"
+		  DstPort		  5
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "R_sc(I)"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  Branch {
+		    ZOrder		    8
+		    Points		    [0, 130]
+		    DstBlock		    "Gravity Gradient Torque"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    9
+		    Points		    [70, 0]
+		    Branch {
+		    ZOrder		    10
+		    DstBlock		    "Zonal Harmonics\n Earth"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    11
+		    DstBlock		    "Sum2"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    ZOrder		    12
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Gravity Moon"
+		  DstPort		  enable
+		}
+		Line {
+		  ZOrder		  14
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [-65, 0]
+		  DstBlock		  "Gravity Sun"
+		  DstPort		  enable
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  Points		  [-65, 0]
+		  DstBlock		  "Zonal Harmonics\n Earth"
+		  DstPort		  enable
+		}
+		Line {
+		  ZOrder		  16
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  Points		  [-65, 0]
+		  DstBlock		  "Gravity Gradient Torque"
+		  DstPort		  enable
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "Gravity Sun"
+		  SrcPort		  1
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  18
+		  SrcBlock		  "Gravity Moon"
+		  SrcPort		  1
+		  Points		  [105, 0; 0, 15]
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  19
+		  SrcBlock		  "R_s(I)"
+		  SrcPort		  1
+		  DstBlock		  "Sum2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  20
+		  SrcBlock		  "R_m(I)"
+		  SrcPort		  1
+		  DstBlock		  "Sum1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  21
+		  SrcBlock		  "Zonal Harmonics\n Earth"
+		  SrcPort		  1
+		  DstBlock		  "Sum"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  22
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  DstBlock		  "F_gr(I)"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  23
+		  SrcBlock		  "M_sat"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  Branch {
+		    ZOrder		    24
+		    Points		    [0, 460]
+		    DstBlock		    "Gravity Gradient Torque"
+		    DstPort		    5
+		  }
+		  Branch {
+		    ZOrder		    25
+		    Points		    [0, -185]
+		    DstBlock		    "Gravity Moon"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    26
+		    Points		    [20, 0]
+		    Branch {
+		    ZOrder		    27
+		    Points		    [0, 170]
+		    DstBlock		    "Zonal Harmonics\n Earth"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    28
+		    DstBlock		    "Gravity Sun"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  29
+		  SrcBlock		  "q(I -> S)"
+		  SrcPort		  1
+		  Points		  [35, 0]
+		  Branch {
+		    ZOrder		    30
+		    Points		    [0, -350; 20, 0]
+		    Branch {
+		    ZOrder		    31
+		    Points		    [0, -185]
+		    DstBlock		    "Gravity Moon"
+		    DstPort		    4
+		    }
+		    Branch {
+		    ZOrder		    32
+		    DstBlock		    "Gravity Sun"
+		    DstPort		    4
+		    }
+		  }
+		  Branch {
+		    ZOrder		    33
+		    Points		    [135, 0]
+		    Branch {
+		    ZOrder		    34
+		    DstBlock		    "Gravity Gradient Torque"
+		    DstPort		    4
+		    }
+		    Branch {
+		    ZOrder		    35
+		    DstBlock		    "Zonal Harmonics\n Earth"
+		    DstPort		    5
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  36
+		  SrcBlock		  "q(C->S)"
+		  SrcPort		  1
+		  Points		  [160, 0]
+		  Branch {
+		    ZOrder		    37
+		    DstBlock		    "Gravity Gradient Torque"
+		    DstPort		    3
+		  }
+		  Branch {
+		    ZOrder		    38
+		    Points		    [0, -160]
+		    Branch {
+		    ZOrder		    39
+		    Points		    [0, -180]
+		    Branch {
+		    ZOrder		    40
+		    Points		    [0, -185]
+		    DstBlock		    "Gravity Moon"
+		    DstPort		    3
+		    }
+		    Branch {
+		    ZOrder		    41
+		    DstBlock		    "Gravity Sun"
+		    DstPort		    3
+		    }
+		    }
+		    Branch {
+		    ZOrder		    42
+		    DstBlock		    "Zonal Harmonics\n Earth"
+		    DstPort		    4
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  43
+		  SrcBlock		  "I(C)"
+		  SrcPort		  1
+		  Points		  [150, 0]
+		  Branch {
+		    ZOrder		    44
+		    DstBlock		    "Gravity Gradient Torque"
+		    DstPort		    2
+		  }
+		  Branch {
+		    ZOrder		    45
+		    Points		    [0, -145]
+		    Branch {
+		    ZOrder		    46
+		    Points		    [-10, 0; 0, -190]
+		    Branch {
+		    ZOrder		    47
+		    Points		    [0, -180]
+		    DstBlock		    "Gravity Moon"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    48
+		    Points		    [35, 0]
+		    DstBlock		    "Gravity Sun"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    ZOrder		    49
+		    DstBlock		    "Zonal Harmonics\n Earth"
+		    DstPort		    3
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  50
+		  SrcBlock		  "Sum3"
+		  SrcPort		  1
+		  DstBlock		  "N_gr(S)"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  51
+		  SrcBlock		  "Gravity Moon"
+		  SrcPort		  2
+		  Points		  [10, 0]
+		  Branch {
+		    ZOrder		    52
+		    Points		    [225, 0]
+		    DstBlock		    "Sum3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    53
+		    DstBlock		    "To Workspace"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  54
+		  SrcBlock		  "Gravity Sun"
+		  SrcPort		  2
+		  Points		  [20, 0]
+		  Branch {
+		    ZOrder		    55
+		    DstBlock		    "Sum3"
+		    DstPort		    2
+		  }
+		  Branch {
+		    ZOrder		    56
+		    Points		    [0, -30]
+		    DstBlock		    "To Workspace1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  57
+		  SrcBlock		  "Zonal Harmonics\n Earth"
+		  SrcPort		  2
+		  Points		  [10, 0]
+		  Branch {
+		    ZOrder		    58
+		    DstBlock		    "Sum3"
+		    DstPort		    3
+		  }
+		  Branch {
+		    ZOrder		    59
+		    Points		    [0, -25]
+		    DstBlock		    "To Workspace2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Magnetic Residual Disturbance1"
+	      SID		      "1:1895:1647"
+	      Ports		      [2, 1, 1]
+	      Position		      [310, 665, 470, 785]
+	      ZOrder		      -19
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Disturbances/Magnetic Residual Disturbance"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      mag_moment	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Quaternion inverter"
+	      SID		      "1:1895:1034"
+	      Ports		      [1, 1]
+	      Position		      [165, 542, 260, 568]
+	      ZOrder		      -20
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Math Utilities/Quaternion operations/Quaternion inverter"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Radiation (I)"
+	      SID		      "1:1895:1031"
+	      Ports		      [5, 2, 1]
+	      Position		      [330, 77, 440, 183]
+	      ZOrder		      -21
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Disturbances/Radiation (I)"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      Dim		      "Dim"
+	      solar_m_flux	      "solar_m_flux"
+	      solar_absorb_coeff      "solar_absorb_coeff"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "1:1895:1025"
+	      Ports		      [4, 1]
+	      Position		      [505, 16, 520, 709]
+	      ZOrder		      -22
+	      ShowName		      off
+	      Inputs		      "++++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      "1:1895:1026"
+	      Ports		      [3, 1]
+	      Position		      [665, 59, 680, 651]
+	      ZOrder		      -23
+	      ShowName		      off
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      ToWorkspace
+	      Name		      "To Workspace"
+	      SID		      "1:1895:1896"
+	      Ports		      [1]
+	      Position		      [545, 70, 605, 100]
+	      ZOrder		      -24
+	      VariableName	      "N_radiation"
+	      MaxDataPoints	      "inf"
+	      SampleTime	      "-1"
+	    }
+	    Block {
+	      BlockType		      ToWorkspace
+	      Name		      "To Workspace1"
+	      SID		      "1:1895:1897"
+	      Ports		      [1]
+	      Position		      [545, 220, 605, 250]
+	      ZOrder		      -25
+	      VariableName	      "N_atmospheric"
+	      MaxDataPoints	      "inf"
+	      SampleTime	      "-1"
+	    }
+	    Block {
+	      BlockType		      ToWorkspace
+	      Name		      "To Workspace2"
+	      SID		      "1:1895:1899"
+	      Ports		      [1]
+	      Position		      [575, 705, 635, 735]
+	      ZOrder		      -26
+	      VariableName	      "N_mag_res"
+	      MaxDataPoints	      "inf"
+	      SampleTime	      "-1"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Disturbance tourque N_dist(S)"
+	      SID		      "1:1895:1029"
+	      Position		      [575, 353, 605, 367]
+	      ZOrder		      -27
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Disturbance Force F_dist(I)"
+	      SID		      "1:1895:1030"
+	      Position		      [735, 348, 765, 362]
+	      ZOrder		      -28
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Magnetic field B(E)"
+	      SrcPort		      1
+	      DstBlock		      "Magnetic Residual Disturbance1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Magnetic Residual Disturbance1"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -5]
+	      Branch {
+		ZOrder			3
+		Points			[0, -105]
+		DstBlock		"Sum1"
+		DstPort			4
+	      }
+	      Branch {
+		ZOrder			4
+		DstBlock		"To Workspace2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Atmospheric"
+	      SrcPort		      2
+	      Points		      [180, 0; 0, 30]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Radiation (I)"
+	      SrcPort		      1
+	      Points		      [30, -5]
+	      Branch {
+		ZOrder			7
+		DstBlock		"Sum1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			8
+		Points			[0, -15]
+		DstBlock		"To Workspace"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      Points		      [125, 0]
+	      DstBlock		      "Magnetic Residual Disturbance1"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      DstBlock		      "Atmospheric"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Gravity"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [135, 0]
+	      DstBlock		      "Radiation (I)"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "R_CoM(S)"
+	      SrcPort		      1
+	      Points		      [185, 0]
+	      Branch {
+		ZOrder			14
+		Points			[0, 120]
+		DstBlock		"Atmospheric"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			15
+		Points			[0, -65]
+		DstBlock		"Radiation (I)"
+		DstPort			4
+	      }
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "q(S->C)"
+	      SrcPort		      1
+	      DstBlock		      "Quaternion inverter"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "Quaternion inverter"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "Mass of Spacecraft"
+	      SrcPort		      1
+	      Points		      [195, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      7
+	    }
+	    Line {
+	      Name		      "R_m(I)\n"
+	      ZOrder		      19
+	      Labels		      [0, 0]
+	      SrcBlock		      "Moon positon R_m(I)"
+	      SrcPort		      1
+	      Points		      [195, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "R_s(I)\n"
+	      ZOrder		      20
+	      Labels		      [0, 0]
+	      SrcBlock		      "Sun position R_s(I)"
+	      SrcPort		      1
+	      Points		      [140, 0]
+	      Branch {
+		ZOrder			21
+		Points			[0, 350]
+		DstBlock		"Gravity"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			22
+		DstBlock		"Radiation (I)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      23
+	      Labels		      [1, 0]
+	      SrcBlock		      "Attitude q(I -> S)"
+	      SrcPort		      1
+	      Points		      [170, 0]
+	      Branch {
+		ZOrder			24
+		Points			[0, 260]
+		Branch {
+		  ZOrder		  25
+		  Points		  [25, 0]
+		  DstBlock		  "Gravity"
+		  DstPort		  5
+		}
+		Branch {
+		  ZOrder		  26
+		  Points		  [0, 170]
+		  DstBlock		  "Magnetic Residual Disturbance1"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			27
+		Points			[0, 0]
+		Branch {
+		  ZOrder		  28
+		  DstBlock		  "Atmospheric"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  29
+		  Points		  [0, -135]
+		  DstBlock		  "Radiation (I)"
+		  DstPort		  3
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      30
+	      SrcBlock		      "Orbit position R_sc(I)"
+	      SrcPort		      1
+	      Points		      [155, 0]
+	      Branch {
+		ZOrder			31
+		Points			[0, 360]
+		DstBlock		"Gravity"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			32
+		DstBlock		"Radiation (I)"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      33
+	      SrcBlock		      "Orbit velocity V_sc(I)"
+	      SrcPort		      1
+	      DstBlock		      "Atmospheric"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      34
+	      SrcBlock		      "Atmospheric"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		ZOrder			35
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			36
+		Points			[0, -40]
+		DstBlock		"To Workspace1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      37
+	      SrcBlock		      "Gravity"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      38
+	      SrcBlock		      "Radiation (I)"
+	      SrcPort		      2
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      39
+	      SrcBlock		      "Gravity"
+	      SrcPort		      2
+	      Points		      [0, -5]
+	      DstBlock		      "Sum2"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      40
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Disturbance tourque N_dist(S)"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      41
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      DstBlock		      "Disturbance Force F_dist(I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      42
+	      SrcBlock		      "eclipse"
+	      SrcPort		      1
+	      DstBlock		      "Radiation (I)"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      43
+	      SrcBlock		      "Inertia I_f(C)"
+	      SrcPort		      1
+	      Points		      [195, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      4
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Ephemeris"
+	  SID			  "1:1250"
+	  Ports			  [1, 3]
+	  Position		  [140, 279, 340, 381]
+	  ZOrder		  -8
+	  LibraryVersion	  "1.1054"
+	  SourceBlock		  "aausat3_lib/Orbit and Ephemeris/Ephemeris"
+	  SourceType		  "SubSystem"
+	  ContentPreviewEnabled	  off
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "1:1198"
+	  Position		  [30, 100, 120, 120]
+	  ZOrder		  -9
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_Sun_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From15"
+	  SID			  "1:1204"
+	  Position		  [30, 585, 120, 605]
+	  ZOrder		  -10
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "q_I_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From16"
+	  SID			  "1:1205"
+	  Position		  [1030, 640, 1120, 660]
+	  ZOrder		  -11
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "F_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From18"
+	  SID			  "1:1206"
+	  Position		  [30, 480, 120, 500]
+	  ZOrder		  -12
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_Sun_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From19"
+	  SID			  "1:1207"
+	  Position		  [30, 550, 120, 570]
+	  ZOrder		  -13
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "1:1208"
+	  Position		  [580, 700, 670, 720]
+	  ZOrder		  -14
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "N_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From22"
+	  SID			  "1:1210"
+	  Position		  [30, 620, 120, 640]
+	  ZOrder		  -15
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Vel_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From23"
+	  SID			  "1:1211"
+	  Position		  [30, 760, 120, 780]
+	  ZOrder		  -16
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Eclipse"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From3"
+	  SID			  "1:1212"
+	  Position		  [30, 50, 120, 70]
+	  ZOrder		  -17
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "q_I_E"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From4"
+	  SID			  "1:1620"
+	  Position		  [1030, 530, 1120, 550]
+	  ZOrder		  -18
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Reflectivity"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From5"
+	  SID			  "1:1214"
+	  Position		  [30, 320, 120, 340]
+	  ZOrder		  -19
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Sim_time_JD"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From6"
+	  SID			  "1:1215"
+	  Position		  [30, 445, 120, 465]
+	  ZOrder		  -20
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_Moon_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From7"
+	  SID			  "1:1622"
+	  Position		  [1030, 580, 1120, 600]
+	  ZOrder		  -21
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Omega_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From8"
+	  SID			  "1:1739"
+	  Position		  [30, 795, 120, 815]
+	  ZOrder		  -22
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Mag_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  "1:1219"
+	  Position		  [395, 35, 485, 55]
+	  ZOrder		  -23
+	  ShowName		  off
+	  GotoTag		  "Mag_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "1:1220"
+	  Position		  [395, 70, 485, 90]
+	  ZOrder		  -24
+	  ShowName		  off
+	  GotoTag		  "Vel_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto10"
+	  SID			  "1:1221"
+	  Position		  [915, 560, 1005, 580]
+	  ZOrder		  -25
+	  ShowName		  off
+	  GotoTag		  "q_I_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto11"
+	  SID			  "1:1222"
+	  Position		  [915, 670, 1005, 690]
+	  ZOrder		  -26
+	  ShowName		  off
+	  GotoTag		  "Omega_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto12"
+	  SID			  "1:1223"
+	  Position		  [400, 715, 490, 735]
+	  ZOrder		  -27
+	  ShowName		  off
+	  GotoTag		  "F_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "1:1225"
+	  Position		  [395, 320, 485, 340]
+	  ZOrder		  -28
+	  ShowName		  off
+	  GotoTag		  "Pos_Sun_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto3"
+	  SID			  "1:1226"
+	  Position		  [395, 105, 485, 125]
+	  ZOrder		  -29
+	  ShowName		  off
+	  GotoTag		  "Pos_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto4"
+	  SID			  "1:1227"
+	  Position		  [395, 285, 485, 305]
+	  ZOrder		  -30
+	  ShowName		  off
+	  GotoTag		  "Pos_Moon_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto5"
+	  SID			  "1:1228"
+	  Position		  [395, 140, 485, 160]
+	  ZOrder		  -31
+	  ShowName		  off
+	  GotoTag		  "Sim_time_JD"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto6"
+	  SID			  "1:1229"
+	  Position		  [395, 210, 485, 230]
+	  ZOrder		  -32
+	  ShowName		  off
+	  GotoTag		  "Eclipse"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto7"
+	  SID			  "1:1230"
+	  Position		  [395, 175, 485, 195]
+	  ZOrder		  -33
+	  ShowName		  off
+	  GotoTag		  "Reflectivity"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto8"
+	  SID			  "1:1231"
+	  Position		  [395, 355, 485, 375]
+	  ZOrder		  -34
+	  ShowName		  off
+	  GotoTag		  "q_I_E"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto9"
+	  SID			  "1:1232"
+	  Position		  [400, 530, 490, 550]
+	  ZOrder		  -35
+	  ShowName		  off
+	  GotoTag		  "N_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initial angular rate W_i(S)"
+	  SID			  "1:1235"
+	  Position		  [580, 527, 640, 543]
+	  ZOrder		  -36
+	  NamePlacement		  "alternate"
+	  Value			  "w_init_s"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initial attitude q_i(I->S)"
+	  SID			  "1:1236"
+	  Position		  [580, 563, 640, 577]
+	  ZOrder		  -37
+	  NamePlacement		  "alternate"
+	  Value			  "q_init_I_S"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initial time (JD)"
+	  SID			  "1:1237"
+	  Position		  [35, 153, 95, 167]
+	  ZOrder		  -38
+	  NamePlacement		  "alternate"
+	  Value			  "init_jd"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Mass of spaccraft"
+	  SID			  "1:1238"
+	  Position		  [30, 689, 100, 711]
+	  ZOrder		  -39
+	  ShowName		  off
+	  Value			  "mass_sc"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Orbit and Magnetic field models1"
+	  SID			  "1:1641"
+	  Ports			  [4, 6]
+	  Position		  [140, 31, 340, 234]
+	  ZOrder		  -40
+	  AncestorBlock		  "aausat3_lib/Orbit and Ephemeris/Orbit and Magnetic field models"
+	  LibraryVersion	  "1.279"
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    67
+	    $ClassName		    "Simulink.Mask"
+	    Description		    "When you want to use \"Other\" make sure to define the TLE in the SGP4 subsystem. "
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      10
+	      Object {
+		$ObjectID		68
+		Type			"edit"
+		Name			"r_e"
+		Prompt			"Radius of the Earth [m]:"
+		Value			"6371e3"
+		Tunable			"off"
+	      }
+	      Object {
+		$ObjectID		69
+		Type			"edit"
+		Name			"theta_e"
+		Prompt			"Max. Angle of Theta [deg] (eclipse: theta > r_earth/norm(R_SA)):"
+		Value			"theta_e"
+	      }
+	      Object {
+		$ObjectID		70
+		Type			"edit"
+		Name			"refldata"
+		Prompt			"Reflectivity Data (REFL Struct):"
+		Value			"refldata"
+	      }
+	      Object {
+		$ObjectID		71
+		Type			"edit"
+		Name			"redfac"
+		Prompt			"Reduction Factor:"
+		Value			"redfac"
+	      }
+	      Object {
+		$ObjectID		72
+		Type			"edit"
+		Name			"Ts"
+		Prompt			"Albedo Model Sampling Time [s]:"
+		Value			"Ts"
+	      }
+	      Object {
+		$ObjectID		73
+		Type			"checkbox"
+		Name			"enable_eclipse"
+		Prompt			"Enable Eclipse Model."
+		Value			"on"
+	      }
+	      Object {
+		$ObjectID		74
+		Type			"checkbox"
+		Name			"enable_IGRF"
+		Prompt			"Enable IGRF Model."
+		Value			"on"
+	      }
+	      Object {
+		$ObjectID		75
+		Type			"checkbox"
+		Name			"reflectivity_enabled"
+		Prompt			"Enable Albedo Model."
+		Value			"off"
+	      }
+	      Object {
+		$ObjectID		76
+		Type			"checkbox"
+		Name			"enable_sgp4"
+		Prompt			"Enable SGP4 Model."
+		Value			"on"
+	      }
+	      Object {
+		$ObjectID		77
+		Type			"checkbox"
+		Name			"enable_custom_time"
+		Prompt			"Enable Custom Time."
+		Value			"on"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "Orbit and Magnetic field models1"
+	    Location		    [301, 45, 1668, 982]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "1640"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Earth rotation q(I->E)"
+	      SID		      "1:1641:1078"
+	      Position		      [225, 558, 255, 572]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sun position R_s(I)"
+	      SID		      "1:1641:1079"
+	      Position		      [55, 478, 85, 492]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Initial time ti(JD)"
+	      SID		      "1:1641:1080"
+	      Position		      [75, 118, 105, 132]
+	      ZOrder		      -3
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "TLE"
+	      SID		      "1:1641:1292"
+	      Position		      [75, 303, 105, 317]
+	      ZOrder		      -4
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "(IGRF) Magnetic field"
+	      SID		      "1:1641:1176"
+	      Ports		      [2, 1, 1]
+	      Position		      [790, 230, 990, 345]
+	      ZOrder		      -5
+	      LibraryVersion	      "1.597"
+	      LinkData {
+		BlockName		"Magnetic field model/S-Function"
+		DialogParameters {
+		  Parameters		  "2009,13"
+		}
+	      }
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/(IGRF) Magnetic field"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Albedo"
+	      SID		      "1:1641:1299"
+	      Ports		      [3, 1, 1]
+	      Position		      [785, 467, 985, 583]
+	      ZOrder		      -6
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/Albedo"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      refldata		      "refldata"
+	      redfac		      "redfac"
+	      Ts		      "Ts"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Custom time"
+	      SID		      "1:1641:1174"
+	      Ports		      [1, 1, 1]
+	      Position		      [275, 93, 460, 177]
+	      ZOrder		      -7
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/Custom time"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Eclipse model"
+	      SID		      "1:1641:1183"
+	      Ports		      [2, 1, 1]
+	      Position		      [775, 60, 975, 175]
+	      ZOrder		      -8
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/Eclipse model"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      r_e		      "r_e"
+	      enable		      off
+	      theta_e		      "theta_e"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "1:1641:1091"
+	      Position		      [1140, 259, 1195, 301]
+	      ZOrder		      -9
+	      Gain		      "1e-4"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Quaternion inverter"
+	      SID		      "1:1641:1177"
+	      Ports		      [1, 1]
+	      Position		      [790, 369, 890, 411]
+	      ZOrder		      -10
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Math Utilities/Quaternion operations/Quaternion inverter"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "SGP4 position"
+	      SID		      "1:1641:1401"
+	      Ports		      [2, 2, 1]
+	      Position		      [375, 248, 540, 332]
+	      ZOrder		      -11
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/SGP4 position"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Vector rotation by q"
+	      SID		      "1:1641:1179"
+	      Ports		      [2, 1]
+	      Position		      [1020, 259, 1120, 301]
+	      ZOrder		      -12
+	      LibraryVersion	      "1.597"
+	      SourceBlock	      "aausat3_lib/Math Utilities/Quaternion operations/Vector rotation by q"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable Albedo"
+	      SID		      "1:1641:1166"
+	      Position		      [760, 441, 865, 459]
+	      ZOrder		      -13
+	      NamePlacement	      "alternate"
+	      Value		      "reflectivity_enabled"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable SGP4"
+	      SID		      "1:1641:1161"
+	      Position		      [360, 221, 445, 239]
+	      ZOrder		      -14
+	      NamePlacement	      "alternate"
+	      Value		      "enable_sgp4"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable eclipse"
+	      SID		      "1:1641:1184"
+	      Position		      [775, 21, 860, 39]
+	      ZOrder		      -15
+	      NamePlacement	      "alternate"
+	      Value		      "enable_eclipse"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable time"
+	      SID		      "1:1641:1167"
+	      Position		      [235, 65, 345, 85]
+	      ZOrder		      -16
+	      NamePlacement	      "alternate"
+	      Value		      "enable_custom_time"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable?1"
+	      SID		      "1:1641:1162"
+	      Position		      [800, 206, 885, 224]
+	      ZOrder		      -17
+	      NamePlacement	      "alternate"
+	      Value		      "enable_IGRF"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "initial time"
+	      SID		      "1:1641:1632"
+	      Ports		      [2, 1]
+	      Position		      [150, 114, 245, 156]
+	      ZOrder		      -18
+	      LibraryVersion	      "1.762"
+	      RequestExecContextInheritance off
+	      Variant		      off
+	      System {
+		Name			"initial time"
+		Location		[399, 284, 945, 819]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Initial time in (JD)"
+		  SID			  "1:1641:1633"
+		  Position		  [245, 43, 275, 57]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "TLE"
+		  SID			  "1:1641:1639"
+		  Position		  [65, 198, 95, 212]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux"
+		  SID			  "1:1641:1635"
+		  Ports			  [1, 12]
+		  Position		  [130, 145, 135, 265]
+		  ZOrder		  -3
+		  ShowName		  off
+		  Outputs		  "12"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux1"
+		  SID			  "1:1641:1636"
+		  Ports			  [12, 1]
+		  Position		  [290, 146, 295, 264]
+		  ZOrder		  -4
+		  ShowName		  off
+		  Inputs		  "12"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch"
+		  SID			  "1:1641:1638"
+		  Position		  [350, 85, 380, 115]
+		  ZOrder		  -5
+		  Criteria		  "u2 > Threshold"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "TLE -> JD converter"
+		  SID			  "1:1641:1637"
+		  Ports			  [1, 1]
+		  Position		  [155, 121, 250, 149]
+		  ZOrder		  -6
+		  NamePlacement		  "alternate"
+		  LibraryVersion	  "1.597"
+		  SourceBlock		  "aausat3_lib/Other Model Utilities/TLE -> JD converter"
+		  SourceType		  "SubSystem"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  "1:1641:1640"
+		  Position		  [325, 195, 345, 215]
+		  ZOrder		  -7
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Initial time out (JD)"
+		  SID			  "1:1641:1634"
+		  Position		  [425, 93, 455, 107]
+		  ZOrder		  -8
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "TLE -> JD converter"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  Branch {
+		    ZOrder		    2
+		    DstBlock		    "Mux1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    3
+		    Points		    [0, -25]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		  }
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Demux"
+		  SrcPort		  1
+		  DstBlock		  "TLE -> JD converter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Demux"
+		  SrcPort		  12
+		  DstBlock		  "Mux1"
+		  DstPort		  12
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Demux"
+		  SrcPort		  11
+		  DstBlock		  "Mux1"
+		  DstPort		  11
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "Demux"
+		  SrcPort		  10
+		  DstBlock		  "Mux1"
+		  DstPort		  10
+		}
+		Line {
+		  ZOrder		  8
+		  SrcBlock		  "Demux"
+		  SrcPort		  9
+		  DstBlock		  "Mux1"
+		  DstPort		  9
+		}
+		Line {
+		  ZOrder		  9
+		  SrcBlock		  "Demux"
+		  SrcPort		  8
+		  DstBlock		  "Mux1"
+		  DstPort		  8
+		}
+		Line {
+		  ZOrder		  10
+		  SrcBlock		  "Demux"
+		  SrcPort		  7
+		  DstBlock		  "Mux1"
+		  DstPort		  7
+		}
+		Line {
+		  ZOrder		  11
+		  SrcBlock		  "Demux"
+		  SrcPort		  6
+		  DstBlock		  "Mux1"
+		  DstPort		  6
+		}
+		Line {
+		  ZOrder		  12
+		  SrcBlock		  "Demux"
+		  SrcPort		  5
+		  DstBlock		  "Mux1"
+		  DstPort		  5
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "Demux"
+		  SrcPort		  4
+		  DstBlock		  "Mux1"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  14
+		  SrcBlock		  "Demux"
+		  SrcPort		  3
+		  DstBlock		  "Mux1"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "Demux"
+		  SrcPort		  2
+		  DstBlock		  "Mux1"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  16
+		  SrcBlock		  "TLE"
+		  SrcPort		  1
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "Initial time in (JD)"
+		  SrcPort		  1
+		  Points		  [40, 0; 0, 40]
+		  Branch {
+		    ZOrder		    18
+		    Points		    [0, 10]
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		  }
+		  Branch {
+		    ZOrder		    19
+		    DstBlock		    "Switch"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  20
+		  SrcBlock		  "Switch"
+		  SrcPort		  1
+		  DstBlock		  "Initial time out (JD)"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  21
+		  SrcBlock		  "Mux1"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Mag [Tesla] B(I)"
+	      SID		      "1:1641:1168"
+	      Position		      [1240, 273, 1270, 287]
+	      ZOrder		      -19
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Spacecraft velocity V (I)"
+	      SID		      "1:1641:1169"
+	      Position		      [620, 303, 650, 317]
+	      ZOrder		      -20
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Spacecraft position R (I)"
+	      SID		      "1:1641:1170"
+	      Position		      [620, 263, 650, 277]
+	      ZOrder		      -21
+	      NamePlacement	      "alternate"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Simulation time t(JD)"
+	      SID		      "1:1641:1171"
+	      Position		      [535, 128, 565, 142]
+	      ZOrder		      -22
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Reflectivity matrix"
+	      SID		      "1:1641:1172"
+	      Position		      [1035, 518, 1065, 532]
+	      ZOrder		      -23
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Eclipse: 1=true, 0=false"
+	      SID		      "1:1641:1173"
+	      Position		      [1050, 113, 1080, 127]
+	      ZOrder		      -24
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "1"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Eclipse model"
+	      SrcPort		      1
+	      DstBlock		      "Eclipse: 1=true, 0=false"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "enable Albedo"
+	      SrcPort		      1
+	      DstBlock		      "Albedo"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "enable?1"
+	      SrcPort		      1
+	      DstBlock		      "(IGRF) Magnetic field"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Vector rotation by q"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Quaternion inverter"
+	      SrcPort		      1
+	      Points		      [110, 0]
+	      DstBlock		      "Vector rotation by q"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "enable time"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      DstBlock		      "Custom time"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Custom time"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		ZOrder			8
+		DstBlock		"Simulation time t(JD)"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			9
+		Points			[0, 70; -135, 0; 0, 65]
+		DstBlock		"SGP4 position"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Albedo"
+	      SrcPort		      1
+	      DstBlock		      "Reflectivity matrix"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Sun position R_s(I)"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		ZOrder			12
+		Points			[0, -60; -45, 0; 0, -380; 555, 0; 0, 45]
+		DstBlock		"Eclipse model"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			13
+		DstBlock		"Albedo"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Earth rotation q(I->E)"
+	      SrcPort		      1
+	      Points		      [470, 0]
+	      Branch {
+		ZOrder			15
+		Points			[0, -175]
+		Branch {
+		  ZOrder		  16
+		  Points		  [0, -75]
+		  DstBlock		  "(IGRF) Magnetic field"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  17
+		  DstBlock		  "Quaternion inverter"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			18
+		DstBlock		"Albedo"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "enable SGP4"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "SGP4 position"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "SGP4 position"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		ZOrder			21
+		Points			[15, 0]
+		Branch {
+		  ZOrder		  22
+		  Points		  [0, 15; 115, 0]
+		  Branch {
+		    ZOrder		    23
+		    Points		    [75, 0]
+		    DstBlock		    "(IGRF) Magnetic field"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    24
+		    Points		    [0, -140]
+		    DstBlock		    "Eclipse model"
+		    DstPort		    2
+		  }
+		}
+		Branch {
+		  ZOrder		  25
+		  DstBlock		  "Spacecraft position R (I)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			26
+		Points			[0, 255]
+		DstBlock		"Albedo"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "SGP4 position"
+	      SrcPort		      2
+	      DstBlock		      "Spacecraft velocity V (I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      28
+	      SrcBlock		      "(IGRF) Magnetic field"
+	      SrcPort		      1
+	      DstBlock		      "Vector rotation by q"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      29
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Mag [Tesla] B(I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      30
+	      SrcBlock		      "enable eclipse"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      DstBlock		      "Eclipse model"
+	      DstPort		      enable
+	    }
+	    Line {
+	      ZOrder		      31
+	      SrcBlock		      "TLE"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		ZOrder			32
+		DstBlock		"SGP4 position"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			33
+		Points			[0, -165]
+		DstBlock		"initial time"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      34
+	      SrcBlock		      "initial time"
+	      SrcPort		      1
+	      DstBlock		      "Custom time"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      35
+	      SrcBlock		      "Initial time ti(JD)"
+	      SrcPort		      1
+	      DstBlock		      "initial time"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Spacecraft Dynamics"
+	  SID			  "1:1277"
+	  Ports			  [6, 2]
+	  Position		  [705, 513, 890, 732]
+	  ZOrder		  -41
+	  LibraryVersion	  "1.1054"
+	  SourceBlock		  "aausat3_lib/Dynamics and Kinematics/Spacecraft Dynamics"
+	  SourceType		  "SubSystem"
+	  ContentPreviewEnabled	  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Spacecraft inertia (C)"
+	  SID			  "1:1242"
+	  Position		  [580, 633, 640, 647]
+	  ZOrder		  -42
+	  NamePlacement		  "alternate"
+	  Value			  "inertia_c"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Spacecraft inertia (C)1"
+	  SID			  "1:1243"
+	  Position		  [30, 515, 105, 535]
+	  ZOrder		  -43
+	  ShowName		  off
+	  Value			  "inertia_c"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "1:1244"
+	  Position		  [1145, 640, 1165, 660]
+	  ZOrder		  -44
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  "1:1621"
+	  Position		  [1145, 530, 1165, 550]
+	  ZOrder		  -45
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  "1:1623"
+	  Position		  [1145, 580, 1165, 600]
+	  ZOrder		  -46
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "From15"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Environment Disturbances"
+	  SrcPort		  2
+	  DstBlock		  "Goto12"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Environment Disturbances"
+	  SrcPort		  1
+	  DstBlock		  "Goto9"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "From8"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  11
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "From23"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  10
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Controller frame (S->C)1"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  9
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Mass of spaccraft"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  8
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Center of mass R_com(S)"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  7
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "From22"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "From19"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Spacecraft inertia (C)1"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "From18"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Enable env disturbance"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "From6"
+	  SrcPort		  1
+	  DstBlock		  "Environment Disturbances"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "TLE"
+	  SrcPort		  1
+	  DstBlock		  "Orbit and Magnetic field models1"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "From3"
+	  SrcPort		  1
+	  DstBlock		  "Orbit and Magnetic field models1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "From7"
+	  SrcPort		  1
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "From4"
+	  SrcPort		  1
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "Initial time (JD)"
+	  SrcPort		  1
+	  DstBlock		  "Orbit and Magnetic field models1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Orbit and Magnetic field models1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  21
+	  SrcBlock		  "Spacecraft Dynamics"
+	  SrcPort		  1
+	  DstBlock		  "Goto10"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "From16"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  23
+	  SrcBlock		  "Orbit and Magnetic field models1"
+	  SrcPort		  6
+	  DstBlock		  "Goto6"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  24
+	  SrcBlock		  "Magnetorquer N_mt(S)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft Dynamics"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  25
+	  SrcBlock		  "Orbit and Magnetic field models1"
+	  SrcPort		  1
+	  DstBlock		  "Goto"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  26
+	  SrcBlock		  "Orbit and Magnetic field models1"
+	  SrcPort		  2
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  27
+	  SrcBlock		  "Spacecraft inertia (C)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft Dynamics"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  28
+	  SrcBlock		  "Controller frame (S->C)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft Dynamics"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  29
+	  SrcBlock		  "Orbit and Magnetic field models1"
+	  SrcPort		  3
+	  DstBlock		  "Goto3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  30
+	  SrcBlock		  "Initial angular rate W_i(S)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft Dynamics"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  31
+	  SrcBlock		  "Initial attitude q_i(I->S)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft Dynamics"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  32
+	  SrcBlock		  "Orbit and Magnetic field models1"
+	  SrcPort		  4
+	  DstBlock		  "Goto5"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  33
+	  SrcBlock		  "Ephemeris"
+	  SrcPort		  1
+	  DstBlock		  "Goto4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  34
+	  SrcBlock		  "Ephemeris"
+	  SrcPort		  2
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  35
+	  SrcBlock		  "Ephemeris"
+	  SrcPort		  3
+	  DstBlock		  "Goto8"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  36
+	  SrcBlock		  "Orbit and Magnetic field models1"
+	  SrcPort		  5
+	  DstBlock		  "Goto7"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  37
+	  SrcBlock		  "Spacecraft Dynamics"
+	  SrcPort		  2
+	  DstBlock		  "Goto11"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  38
+	  SrcBlock		  "From5"
+	  SrcPort		  1
+	  DstBlock		  "Ephemeris"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  39
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft Dynamics"
+	  DstPort		  6
+	}
+	Annotation {
+	  SID			  "1:1896"
+	  Position		  [422, 43, 424, 57]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      SID		      "13"
+      Position		      [515, 465, 605, 485]
+      ZOrder		      -3
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "q_I_S"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From15"
+      SID		      "2"
+      Position		      [40, 135, 130, 155]
+      ZOrder		      -4
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "q_I_S"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From18"
+      SID		      "9"
+      Position		      [515, 545, 605, 565]
+      ZOrder		      -5
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_Sun_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From19"
+      SID		      "17"
+      Position		      [515, 425, 605, 445]
+      ZOrder		      -6
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_SC_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From22"
+      SID		      "18"
+      Position		      [515, 505, 605, 525]
+      ZOrder		      -7
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Vel_SC_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      SID		      "14"
+      Position		      [395, 585, 485, 605]
+      ZOrder		      -8
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "q_I_E"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From8"
+      SID		      "4"
+      Position		      [40, 195, 130, 215]
+      ZOrder		      -9
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Mag_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Permanent Magnet"
+      SID		      "5"
+      Ports		      [2, 1, 1]
+      Position		      [150, 115, 320, 235]
+      ZOrder		      -10
+      LibraryVersion	      "1.1054"
+      SourceBlock	      "aausat3_lib/Actuator Emulation/Permanent Magnet"
+      SourceType	      ""
+      ContentPreviewEnabled   off
+      mag_moment	      "0.0030"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TLE AAUSAT-II (2)"
+      SID		      "6"
+      Ports		      [0, 1]
+      Position		      [165, 262, 310, 328]
+      ZOrder		      -11
+      LibraryVersion	      "1.1054"
+      FontSize		      12
+      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/TLE AAUSAT-II"
+      SourceType	      ""
+      ContentPreviewEnabled   off
+      satname		      "'AAUSAT-II'"
+      JulianDay		      "09321.69542252"
+      xndt2o		      "0.00000555"
+      xndd6o		      "0.0"
+      bstar		      ".76898e-4"
+      xincl		      "97.9251"
+      xnodeo		      "24.1597"
+      eo		      "0.0014245"
+      omegao		      "254.1774"
+      xmo		      "105.7862"
+      xno		      "14.81823818"
+      ts		      "1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "enable_perm_mag"
+      SID		      "7"
+      Position		      [155, 20, 185, 50]
+      ZOrder		      -12
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "rotation angle z-axis"
+      SID		      "19"
+      Ports		      [1, 1]
+      Position		      [545, 580, 605, 610]
+      ZOrder		      -13
+      MATLABFcn		      "2*acos(u(4))"
+    }
+    Line {
+      ZOrder		      1
+      SrcBlock		      "TLE AAUSAT-II (2)"
+      SrcPort		      1
+      DstBlock		      "AAUSAT3"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      2
+      SrcBlock		      "Permanent Magnet"
+      SrcPort		      1
+      DstBlock		      "AAUSAT3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      3
+      SrcBlock		      "From15"
+      SrcPort		      1
+      DstBlock		      "Permanent Magnet"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      4
+      SrcBlock		      "From8"
+      SrcPort		      1
+      DstBlock		      "Permanent Magnet"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      5
+      SrcBlock		      "enable_perm_mag"
+      SrcPort		      1
+      Points		      [45, 0]
+      DstBlock		      "Permanent Magnet"
+      DstPort		      enable
+    }
+    Line {
+      ZOrder		      6
+      SrcBlock		      "From18"
+      SrcPort		      1
+      DstBlock		      "AAUSAT-II Animation"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      7
+      SrcBlock		      "From22"
+      SrcPort		      1
+      DstBlock		      "AAUSAT-II Animation"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      8
+      SrcBlock		      "From19"
+      SrcPort		      1
+      DstBlock		      "AAUSAT-II Animation"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      9
+      SrcBlock		      "rotation angle z-axis"
+      SrcPort		      1
+      DstBlock		      "AAUSAT-II Animation"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      10
+      SrcBlock		      "From3"
+      SrcPort		      1
+      DstBlock		      "rotation angle z-axis"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      11
+      SrcBlock		      "From1"
+      SrcPort		      1
+      DstBlock		      "AAUSAT-II Animation"
+      DstPort		      2
+    }
+  }
+}

@@ -1,0 +1,5 @@
+svd med ny A to q
+
+SVD: 0.30 [ms]
+
+1       31.68 [deg]       16.77 [deg]      179.90 [deg]       29.39 [deg]

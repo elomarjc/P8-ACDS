@@ -1,0 +1,3694 @@
+Model {
+  Name			  "eclipse_test"
+  Version		  7.4
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.49"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Nov 24 13:30:40 2009"
+  Creator		  "kasperv"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "kasperv"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Jan 22 10:04:18 2010"
+  RTWModifiedTimeStamp	  186055456
+  ModelVersionFormat	  "1.%<AutoIncrement:49>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "2000.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "1"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 400, 210, 1280, 840 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      DotProduct
+      SampleTime	      "-1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutputDataTypeScalingMode	"Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Newton-Raphson"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "eclipse_test"
+    Location		    [379, 233, 1540, 1059]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    134
+    Block {
+      BlockType		      SubSystem
+      Name		      "AAUSAT3"
+      SID		      41
+      Ports		      [2]
+      Position		      [250, 33, 565, 277]
+      ShowPortLabels	      "none"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "Center of Mass:|Start Temperature of the Satellite [K]:|Mass of the Satellite [kg]:|Dime"
+      "nsion of the Satellite [x,y,z][m];|Inertia Matrix of the Satellite:|Initial time [JD]:|Controller Reference Fram"
+      "e (S->C):|Initial Attitude (I->S):|Initial Angular Rate (S):|Atmospheric Drag Coefficient [-]:|Atmospheric Densi"
+      "ty [kg/m^3]:|Solar Momentum Flux [kg/ms^2]:|Solar Absorbtion Coefficient [-]:|Max. Angle of Theta [deg](eclipse:"
+      " theta>r_earth/norm(R_SA)):|Reflectivity Data (REFL Struct):|Reduction Factor:|Albedo Sampling Time [s]:|Enable "
+      "Sensor Emulation.|Enable Environment Disturbance."
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,chec"
+      "kbox,checkbox"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||||||||||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVariables	      "r_com_s=@1;sat_temp_start=@2;mass_sc=@3;Dim=@4;inertia_c=@5;init_jd=@6;q_s_c=@7;q_init_I_S="
+      "@8;w_init_s=@9;Cd=@10;rho=@11;solar_m_flux=@12;solar_absorb_coeff=@13;theta_e=@14;refldata=@15;redfac=@16;Ts=@17"
+      ";enable_sensor_emulation=@18;enable_env_disturbance=@19;"
+      MaskDisplay	      "image(imread('sat.jpg'));\ncolor('w');\nport_label('input', 1, 'N_mt(S)');\nport_label('input"
+      "', 2, 'TLE');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[0.0493,0.0972,0.0549]|293.15|0.7924|[0.1,0.2,0.1]|[0.001653,0.003145,0.003314]|0|[-0.192"
+      "6 -0.1883 -0.6821 0.6799\n]|[0 0 0 1] |[0.1,0.1,0.1]|2|5e-14|4.5565e-6|1.5|65|load('lib\\AlbedoToolbox-1.0\\refl"
+      "_data\\2005\\ga050101-051231')|1|1|on|off"
+      System {
+	Name			"AAUSAT3"
+	Location		[442, 164, 1529, 968]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"107"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Magnetorquer N_mt(S)"
+	  SID			  42
+	  Position		  [55, 553, 85, 567]
+	  NamePlacement		  "alternate"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "TLE"
+	  SID			  43
+	  Position		  [35, 188, 65, 202]
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Center of mass R_com(S)"
+	  SID			  44
+	  Position		  [490, 265, 560, 285]
+	  ShowName		  off
+	  Value			  "r_com_s"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Controller frame (S->C)"
+	  SID			  45
+	  Position		  [35, 483, 95, 497]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "q_s_c"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Controller frame (S->C)1"
+	  SID			  46
+	  Position		  [490, 335, 560, 355]
+	  ShowName		  off
+	  Value			  "q_s_c"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Enable env disturbance"
+	  SID			  47
+	  Position		  [555, 20, 675, 40]
+	  ShowName		  off
+	  Value			  "enable_env_disturbance"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Environmental disturbances models"
+	  SID			  48
+	  Ports			  [11, 2, 1]
+	  Position		  [610, 53, 820, 427]
+	  AncestorBlock		  "aausat3_lib/Disturbances/Environment Disturbances"
+	  LibraryVersion	  "*1.327"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Torque and force from the environment affecting the satellite."
+	  MaskPromptString	  "Satellite Dimension [x,y,z][m]:|Solar Momentum Flux [kg/ms^2]:|Solar Absorbtion Coefficient [-]"
+	  ":|Atmospheric Density [kg/m^3]:|Atmospheric Drag Coefficient [-]:|Gravitational Constant [m^3/kgs^2]:|Mass of the S"
+	  "un [kg]:|Mass of the Earth [kg]:|Mass of the Moon [kg]:|Enable Radiation Disturbanceses.|Enable Atmospheric Disturb"
+	  "anceses.|Enable Gravity Disturbanceses.|Enable Magnetic Residual Disturbance"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit,edit,edit,edit,checkbox,checkbox,checkbox,checkbox"
+	  MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskCallbackString	  "||||||||||||"
+	  MaskEnableString	  "on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskVariables		  "Dim=@1;sola_m_flux=@2;solar_absorb_coeff=@3;rho=@4;Cd=@5;G=@6;M_sun=@7;M_earth=@8;M_moon=@9;enabl"
+	  "e_rad_dist=@10;enable_atmospheric_dist=@11;enable_gravity_dist=@12;enable_mag_residual_dist=@13;"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "Dim|solar_m_flux|solar_absorb_coeff|rho|Cd|6.672e-11|1.989e30|5.9742e24|0.073483e24|on|on|on|on"
+	  System {
+	    Name		    "Environmental disturbances models"
+	    Location		    [0, 59, 1243, 724]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    1894
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Moon positon R_m(I)"
+	      SID		      1008
+	      Position		      [85, 398, 115, 412]
+	      NamePlacement	      "alternate"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      Port {
+		PortNumber		1
+		Name			"R_m(I)\n"
+		PropagatedSignals	"R_m(I)\n\n"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sun position R_s(I)"
+	      SID		      1009
+	      Position		      [90, 83, 120, 97]
+	      NamePlacement	      "alternate"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      Port {
+		PortNumber		1
+		Name			"R_s(I)\n"
+		PropagatedSignals	"R_s(I)\n"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Inertia I_f(C)"
+	      SID		      1010
+	      Position		      [85, 488, 115, 502]
+	      NamePlacement	      "alternate"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Orbit position R_sc(I)"
+	      SID		      1011
+	      Position		      [90, 103, 120, 117]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Attitude q(I -> S)"
+	      SID		      1012
+	      Position		      [85, 258, 115, 272]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Orbit velocity V_sc(I)"
+	      SID		      1013
+	      Position		      [85, 293, 115, 307]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "R_CoM(S)"
+	      SID		      1014
+	      Position		      [85, 208, 115, 222]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Mass of Spacecraft"
+	      SID		      1015
+	      Position		      [85, 578, 115, 592]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q(S->C)"
+	      SID		      1016
+	      Position		      [85, 548, 115, 562]
+	      NamePlacement	      "alternate"
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "eclipse"
+	      SID		      1017
+	      Position		      [90, 163, 120, 177]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Magnetic field B(I)"
+	      SID		      1645
+	      Position		      [85, 748, 115, 762]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      1035
+	      Ports		      []
+	      Position		      [575, 25, 595, 45]
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Atmospheric"
+	      SID		      1032
+	      Ports		      [3, 2, 1]
+	      Position		      [330, 250, 440, 350]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Disturbances/Atmospheric"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      Dim		      "Dim"
+	      Cd		      "Cd"
+	      rho		      "rho"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      1036
+	      Position		      [160, 34, 245, 66]
+	      Value		      "enable_rad_dist"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      1039
+	      Position		      [135, 220, 255, 250]
+	      Value		      "enable_atmospheric_dist"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      1038
+	      Position		      [150, 354, 250, 386]
+	      Value		      "enable_gravity_dist"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      SID		      1643
+	      Position		      [115, 620, 260, 650]
+	      Value		      "enable_mag_residual_dist"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Gravity"
+	      SID		      1894
+	      Ports		      [7, 2, 1]
+	      Position		      [330, 394, 450, 606]
+	      LibraryVersion	      "1.333"
+	      LinkData {
+		BlockName		"Gravity Gradient Torque"
+		DialogParameters {
+		  G			  "G"
+		  M_earth		  "M_earth"
+		}
+	      }
+	      SourceBlock	      "aausat3_lib/Disturbances/Gravity"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      G			      "G"
+	      M_sun		      "M_sun"
+	      M_moon		      "M_moon"
+	      M_earth		      "M_earth"
+	      enable_moon_G	      off
+	      enable_sun_G	      off
+	      enable_zharm_earth      off
+	      enable_gravity_torque   on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Magnetic Residual Disturbance1"
+	      SID		      1647
+	      Ports		      [2, 1, 1]
+	      Position		      [310, 665, 470, 785]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Disturbances/Magnetic Residual Disturbance"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      mag_moment	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Quaternion inverter"
+	      SID		      1034
+	      Ports		      [1, 1]
+	      Position		      [165, 542, 260, 568]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Math Utilities/Quaternion operations/Quaternion inverter"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Radiation (I)"
+	      SID		      1031
+	      Ports		      [5, 2, 1]
+	      Position		      [330, 77, 440, 183]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Disturbances/Radiation (I)"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      Dim		      "Dim"
+	      solar_m_flux	      "solar_m_flux"
+	      solar_absorb_coeff      "solar_absorb_coeff"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      1025
+	      Ports		      [4, 1]
+	      Position		      [505, 16, 520, 709]
+	      ShowName		      off
+	      Inputs		      "++++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      1026
+	      Ports		      [3, 1]
+	      Position		      [665, 59, 680, 651]
+	      ShowName		      off
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Disturbance tourque N_dist(S)"
+	      SID		      1029
+	      Position		      [575, 353, 605, 367]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Disturbance Force F_dist(I)"
+	      SID		      1030
+	      Position		      [735, 348, 765, 362]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      SrcBlock		      "Inertia I_f(C)"
+	      SrcPort		      1
+	      Points		      [195, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "eclipse"
+	      SrcPort		      1
+	      DstBlock		      "Radiation (I)"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      DstBlock		      "Disturbance Force F_dist(I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Disturbance tourque N_dist(S)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gravity"
+	      SrcPort		      2
+	      Points		      [0, -5]
+	      DstBlock		      "Sum2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Radiation (I)"
+	      SrcPort		      2
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gravity"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Atmospheric"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Orbit velocity V_sc(I)"
+	      SrcPort		      1
+	      DstBlock		      "Atmospheric"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Orbit position R_sc(I)"
+	      SrcPort		      1
+	      Points		      [155, 0]
+	      Branch {
+		DstBlock		"Radiation (I)"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 360]
+		DstBlock		"Gravity"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      Labels		      [1, 0]
+	      SrcBlock		      "Attitude q(I -> S)"
+	      SrcPort		      1
+	      Points		      [170, 0]
+	      Branch {
+		Points			[0, 0]
+		Branch {
+		  Points		  [0, -135]
+		  DstBlock		  "Radiation (I)"
+		  DstPort		  3
+		}
+		Branch {
+		  DstBlock		  "Atmospheric"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 260]
+		Branch {
+		  Points		  [0, 170]
+		  DstBlock		  "Magnetic Residual Disturbance1"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [25, 0]
+		  DstBlock		  "Gravity"
+		  DstPort		  5
+		}
+	      }
+	    }
+	    Line {
+	      Name		      "R_s(I)\n"
+	      Labels		      [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	      SrcBlock		      "Sun position R_s(I)"
+	      SrcPort		      1
+	      Points		      [140, 0]
+	      Branch {
+		DstBlock		"Radiation (I)"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 350]
+		DstBlock		"Gravity"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      Name		      "R_m(I)\n"
+	      Labels		      [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	      SrcBlock		      "Moon positon R_m(I)"
+	      SrcPort		      1
+	      Points		      [195, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mass of Spacecraft"
+	      SrcPort		      1
+	      Points		      [195, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Quaternion inverter"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      DstBlock		      "Gravity"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "q(S->C)"
+	      SrcPort		      1
+	      DstBlock		      "Quaternion inverter"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "R_CoM(S)"
+	      SrcPort		      1
+	      Points		      [185, 0]
+	      Branch {
+		Points			[0, -65]
+		DstBlock		"Radiation (I)"
+		DstPort			4
+	      }
+	      Branch {
+		Points			[0, 120]
+		DstBlock		"Atmospheric"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [135, 0]
+	      DstBlock		      "Radiation (I)"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Gravity"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      DstBlock		      "Atmospheric"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      Points		      [125, 0]
+	      DstBlock		      "Magnetic Residual Disturbance1"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "Radiation (I)"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Atmospheric"
+	      SrcPort		      2
+	      Points		      [180, 0; 0, 30]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Magnetic Residual Disturbance1"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -110]
+	      DstBlock		      "Sum1"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Magnetic field B(I)"
+	      SrcPort		      1
+	      DstBlock		      "Magnetic Residual Disturbance1"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Ephemeris models"
+	  SID			  49
+	  Ports			  [1, 3]
+	  Position		  [125, 259, 325, 361]
+	  LibraryVersion	  "1.333"
+	  SourceBlock		  "aausat3_lib/Orbit and Ephemeris/Ephemeris"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  50
+	  Position		  [15, 85, 105, 105]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_Sun_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From15"
+	  SID			  51
+	  Position		  [490, 195, 580, 215]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "q_I_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From16"
+	  SID			  52
+	  Position		  [485, 555, 575, 575]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "F_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From18"
+	  SID			  53
+	  Position		  [490, 90, 580, 110]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_Sun_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From19"
+	  SID			  54
+	  Position		  [490, 160, 580, 180]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  55
+	  Position		  [25, 585, 115, 605]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "N_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From22"
+	  SID			  56
+	  Position		  [490, 230, 580, 250]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Vel_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From23"
+	  SID			  57
+	  Position		  [490, 370, 580, 390]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Eclipse"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From3"
+	  SID			  58
+	  Position		  [15, 35, 105, 55]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "q_I_E"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From4"
+	  SID			  59
+	  Position		  [485, 455, 575, 475]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Reflectivity"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From5"
+	  SID			  60
+	  Position		  [15, 300, 105, 320]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Sim_time_JD"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From6"
+	  SID			  61
+	  Position		  [490, 55, 580, 75]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Pos_Moon_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From7"
+	  SID			  62
+	  Position		  [485, 505, 575, 525]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Omega_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From8"
+	  SID			  63
+	  Position		  [490, 405, 580, 425]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Mag_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  64
+	  Position		  [380, 20, 470, 40]
+	  ShowName		  off
+	  GotoTag		  "Mag_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  65
+	  Position		  [380, 55, 470, 75]
+	  ShowName		  off
+	  GotoTag		  "Vel_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto10"
+	  SID			  66
+	  Position		  [375, 445, 465, 465]
+	  ShowName		  off
+	  GotoTag		  "q_I_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto11"
+	  SID			  67
+	  Position		  [375, 555, 465, 575]
+	  ShowName		  off
+	  GotoTag		  "Omega_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto12"
+	  SID			  68
+	  Position		  [840, 325, 930, 345]
+	  ShowName		  off
+	  GotoTag		  "F_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  69
+	  Position		  [380, 300, 470, 320]
+	  ShowName		  off
+	  GotoTag		  "Pos_Sun_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto3"
+	  SID			  70
+	  Position		  [380, 90, 470, 110]
+	  ShowName		  off
+	  GotoTag		  "Pos_SC_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto4"
+	  SID			  71
+	  Position		  [380, 265, 470, 285]
+	  ShowName		  off
+	  GotoTag		  "Pos_Moon_I"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto5"
+	  SID			  72
+	  Position		  [380, 125, 470, 145]
+	  ShowName		  off
+	  GotoTag		  "Sim_time_JD"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto6"
+	  SID			  73
+	  Position		  [380, 195, 470, 215]
+	  ShowName		  off
+	  GotoTag		  "Eclipse"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto7"
+	  SID			  74
+	  Position		  [380, 160, 470, 180]
+	  ShowName		  off
+	  GotoTag		  "Reflectivity"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto8"
+	  SID			  75
+	  Position		  [380, 335, 470, 355]
+	  ShowName		  off
+	  GotoTag		  "q_I_E"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto9"
+	  SID			  76
+	  Position		  [840, 140, 930, 160]
+	  ShowName		  off
+	  GotoTag		  "N_dist_S"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initial angular rate W_i(S)"
+	  SID			  77
+	  Position		  [35, 412, 95, 428]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "w_init_s"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initial attitude q_i(I->S)"
+	  SID			  78
+	  Position		  [35, 448, 95, 462]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "q_init_I_S"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initial time (JD)"
+	  SID			  79
+	  Position		  [20, 138, 80, 152]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "init_jd"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Mass of spaccraft"
+	  SID			  80
+	  Position		  [490, 299, 560, 321]
+	  ShowName		  off
+	  Value			  "mass_sc"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Orbit, eclipse, albedo and magnetic field models"
+	  SID			  81
+	  Ports			  [4, 6]
+	  Position		  [125, 16, 325, 219]
+	  AncestorBlock		  "aausat3_lib/Orbit and Ephemeris/Orbit and Magnetic field models"
+	  LibraryVersion	  "*1.279"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "When you want to use \"Other\" make sure to define the TLE in the SGP4 subsystem. "
+	  MaskPromptString	  "Radius of the Earth [m]:|Max. Angle of Theta [deg] (eclipse: theta > r_earth/norm(R_SA)):|Refle"
+	  "ctivity Data (REFL Struct):|Reduction Factor:|Albedo Model Sampling Time [s]:|Enable Eclipse Model.|Enable IGRF Mod"
+	  "el.|Enable Albedo Model.|Enable SGP4 Model.|Enable Custom Time."
+	  MaskStyleString	  "edit,edit,edit,edit,edit,checkbox,checkbox,checkbox,checkbox,checkbox"
+	  MaskTunableValueString  "off,on,on,on,on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||||||"
+	  MaskEnableString	  "on,on,on,on,on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on,on,on,on,on"
+	  MaskVariables		  "r_e=@1;theta_e=@2;refldata=@3;redfac=@4;Ts=@5;enable_eclipse=@6;enable_IGRF=@7;reflectivity_enabl"
+	  "ed=@8;enable_sgp4=@9;enable_custom_time=@10;"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "6371e3|theta_e|refldata|redfac|Ts|on|on|off|on|on"
+	  System {
+	    Name		    "Orbit, eclipse, albedo and magnetic field models"
+	    Location		    [3, 82, 1318, 731]
+	    Open		    on
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    1637
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Earth rotation q(I->E)"
+	      SID		      1078
+	      Position		      [225, 558, 255, 572]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sun position R_s(I)"
+	      SID		      1079
+	      Position		      [55, 478, 85, 492]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Initial time ti(JD)"
+	      SID		      1080
+	      Position		      [75, 118, 105, 132]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "TLE"
+	      SID		      1292
+	      Position		      [75, 303, 105, 317]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "(IGRF) Magnetic field"
+	      SID		      1176
+	      Ports		      [2, 1, 1]
+	      Position		      [790, 230, 990, 345]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/(IGRF) Magnetic field"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Albedo"
+	      SID		      1299
+	      Ports		      [3, 1, 1]
+	      Position		      [785, 467, 985, 583]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/Albedo"
+	      SourceType	      ""
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      refldata		      "refldata"
+	      redfac		      "redfac"
+	      Ts		      "Ts"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Custom time"
+	      SID		      1174
+	      Ports		      [1, 1, 1]
+	      Position		      [275, 93, 460, 177]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/Custom time"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Eclipse model"
+	      SID		      1183
+	      Ports		      [2, 1, 1]
+	      Position		      [775, 62, 975, 178]
+	      AncestorBlock	      "aausat3_lib/Orbit and Ephemeris/Eclipse model"
+	      LibraryVersion	      "*1.333"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskPromptString	      "Radius of Earth [m]|Enable max angle|Max. angle of theta [deg] (eclipse: theta > r_eart"
+	      "h/norm(R_SA))"
+	      MaskStyleString	      "edit,checkbox,edit"
+	      MaskTunableValueString  "on,on,on"
+	      MaskCallbackString      "||"
+	      MaskEnableString	      "on,on,on"
+	      MaskVisibilityString    "on,on,on"
+	      MaskToolTipString	      "on,on,on"
+	      MaskVariables	      "r_e=@1;enable=@2;theta_e=@3;"
+	      MaskDisplay	      "fprintf('1=true,\\n 0=false')\n\n"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      off
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "r_e|off|theta_e"
+	      System {
+		Name			"Eclipse model"
+		Location		[334, 472, 1409, 897]
+		Open			on
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	1224
+		SIDPrevWatermark	1182
+		Block {
+		  BlockType		  Inport
+		  Name			  "Sun vector (I)"
+		  SID			  1202
+		  Position		  [80, 53, 110, 67]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Satellite (I)"
+		  SID			  1203
+		  Position		  [80, 153, 110, 167]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  EnablePort
+		  Name			  "Enable"
+		  SID			  1204
+		  Ports			  []
+		  Position		  [615, 60, 635, 80]
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  1205
+		  Position		  [420, 35, 450, 65]
+		  Value			  "pi"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  1206
+		  Position		  [295, 224, 350, 256]
+		  Value			  "enable"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Divide"
+		  SID			  1207
+		  Ports			  [2, 1]
+		  Position		  [255, 252, 270, 363]
+		  Inputs		  "*/"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  RndMeth		  "Floor"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  DotProduct
+		  Name			  "Dot Product"
+		  SID			  1208
+		  Position		  [330, 92, 360, 123]
+		  OutputDataTypeScalingMode "Inherit via internal rule"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  DotProduct
+		  Name			  "Dot Product1"
+		  SID			  1209
+		  Position		  [145, 317, 175, 348]
+		  OutputDataTypeScalingMode "Inherit via internal rule"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Earth radius"
+		  SID			  1210
+		  Position		  [170, 265, 230, 295]
+		  Value			  "r_e"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "False"
+		  SID			  1211
+		  Position		  [530, 180, 560, 210]
+		  Value			  "0"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "Math\nFunction"
+		  SID			  1212
+		  Ports			  [1, 1]
+		  Position		  [200, 320, 230, 350]
+		  Operator		  "sqrt"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Max angle"
+		  SID			  1213
+		  Position		  [270, 171, 355, 199]
+		  Value			  "theta_e/180*pi"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  SID			  1214
+		  Ports			  [2, 1]
+		  Position		  [500, 100, 520, 120]
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "-+|"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "theta"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum1"
+		  SID			  1215
+		  Ports			  [2, 1]
+		  Position		  [500, 230, 520, 250]
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "+-|"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch"
+		  SID			  1216
+		  Position		  [590, 213, 615, 267]
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  SID			  1217
+		  Position		  [410, 225, 440, 255]
+		  Criteria		  "u2 > Threshold"
+		  InputSameDT		  off
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "To unit vector"
+		  SID			  1218
+		  Ports			  [1, 1]
+		  Position		  [150, 39, 250, 81]
+		  LibraryVersion	  "1.333"
+		  SourceBlock		  "aausat3_lib/Math Utilities/Vector operations/To unit vector"
+		  SourceType		  "SubSystem"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "To unit vector1"
+		  SID			  1219
+		  Ports			  [1, 1]
+		  Position		  [150, 139, 250, 181]
+		  LibraryVersion	  "1.333"
+		  SourceBlock		  "aausat3_lib/Math Utilities/Vector operations/To unit vector"
+		  SourceType		  "SubSystem"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		}
+		Block {
+		  BlockType		  Trigonometry
+		  Name			  "Trigonometric\nFunction"
+		  SID			  1220
+		  Ports			  [1, 1]
+		  Position		  [330, 295, 360, 325]
+		  Operator		  "asin"
+		}
+		Block {
+		  BlockType		  Trigonometry
+		  Name			  "Trigonometric\nFunction1"
+		  SID			  1221
+		  Ports			  [1, 1]
+		  Position		  [420, 95, 450, 125]
+		  Operator		  "acos"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "True"
+		  SID			  1222
+		  Position		  [530, 270, 560, 300]
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Eclipse"
+		  SID			  1223
+		  Position		  [670, 233, 700, 247]
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "Max angle"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, 45]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Sun vector (I)"
+		  SrcPort		  1
+		  DstBlock		  "To unit vector"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Satellite (I)"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    Points		    [0, 175]
+		    Branch {
+		    DstBlock		    "Dot Product1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Dot Product1"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "To unit vector1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Dot Product"
+		  SrcPort		  1
+		  DstBlock		  "Trigonometric\nFunction1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Earth radius"
+		  SrcPort		  1
+		  DstBlock		  "Divide"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Math\nFunction"
+		  SrcPort		  1
+		  DstBlock		  "Divide"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Divide"
+		  SrcPort		  1
+		  DstBlock		  "Trigonometric\nFunction"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Trigonometric\nFunction1"
+		  SrcPort		  1
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  Points		  [55, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "theta"
+		  Labels		  [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1]
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  DstBlock		  "Sum1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Sum1"
+		  SrcPort		  1
+		  DstBlock		  "Switch"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "True"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  DstBlock		  "Switch"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "False"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  DstBlock		  "Switch"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Switch"
+		  SrcPort		  1
+		  DstBlock		  "Eclipse"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Sum1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Trigonometric\nFunction"
+		  SrcPort		  1
+		  Points		  [20, 0; 0, -60]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Dot Product1"
+		  SrcPort		  1
+		  DstBlock		  "Math\nFunction"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "To unit vector"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Dot Product"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "To unit vector1"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -45]
+		  DstBlock		  "Dot Product"
+		  DstPort		  2
+		}
+		Annotation {
+		  Name			  "theta_e"
+		  Position		  [457, 231]
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      1091
+	      Position		      [1140, 259, 1195, 301]
+	      Gain		      "1e-4"
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParameterDataType	      "sfix(16)"
+	      ParameterScaling	      "2^0"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Quaternion inverter"
+	      SID		      1177
+	      Ports		      [1, 1]
+	      Position		      [790, 369, 890, 411]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Math Utilities/Quaternion operations/Quaternion inverter"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "SGP4 position"
+	      SID		      1401
+	      Ports		      [2, 2, 1]
+	      Position		      [375, 248, 540, 332]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/SGP4 position"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Vector rotation by q"
+	      SID		      1179
+	      Ports		      [2, 1]
+	      Position		      [1020, 259, 1120, 301]
+	      LibraryVersion	      "1.333"
+	      SourceBlock	      "aausat3_lib/Math Utilities/Quaternion operations/Vector rotation by q"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable Albedo"
+	      SID		      1166
+	      Position		      [760, 441, 865, 459]
+	      NamePlacement	      "alternate"
+	      Value		      "reflectivity_enabled"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable SGP4"
+	      SID		      1161
+	      Position		      [360, 221, 445, 239]
+	      NamePlacement	      "alternate"
+	      Value		      "enable_sgp4"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable eclipse"
+	      SID		      1184
+	      Position		      [775, 21, 860, 39]
+	      NamePlacement	      "alternate"
+	      Value		      "enable_eclipse"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable time"
+	      SID		      1167
+	      Position		      [235, 65, 345, 85]
+	      NamePlacement	      "alternate"
+	      Value		      "enable_custom_time"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "enable?1"
+	      SID		      1162
+	      Position		      [800, 206, 885, 224]
+	      NamePlacement	      "alternate"
+	      Value		      "enable_IGRF"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "initial time"
+	      SID		      1632
+	      Ports		      [2, 1]
+	      Position		      [150, 114, 245, 156]
+	      LibraryVersion	      "1.762"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"initial time"
+		Location		[433, 403, 931, 703]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Initial time in (JD)"
+		  SID			  1633
+		  Position		  [245, 43, 275, 57]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "TLE"
+		  SID			  1639
+		  Position		  [65, 198, 95, 212]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux"
+		  SID			  1635
+		  Ports			  [1, 12]
+		  Position		  [130, 145, 135, 265]
+		  ShowName		  off
+		  Outputs		  "12"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux1"
+		  SID			  1636
+		  Ports			  [12, 1]
+		  Position		  [290, 146, 295, 264]
+		  ShowName		  off
+		  Inputs		  "12"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch"
+		  SID			  1638
+		  Position		  [350, 85, 380, 115]
+		  Criteria		  "u2 > Threshold"
+		  InputSameDT		  off
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "TLE -> JD converter"
+		  SID			  1637
+		  Ports			  [1, 1]
+		  Position		  [155, 121, 250, 149]
+		  NamePlacement		  "alternate"
+		  LibraryVersion	  "1.333"
+		  SourceBlock		  "aausat3_lib/Other Model Utilities/TLE -> JD converter"
+		  SourceType		  "SubSystem"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  1640
+		  Position		  [325, 195, 345, 215]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Initial time out (JD)"
+		  SID			  1634
+		  Position		  [425, 93, 455, 107]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "TLE -> JD converter"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  Branch {
+		    DstBlock		    "Mux1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -25]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		  }
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  1
+		  DstBlock		  "TLE -> JD converter"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  12
+		  DstBlock		  "Mux1"
+		  DstPort		  12
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  11
+		  DstBlock		  "Mux1"
+		  DstPort		  11
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  10
+		  DstBlock		  "Mux1"
+		  DstPort		  10
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  9
+		  DstBlock		  "Mux1"
+		  DstPort		  9
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  8
+		  DstBlock		  "Mux1"
+		  DstPort		  8
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  7
+		  DstBlock		  "Mux1"
+		  DstPort		  7
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  6
+		  DstBlock		  "Mux1"
+		  DstPort		  6
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  5
+		  DstBlock		  "Mux1"
+		  DstPort		  5
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  4
+		  DstBlock		  "Mux1"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  3
+		  DstBlock		  "Mux1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Demux"
+		  SrcPort		  2
+		  DstBlock		  "Mux1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "TLE"
+		  SrcPort		  1
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Initial time in (JD)"
+		  SrcPort		  1
+		  Points		  [40, 0; 0, 40]
+		  Branch {
+		    Points		    [0, 10]
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Switch"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Switch"
+		  SrcPort		  1
+		  DstBlock		  "Initial time out (JD)"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux1"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Mag [Tesla] B(I)"
+	      SID		      1168
+	      Position		      [1240, 273, 1270, 287]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Spacecraft velocity V (I)"
+	      SID		      1169
+	      Position		      [620, 303, 650, 317]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Spacecraft position R (I)"
+	      SID		      1170
+	      Position		      [620, 263, 650, 277]
+	      NamePlacement	      "alternate"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Simulation time t(JD)"
+	      SID		      1171
+	      Position		      [535, 128, 565, 142]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Reflectivity matrix"
+	      SID		      1172
+	      Position		      [1035, 518, 1065, 532]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Eclipse: 1=true, 0=false"
+	      SID		      1173
+	      Position		      [1050, 113, 1080, 127]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "1"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      SrcBlock		      "Eclipse model"
+	      SrcPort		      1
+	      DstBlock		      "Eclipse: 1=true, 0=false"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "enable Albedo"
+	      SrcPort		      1
+	      DstBlock		      "Albedo"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "enable?1"
+	      SrcPort		      1
+	      DstBlock		      "(IGRF) Magnetic field"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "Vector rotation by q"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Quaternion inverter"
+	      SrcPort		      1
+	      Points		      [110, 0]
+	      DstBlock		      "Vector rotation by q"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "enable time"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      DstBlock		      "Custom time"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "Custom time"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		DstBlock		"Simulation time t(JD)"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 70; -135, 0; 0, 65]
+		DstBlock		"SGP4 position"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Albedo"
+	      SrcPort		      1
+	      DstBlock		      "Reflectivity matrix"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sun position R_s(I)"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		DstBlock		"Albedo"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -60; -45, 0; 0, -380; 555, 0; 0, 45]
+		DstBlock		"Eclipse model"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Earth rotation q(I->E)"
+	      SrcPort		      1
+	      Points		      [470, 0]
+	      Branch {
+		Points			[0, -175]
+		Branch {
+		  Points		  [0, -75]
+		  DstBlock		  "(IGRF) Magnetic field"
+		  DstPort		  2
+		}
+		Branch {
+		  DstBlock		  "Quaternion inverter"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Albedo"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "enable SGP4"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "SGP4 position"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "SGP4 position"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		Points			[15, 0]
+		Branch {
+		  Points		  [0, 15; 115, 0]
+		  Branch {
+		    Points		    [75, 0]
+		    DstBlock		    "(IGRF) Magnetic field"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -135]
+		    DstBlock		    "Eclipse model"
+		    DstPort		    2
+		  }
+		}
+		Branch {
+		  DstBlock		  "Spacecraft position R (I)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 255]
+		DstBlock		"Albedo"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "SGP4 position"
+	      SrcPort		      2
+	      DstBlock		      "Spacecraft velocity V (I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "(IGRF) Magnetic field"
+	      SrcPort		      1
+	      DstBlock		      "Vector rotation by q"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Mag [Tesla] B(I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "enable eclipse"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      DstBlock		      "Eclipse model"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "TLE"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		DstBlock		"SGP4 position"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -165]
+		DstBlock		"initial time"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "initial time"
+	      SrcPort		      1
+	      DstBlock		      "Custom time"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Initial time ti(JD)"
+	      SrcPort		      1
+	      DstBlock		      "initial time"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Spacecraft dynamics"
+	  SID			  82
+	  Ports			  [6, 2]
+	  Position		  [135, 398, 320, 617]
+	  LibraryVersion	  "1.333"
+	  SourceBlock		  "aausat3_lib/Dynamics and Kinematics/Spacecraft Dynamics"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Spacecraft inertia (C)"
+	  SID			  83
+	  Position		  [35, 518, 95, 532]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "inertia_c"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Spacecraft inertia (C)1"
+	  SID			  84
+	  Position		  [490, 125, 565, 145]
+	  ShowName		  off
+	  Value			  "inertia_c"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  85
+	  Position		  [600, 455, 620, 475]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  86
+	  Position		  [600, 505, 620, 525]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  SID			  87
+	  Position		  [600, 555, 620, 575]
+	}
+	Line {
+	  SrcBlock		  "From15"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Environmental disturbances models"
+	  SrcPort		  2
+	  DstBlock		  "Goto12"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Environmental disturbances models"
+	  SrcPort		  1
+	  DstBlock		  "Goto9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From8"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  11
+	}
+	Line {
+	  SrcBlock		  "From23"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  10
+	}
+	Line {
+	  SrcBlock		  "Controller frame (S->C)1"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "Mass of spaccraft"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "Center of mass R_com(S)"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "From22"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "From19"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Spacecraft inertia (C)1"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From18"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Enable env disturbance"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  enable
+	}
+	Line {
+	  SrcBlock		  "From6"
+	  SrcPort		  1
+	  DstBlock		  "Environmental disturbances models"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TLE"
+	  SrcPort		  1
+	  DstBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "From3"
+	  SrcPort		  1
+	  DstBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From7"
+	  SrcPort		  1
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From4"
+	  SrcPort		  1
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Initial time (JD)"
+	  SrcPort		  1
+	  DstBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Spacecraft dynamics"
+	  SrcPort		  1
+	  DstBlock		  "Goto10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From16"
+	  SrcPort		  1
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  SrcPort		  6
+	  DstBlock		  "Goto6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Magnetorquer N_mt(S)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft dynamics"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  SrcPort		  1
+	  DstBlock		  "Goto"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  SrcPort		  2
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Spacecraft inertia (C)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft dynamics"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Controller frame (S->C)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft dynamics"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  SrcPort		  3
+	  DstBlock		  "Goto3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Initial angular rate W_i(S)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft dynamics"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Initial attitude q_i(I->S)"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft dynamics"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  SrcPort		  4
+	  DstBlock		  "Goto5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ephemeris models"
+	  SrcPort		  1
+	  DstBlock		  "Goto4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ephemeris models"
+	  SrcPort		  2
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ephemeris models"
+	  SrcPort		  3
+	  DstBlock		  "Goto8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Orbit, eclipse, albedo and magnetic field models"
+	  SrcPort		  5
+	  DstBlock		  "Goto7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Spacecraft dynamics"
+	  SrcPort		  2
+	  DstBlock		  "Goto11"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From5"
+	  SrcPort		  1
+	  DstBlock		  "Ephemeris models"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Spacecraft dynamics"
+	  DstPort		  6
+	}
+	Annotation {
+	  Position		  [408, 35]
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      20
+      Position		      [145, 80, 175, 110]
+      Value		      "0"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From18"
+      SID		      16
+      Position		      [280, 475, 370, 495]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_Sun_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From19"
+      SID		      13
+      Position		      [290, 365, 380, 385]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_SC_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From23"
+      SID		      9
+      Position		      [655, 265, 745, 285]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Eclipse"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From5"
+      SID		      14
+      Position		      [150, 330, 240, 350]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Sim_time_JD"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      SID		      28
+      Position		      [280, 600, 370, 620]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_Moon_I"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "SC ECI to geodetic position converter"
+      SID		      17
+      Ports		      [2, 3]
+      Position		      [430, 320, 685, 390]
+      LibraryVersion	      "1.333"
+      SourceBlock	      "aausat3_lib/Other Model Utilities/SC ECI to geodetic position converter"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "SC ECI to geodetic position converter1"
+      SID		      18
+      Ports		      [2, 3]
+      Position		      [430, 430, 685, 500]
+      LibraryVersion	      "1.333"
+      SourceBlock	      "aausat3_lib/Other Model Utilities/SC ECI to geodetic position converter"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "SC ECI to geodetic position converter2"
+      SID		      31
+      Ports		      [2, 3]
+      Position		      [430, 555, 685, 625]
+      LibraryVersion	      "1.333"
+      SourceBlock	      "aausat3_lib/Other Model Utilities/SC ECI to geodetic position converter"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TLE AAUSAT-II (2)"
+      SID		      19
+      Ports		      [0, 1]
+      Position		      [30, 182, 175, 248]
+      LibraryVersion	      "1.333"
+      FontSize		      12
+      SourceBlock	      "aausat3_lib/Orbit and Ephemeris/TLE AAUSAT-II"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      satname		      "'AAUSAT-II'"
+      JulianDay		      "09321.69542252"
+      xndt2o		      "0.00000555"
+      xndd6o		      "0.0"
+      bstar		      ".76898e-4"
+      xincl		      "97.9251"
+      xnodeo		      "24.1597"
+      eo		      "0.0014245"
+      omegao		      "254.1774"
+      xmo		      "105.7862"
+      xno		      "14.81823818"
+      ts		      "1"
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      SID		      22
+      Position		      [710, 320, 730, 340]
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator1"
+      SID		      30
+      Position		      [705, 430, 725, 450]
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator2"
+      SID		      40
+      Position		      [705, 555, 725, 575]
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      10
+      Ports		      [1]
+      Position		      [800, 260, 860, 290]
+      VariableName	      "eclipse"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      21
+      Ports		      [1]
+      Position		      [800, 315, 860, 345]
+      VariableName	      "sc_longitude"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      SID		      24
+      Ports		      [1]
+      Position		      [800, 365, 860, 395]
+      VariableName	      "sc_latitude"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      SID		      33
+      Ports		      [1]
+      Position		      [800, 575, 860, 605]
+      VariableName	      "moon_longitude"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace5"
+      SID		      26
+      Ports		      [1]
+      Position		      [800, 450, 860, 480]
+      VariableName	      "sun_longitude"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      SID		      27
+      Ports		      [1]
+      Position		      [800, 505, 860, 535]
+      VariableName	      "sun_latitude"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace7"
+      SID		      34
+      Ports		      [1]
+      Position		      [800, 650, 860, 680]
+      VariableName	      "moon_latitude"
+      MaxDataPoints	      "inf"
+      SampleTime	      "1"
+      SaveFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "From23"
+      SrcPort		      1
+      DstBlock		      "To Workspace1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From5"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"SC ECI to geodetic position converter"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 110]
+	Branch {
+	  DstBlock		  "SC ECI to geodetic position converter1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 125]
+	  DstBlock		  "SC ECI to geodetic position converter2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "From19"
+      SrcPort		      1
+      DstBlock		      "SC ECI to geodetic position converter"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From18"
+      SrcPort		      1
+      DstBlock		      "SC ECI to geodetic position converter1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "TLE AAUSAT-II (2)"
+      SrcPort		      1
+      DstBlock		      "AAUSAT3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "AAUSAT3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter"
+      SrcPort		      1
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter"
+      SrcPort		      2
+      Points		      [95, 0]
+      DstBlock		      "To Workspace2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter"
+      SrcPort		      3
+      DstBlock		      "To Workspace3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter1"
+      SrcPort		      3
+      Points		      [45, 0; 0, 30]
+      DstBlock		      "To Workspace6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter1"
+      SrcPort		      2
+      DstBlock		      "To Workspace5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter1"
+      SrcPort		      1
+      DstBlock		      "Terminator1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "SC ECI to geodetic position converter2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter2"
+      SrcPort		      3
+      Points		      [45, 0; 0, 50]
+      DstBlock		      "To Workspace7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter2"
+      SrcPort		      2
+      DstBlock		      "To Workspace4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SC ECI to geodetic position converter2"
+      SrcPort		      1
+      DstBlock		      "Terminator2"
+      DstPort		      1
+    }
+  }
+}
