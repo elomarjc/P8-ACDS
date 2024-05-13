@@ -1,4 +1,4 @@
-Introducing the WIKI-VERSION branch!!!
+Introducing the WIKI-VERSION Space Simulator!!!
 
 - Improved the Installation Guide
 - Provided Instructions on Library Usage
@@ -8,4 +8,4 @@ Introducing the WIKI-VERSION branch!!!
 - Created a Documentation Status Overview
 
 Check out the Github Wiki Page for installation, how to use, examples and in-depth guides!
-https://github.com/aausat/space_simulator/wiki
+https://github.com/elomarjc/P8-ACDS/wiki
