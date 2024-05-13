@@ -1,0 +1,3 @@
+Making an 80% report size from a ps-file on unix/linux:
+
+pstops  2:0@.8\(0,0\),1@.8\(4.3cm,0\) master.ps master80.ps 

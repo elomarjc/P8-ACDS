@@ -1,0 +1,2047 @@
+Model {
+  Name			  "radiation_test"
+  Version		  6.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.33"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Tue Mar 23 10:51:56 2004"
+  Creator		  "yliu03"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Dan T"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Apr 28 12:06:05 2005"
+  ModelVersionFormat	  "1.%<AutoIncrement:33>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.0.4"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.0.4"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.0.4"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.0.4"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  ConditionalExecOptimization "on_for_testing"
+	  InlineParams		  off
+	  InlineInvariantSignals  on
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.0.4"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.0.4"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.0.4"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.0.4"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_default_tmf"
+	  Description		  "Generic Real-Time Target"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.0.4"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.0.4"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "radiation_test"
+    Location		    [70, 93, 951, 637]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [40, 20, 95, 50]
+      Value		      "[1;1;3]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [50, 65, 105, 95]
+      Value		      "[1;-1;3]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [50, 115, 110, 145]
+      Value		      "[0;0;0;1]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      Position		      [45, 167, 115, 203]
+      Value		      "[0;0.02;0.02]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      Position		      [50, 224, 95, 256]
+      Value		      "[0;3;0]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant5"
+      Position		      [50, 280, 95, 310]
+      Value		      "[3;0;3]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant6"
+      Position		      [25, 342, 125, 378]
+      Value		      "[-0.5;0.5;-0.5;0.5]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant7"
+      Position		      [40, 397, 110, 433]
+      Value		      "[0;0.02;0.02]"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [750, 12, 860, 108]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1]
+      Position		      [405, 87, 510, 163]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display2"
+      Ports		      [1]
+      Position		      [710, 236, 855, 334]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display3"
+      Ports		      [1]
+      Position		      [455, 317, 560, 393]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display4"
+      Ports		      [1]
+      Position		      [610, 418, 720, 472]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display5"
+      Ports		      [1]
+      Position		      [710, 168, 820, 222]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display6"
+      Ports		      [1]
+      Position		      [630, 83, 740, 137]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display7"
+      Ports		      [1]
+      Position		      [730, 363, 840, 417]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Radiation Max"
+      Ports		      [4, 2]
+      Position		      [250, 264, 355, 346]
+      AncestorBlock	      "radiation_lib/Radiation (I)"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Radiation Max"
+	Location		[12, 82, 1024, 675]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "R_s(I)"
+	  Position		  [45, 108, 75, 122]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "R_sat(I)"
+	  Position		  [45, 148, 75, 162]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "q(I->S)"
+	  Position		  [45, 73, 75, 87]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "R_com(S)"
+	  Position		  [45, 313, 75, 327]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Absorbtion\nCoefficient"
+	  Position		  [45, 255, 75, 285]
+	  Value			  "1.4"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Exposed area"
+	  Ports			  [2, 1]
+	  Position		  [310, 60, 405, 135]
+	  SourceBlock		  "exposed_area_lib/Exposed area"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [725, 165, 755, 195]
+	  Gain			  "-1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Momentum flux \nfrom the sun"
+	  Position		  [40, 190, 90, 220]
+	  Value			  "4.4e-6"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [465, 136, 510, 169]
+	  InputSameDT		  off
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [560, 171, 605, 204]
+	  InputSameDT		  off
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  Ports			  [2, 1]
+	  Position		  [655, 161, 700, 194]
+	  InputSameDT		  off
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [125, 105, 145, 125]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vector rotation by q"
+	  Ports			  [2, 1]
+	  Position		  [810, 249, 910, 291]
+	  SourceBlock		  "Accessories_lib/Math utilities/Vector opera"
+"tions/Vector rotation by q"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "cross product"
+	  Ports			  [2, 1]
+	  Position		  [940, 284, 1010, 331]
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskDisplay		  "disp('crossproduct');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "cross product"
+	    Location		    [257, 457, 812, 717]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u"
+	      Position		      [20, 101, 40, 119]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "v"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 160, 320, 200]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function radiation_test 2"
+	      Ports		      [2, 2]
+	      Position		      [180, 100, 230, 160]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[2 2]"
+	      Port {
+		PortNumber		2
+		Name			"y"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+		ShowSigGenPortName	on
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 171, 480, 189]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      Points		      [0, 65]
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "u"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "y"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "y"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "v"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "to unit vector1"
+	  Ports			  [1, 1]
+	  Position		  [545, 228, 605, 272]
+	  SourceBlock		  "Accessories_lib/Math utilities/Vector opera"
+"tions/to unit vector"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "N_rad(S)"
+	  Position		  [1045, 303, 1075, 317]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "F_rad(I)"
+	  Position		  [1000, 173, 1030, 187]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Vector rotation by q"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 25]
+	  DstBlock		  "cross product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "R_com(S)"
+	  SrcPort		  1
+	  DstBlock		  "cross product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "F_rad(I)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 100]
+	    DstBlock		    "Vector rotation by q"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "to unit vector1"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -65]
+	  DstBlock		  "Product4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [0, -20]
+	  DstBlock		  "Product4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Absorbtion\nCoefficient"
+	  SrcPort		  1
+	  Points		  [235, 0; 0, -75]
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Exposed area"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 45]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Momentum flux \nfrom the sun"
+	  SrcPort		  1
+	  Points		  [180, 0; 0, -45]
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Labels		    [1, 0]
+	    DstBlock		    "Exposed area"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 135]
+	    DstBlock		    "to unit vector1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "q(I->S)"
+	  SrcPort		  1
+	  Points		  [205, 0]
+	  Branch {
+	    Points		    [0, -40; 510, 0]
+	    DstBlock		    "Vector rotation by q"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Exposed area"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "R_sat(I)"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "R_s(I)"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "cross product"
+	  SrcPort		  1
+	  DstBlock		  "N_rad(S)"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Radiation force"
+	  Position		  [876, 185]
+	}
+	Annotation {
+	  Name			  "Center of mass"
+	  Position		  [361, 330]
+	}
+	Annotation {
+	  Name			  "Earth rotation"
+	  Position		  [183, 86]
+	}
+	Annotation {
+	  Name			  "Sun line"
+	  Position		  [227, 124]
+	}
+	Annotation {
+	  Position		  [462, 490]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Radiation Min"
+      Ports		      [4, 2]
+      Position		      [250, 64, 355, 146]
+      AncestorBlock	      "radiation_lib/Radiation (I)"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Radiation Min"
+	Location		[-9, 121, 1003, 621]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "R_s(I)"
+	  Position		  [45, 108, 75, 122]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "R_sat(I)"
+	  Position		  [45, 148, 75, 162]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "q(S->I)"
+	  Position		  [45, 73, 75, 87]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "R_com(S)"
+	  Position		  [45, 323, 75, 337]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Absorbtion\nCoefficient"
+	  Position		  [45, 250, 75, 280]
+	  Value			  "1.4"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Exposed area"
+	  Ports			  [2, 1]
+	  Position		  [300, 84, 400, 126]
+	  SourceBlock		  "exposed_area_lib/Exposed area"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [725, 165, 755, 195]
+	  Gain			  "-1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Momentum flux \nfrom the sun"
+	  Position		  [40, 190, 90, 220]
+	  Value			  "4.4e-6"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [465, 116, 510, 149]
+	  InputSameDT		  off
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [565, 151, 610, 184]
+	  InputSameDT		  off
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3\n"
+	  Ports			  [2, 1]
+	  Position		  [655, 161, 700, 194]
+	  InputSameDT		  off
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Reverse quaternion rotation"
+	  Ports			  [1, 1]
+	  Position		  [130, 44, 230, 86]
+	  SourceBlock		  "Accessories_lib/Math utilities/Quaternion o"
+"perations/Reverse quaternion rotation"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [125, 105, 145, 125]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vector rotation by q"
+	  Ports			  [2, 1]
+	  Position		  [790, 259, 890, 301]
+	  SourceBlock		  "Accessories_lib/Math utilities/Vector opera"
+"tions/Vector rotation by q"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "cross product"
+	  Ports			  [2, 1]
+	  Position		  [910, 294, 980, 341]
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskDisplay		  "disp('crossproduct');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "cross product"
+	    Location		    [257, 457, 812, 717]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u"
+	      Position		      [20, 101, 40, 119]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "v"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 160, 320, 200]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function radiation_test 1"
+	      Ports		      [2, 2]
+	      Position		      [180, 100, 230, 160]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[2 2]"
+	      Port {
+		PortNumber		2
+		Name			"y"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+		ShowSigGenPortName	on
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 171, 480, 189]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      Points		      [0, 65]
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "u"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "y"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "y"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "v"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "to unit vector"
+	  Ports			  [1, 1]
+	  Position		  [555, 208, 610, 252]
+	  SourceBlock		  "Accessories_lib/Math utilities/Vector opera"
+"tions/to unit vector"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "N_rad(S)"
+	  Position		  [1040, 313, 1070, 327]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "F_rad(I)"
+	  Position		  [835, 173, 865, 187]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "cross product"
+	  SrcPort		  1
+	  DstBlock		  "N_rad(S)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector rotation by q"
+	  SrcPort		  1
+	  DstBlock		  "cross product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "R_com(S)"
+	  SrcPort		  1
+	  DstBlock		  "cross product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "F_rad(I)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 110]
+	    DstBlock		    "Vector rotation by q"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product3\n"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "to unit vector"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -45]
+	  DstBlock		  "Product3\n"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  DstBlock		  "Product3\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Absorbtion\nCoefficient"
+	  SrcPort		  1
+	  Points		  [235, 0; 0, -90]
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Exposed area"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 20]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Momentum flux \nfrom the sun"
+	  SrcPort		  1
+	  Points		  [180, 0; 0, -65]
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Points		    [0, 115]
+	    DstBlock		    "to unit vector"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Exposed area"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Reverse quaternion rotation"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  Branch {
+	    Points		    [490, 0]
+	    DstBlock		    "Vector rotation by q"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Exposed area"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "q(S->I)"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Reverse quaternion rotation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "R_sat(I)"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "R_s(I)"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "||F||_max"
+      Position		      [475, 430, 535, 460]
+      MATLABFcn		      "norm"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "||F||_min\n"
+      Position		      [535, 180, 595, 210]
+      MATLABFcn		      "norm"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "||N||_max"
+      Position		      [605, 320, 665, 350]
+      MATLABFcn		      "norm"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "||N||_min"
+      Position		      [550, 95, 610, 125]
+      MATLABFcn		      "norm"
+    }
+    Line {
+      SrcBlock		      "Radiation Min"
+      SrcPort		      1
+      Points		      [20, 0; 0, -25; 140, 0]
+      Branch {
+	DstBlock		"Display"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 50]
+	DstBlock		"||N||_min"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Radiation Min"
+      SrcPort		      2
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"Display1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"||F||_min\n"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [100, 0; 0, 40]
+      DstBlock		      "Radiation Min"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [80, 0; 0, 15]
+      DstBlock		      "Radiation Min"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [90, 0; 0, -15]
+      DstBlock		      "Radiation Min"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      Points		      [115, 0]
+      DstBlock		      "Radiation Min"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      Points		      [85, 0; 0, 35]
+      DstBlock		      "Radiation Max"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant5"
+      SrcPort		      1
+      DstBlock		      "Radiation Max"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant7"
+      SrcPort		      1
+      Points		      [110, 0; 0, -80]
+      DstBlock		      "Radiation Max"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Constant6"
+      SrcPort		      1
+      Points		      [40, 0; 0, -45]
+      DstBlock		      "Radiation Max"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Radiation Max"
+      SrcPort		      1
+      Points		      [210, 0]
+      Branch {
+	DstBlock		"Display2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 50]
+	DstBlock		"||N||_max"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Radiation Max"
+      SrcPort		      2
+      Points		      [40, 0; 0, 30]
+      Branch {
+	DstBlock		"Display3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 90]
+	DstBlock		"||F||_max"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "||F||_max"
+      SrcPort		      1
+      DstBlock		      "Display4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "||F||_min\n"
+      SrcPort		      1
+      DstBlock		      "Display5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "||N||_min"
+      SrcPort		      1
+      DstBlock		      "Display6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "||N||_max"
+      SrcPort		      1
+      Points		      [20, 0; 0, 55]
+      DstBlock		      "Display7"
+      DstPort		      1
+    }
+  }
+}
+
+# Finite State Machines
+#
+#    Stateflow Version 6.1 (R14SP1) dated Sep  7 2004, 18:52:26
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"radiation_test"
+		created              		"23-Mar-2005 12:52:04"
+		isLibrary            		0
+		firstTarget          		18
+		sfVersion            		61014000
+	}
+
+	chart {
+		id                       		2
+		name                     		"Radiation Min/cross product"
+		windowPosition           		[255.45 318.75 200.25 189.75]
+		viewLimits               		[0 156.75 0 153.75]
+		screen                   		[1 1 1024 768 1.333333333333333]
+		treeNode                 		[0 3 0 0]
+		firstTransition          		5
+		firstJunction            		4
+		viewObj                  		2
+		machine                  		1
+		decomposition            		CLUSTER_CHART
+		type                     		EML_CHART
+		firstData                		6
+		chartFileNumber          		1
+		disableImplicitCasting   		1
+		eml {
+			name		"crossproduct"
+		}
+	}
+
+	state {
+		id                  		3
+		labelString         		"eML_blk_kernel()"
+		position            		[18 64.5 118 66]
+		fontSize            		12
+		chart               		2
+		treeNode            		[2 0 0 0]
+		superState          		SUBCHART
+		subviewer           		2
+		type                		FUNC_STATE
+		decomposition       		CLUSTER_STATE
+		eml {
+			isEML       		1
+			script      		"function y = crossproduct(u,v)\n"
+						"% This block supports an embeddable subset of the MATLAB la"
+						"nguage.\n"
+						"% See the help menu for details. \n"
+						"\n"
+						"y = [u(2)*v(3)-u(3)*v(2);u(3)*v(1)-u(1)*v(3);u(1)*v(2)-u(2)"
+						"*v(1)];"
+			editorLayout		"100 M4x1[48 10 671 364]"
+		}
+	}
+
+	junction {
+		id         		4
+		position   		[23.5747 49.5747 7]
+		chart      		2
+		linkNode   		[2 0 0]
+		subviewer  		2
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	transition {
+		id             		5
+		labelString    		"{eML_blk_kernel();}"
+		labelPosition  		[32.125 19.875 102.544 14.964]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 23.5747 14.625 0 0]
+		}
+		dst {
+			id          		4
+			intersection		[7 0 -1 -1 23.5747 42.5747 0 0]
+		}
+		midPoint       		[23.5747 24.9468]
+		chart          		2
+		linkNode       		[2 0 0]
+		dataLimits     		[21.175 25.975 14.625 42.575]
+		subviewer      		2
+		drawStyle      		SMART
+	}
+
+	data {
+		id                            		6
+		name                          		"u"
+		linkNode                      		[2 0 7]
+		scope                         		INPUT_DATA
+		machine                       		1
+		dataType                      		"inherited"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		SF_INT16_TYPE
+			lock    		0
+		}
+		dlgFixptMode                  		0
+		complexity                    		SF_COMPLEX_INHERITED
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"-1"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	data {
+		id                            		7
+		name                          		"y"
+		linkNode                      		[2 6 8]
+		scope                         		OUTPUT_DATA
+		machine                       		1
+		dataType                      		"inherited"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		SF_INT16_TYPE
+			lock    		0
+		}
+		dlgFixptMode                  		0
+		complexity                    		SF_COMPLEX_INHERITED
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"-1"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	data {
+		id                            		8
+		name                          		"v"
+		linkNode                      		[2 7 0]
+		scope                         		INPUT_DATA
+		machine                       		1
+		dataType                      		"inherited"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		SF_INT16_TYPE
+			lock    		0
+		}
+		dlgFixptMode                  		0
+		complexity                    		SF_COMPLEX_INHERITED
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"-1"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	instance {
+		id     		9
+		name   		"Radiation Min/cross product"
+		machine		1
+		chart  		2
+	}
+
+	chart {
+		id                       		10
+		name                     		"Radiation Max/cross product"
+		windowPosition           		[240.45 333.75 200.25 189.75]
+		viewLimits               		[0 156.75 0 153.75]
+		screen                   		[1 1 1024 768 1.333333333333333]
+		treeNode                 		[0 11 0 0]
+		firstTransition          		13
+		firstJunction            		12
+		viewObj                  		10
+		machine                  		1
+		decomposition            		CLUSTER_CHART
+		type                     		EML_CHART
+		firstData                		14
+		chartFileNumber          		2
+		disableImplicitCasting   		1
+		eml {
+			name		"crossproduct"
+		}
+	}
+
+	state {
+		id                  		11
+		labelString         		"eML_blk_kernel()"
+		position            		[18 64.5 118 66]
+		fontSize            		12
+		chart               		10
+		treeNode            		[10 0 0 0]
+		superState          		SUBCHART
+		subviewer           		10
+		type                		FUNC_STATE
+		decomposition       		CLUSTER_STATE
+		eml {
+			isEML       		1
+			script      		"function y = crossproduct(u,v)\n"
+						"% This block supports an embeddable subset of the MATLAB la"
+						"nguage.\n"
+						"% See the help menu for details. \n"
+						"\n"
+						"y = [u(2)*v(3)-u(3)*v(2);u(3)*v(1)-u(1)*v(3);u(1)*v(2)-u(2)"
+						"*v(1)];"
+			editorLayout		"100 M4x1[48 10 671 364]"
+		}
+	}
+
+	junction {
+		id         		12
+		position   		[23.5747 49.5747 7]
+		chart      		10
+		linkNode   		[10 0 0]
+		subviewer  		10
+		type       		CONNECTIVE_JUNCTION
+	}
+
+	transition {
+		id             		13
+		labelString    		"{eML_blk_kernel();}"
+		labelPosition  		[32.125 19.875 102.544 14.964]
+		fontSize       		12
+		src {
+			intersection		[0 0 1 0 23.5747 14.625 0 0]
+		}
+		dst {
+			id          		12
+			intersection		[7 0 -1 -1 23.5747 42.5747 0 0]
+		}
+		midPoint       		[23.5747 24.9468]
+		chart          		10
+		linkNode       		[10 0 0]
+		dataLimits     		[21.175 25.975 14.625 42.575]
+		subviewer      		10
+		drawStyle      		SMART
+	}
+
+	data {
+		id                            		14
+		name                          		"u"
+		linkNode                      		[10 0 15]
+		scope                         		INPUT_DATA
+		machine                       		1
+		dataType                      		"inherited"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		SF_INT16_TYPE
+			lock    		0
+		}
+		dlgFixptMode                  		0
+		complexity                    		SF_COMPLEX_INHERITED
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"-1"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	data {
+		id                            		15
+		name                          		"y"
+		linkNode                      		[10 14 16]
+		scope                         		OUTPUT_DATA
+		machine                       		1
+		dataType                      		"inherited"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		SF_INT16_TYPE
+			lock    		0
+		}
+		dlgFixptMode                  		0
+		complexity                    		SF_COMPLEX_INHERITED
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"-1"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	data {
+		id                            		16
+		name                          		"v"
+		linkNode                      		[10 15 0]
+		scope                         		INPUT_DATA
+		machine                       		1
+		dataType                      		"inherited"
+		fixptType {
+			bias    		0
+			slope   		1
+			exponent		0
+			baseType		SF_INT16_TYPE
+			lock    		0
+		}
+		dlgFixptMode                  		0
+		complexity                    		SF_COMPLEX_INHERITED
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+			array {
+				size      		"-1"
+				firstIndex		"1"
+			}
+		}
+	}
+
+	instance {
+		id     		17
+		name   		"Radiation Max/cross product"
+		machine		1
+		chart  		10
+	}
+
+	target {
+		id                        		18
+		name                      		"sfun"
+		description               		"Default Simulink S-Function Target."
+		machine                   		1
+		linkNode                  		[1 0 0]
+	}
+}
