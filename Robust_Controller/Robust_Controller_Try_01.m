@@ -1,6 +1,7 @@
-clear all
-close all
-clc
+
+addpath("functions\");
+
+
 
 % Variables
 Ip = diag([0.0088,0.0088,0.0044]);
@@ -18,7 +19,9 @@ B = [ -inv(Ip);
 C = eye(6,6);
 D = zeros(6,3);
 
-sys = ss(A,B,C,D)
+sys = ss(A,B,C,D);
+
+
 %% Is the system controllable?
 [U,d,V] = svd(ctrb(sys));
 diag(d)
@@ -42,13 +45,11 @@ N = Nu+K*Nx;
 
 sys_fl = ss(A-B*K,B*N,C,D);
 
-step(K*sys_fl) % It appears to work!
+step(sys_fl) % It appears to work!
 
 
 
 
-function [skew]=skew3(u)
-    skew = cross(repmat(u,1,3),eye(3));
-end
+
 
 
