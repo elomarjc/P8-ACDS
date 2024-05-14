@@ -23,7 +23,7 @@ m_do = 0.95;
 pole_lim = -0.2*2*pi;
 
 % Dummy variables
-w_0 = [0, 0, 0.1]';
+w_0 = [0, 0, 0]';
 q_0 = [0, 0, 0]';
 
 % Inertia matrix
@@ -57,7 +57,7 @@ yalmip('clear');
 W = sdpvar(m, n);
 Y = sdpvar(n, n, 'symmetric');
 theta = 20; % Change the value of theta as per your requirement
-epsilon = 1e-6; % Small positive value
+epsilon = 1e-6; % Small positive value 
 
 % vertices of the convex uncertainty region
 corners = [m_do m_do m_do;
@@ -79,7 +79,7 @@ if system_ang == 1 % system for P8-ACDS
         A{k_ang}  =  [[inv(I_delta)*(skew3(I_delta*w_0)-skew3(w_0)*I_delta), zeros(3);
          -1/2*(skew3(q_0)+eye(3))                         , 1/2*skew3(w_0)],zeros(6,3);
          zeros(3),eye(3),zeros(3)];
-        B1{k_ang} = ones(9,3);
+        B1{k_ang} = 1/gamma * ones(9,3); % scaling B1{k_ang} with 1/gamma
         B2{k_ang} = [-inv(I_delta);zeros(6,3)];
     end
     D12 = zeros(3,3);
@@ -115,6 +115,10 @@ for k_ang=1:N
     % Add LMIs to the constraint list
     Constraints = [Constraints, FP{k_ang} <= 0, Phi{k_ang} <= 0];
 end
+
+% Define N_x and N_u according to Equation (2)
+N_x = [A_sys, B_sys; zeros(3, 9), eye(3)];
+N_u = [zeros(9, 3); eye(3)];
 
 % Set YALMIP options
 options = sdpsettings('solver', 'sedumi', 'verbose', ~run_silent);
