@@ -74,12 +74,8 @@ step(K*sys_int_tt*.5)
 
 s = tf('s');
 
-N = (eye(3)-[zeros(3),eye(3),zeros(3)]*sys_int_tt)
+N = (eye(3)-[zeros(3),eye(3)]*sys_int_tt)
 
-stepplot(N)
-%%
-sigma(N)
-hinfnorm(N)
 
 
 
