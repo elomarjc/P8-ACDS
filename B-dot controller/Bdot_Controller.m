@@ -5,8 +5,6 @@ clc
 %MagnetorquerPlant = Transferfunction;
 dyear = decyear('20-may-2024','dd-mmm-yyyy');
 
-BeField = load('BeField.mat');
-
 %% orbital information
 clc
 n = 16470;
@@ -18,9 +16,6 @@ DataMagFieldBe = [psi;theta;zeros(size(t))];
 Data = [psi;theta];
 plot(t,Data)
 
-%% world magnetic simulink block
-clc
-Data = out.Magfield;
 %% Bdot data
 
 
