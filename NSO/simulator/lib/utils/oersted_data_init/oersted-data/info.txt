@@ -1,5 +1,0 @@
-Put Oersted meas data here!
-file: ml020210to17.txt
-You should be able to download it here:
-
-/stud/rals01-nobackup/oersted-data/ml020210to17.txt

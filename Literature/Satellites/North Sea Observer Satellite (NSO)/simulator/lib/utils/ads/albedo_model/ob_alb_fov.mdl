@@ -1,0 +1,1183 @@
+Library {
+  Name			  "ob_alb_fov"
+  Version		  6.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat May 14 22:27:08 2005"
+  Creator		  "rsni02"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "rsni02"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 27 22:06:45 2005"
+  ModelVersionFormat	  "1.%<AutoIncrement:21>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      ShowOutputPort	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ob_alb_fov"
+    Location		    [270, 204, 930, 652]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Albedo model onboard"
+      Ports		      [4, 1]
+      Position		      [215, 61, 390, 194]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskPromptString	      "Sun flux (mean: 1366.9)|Choose used reflectivit"
+"y data:|Use reflectivity matrix (blackbox)"
+      MaskStyleString	      "edit,popup(FOV cosine dep. reflectivity table|F"
+"OV meaned reflectivity table|Polynomial fit to latitude meaned reflectivity|C"
+"onstant reflectivity of 30%),checkbox"
+      MaskTunableValueString  "off,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVarAliasString      ",,"
+      MaskVariables	      "sun_flux=@1;matrix=@2;enable=@3;"
+      MaskInitialization      "if matrix == 1\n    mrm = load('fov_albedo_matr"
+"ix.mat');\n    mrm = mrm.mrm;  \nelseif matrix == 2\n    mrm = load('fov_mean"
+"ed_albedo_matrix.mat');\n    mrm = mrm.mrm;\nelseif matrix == 3\n    mrm = lo"
+"ad('fov_albedo_polynomial_matrix.mat');\n    mrm = mrm.mrm;\nelseif matrix =="
+" 4\n    mrm = ones(180,288).*0.30;\nend\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1366.9|FOV cosine dep. reflectivity table|off"
+      MaskTabNameString	      ",,"
+      Port {
+	PortNumber		1
+	Name			"alb_ob"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+	ShowSigGenPortName	on
+      }
+      System {
+	Name			"Albedo model onboard"
+	Location		[339, 183, 1007, 742]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Earth -> Sun vector (ECEF)"
+	  Position		  [95, 113, 125, 127]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Zenith vector (ECEF)"
+	  Position		  [95, 193, 125, 207]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "q(I->S)"
+	  Position		  [95, 448, 125, 462]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "q(I->E)"
+	  Position		  [95, 488, 125, 502]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "On"
+	  Position		  [302, 310, 358, 325]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "enable"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "On1"
+	  Position		  [302, 40, 358, 55]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "~enable"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [480, 150, 500, 170]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "cos dependent albedo"
+	  Ports			  [2, 1, 1]
+	  Position		  [250, 81, 415, 239]
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "cos dependent albedo"
+	    Location		    [84, 168, 1027, 615]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Earth -> Sun vector (ECEF)"
+	      Position		      [65, 53, 95, 67]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Zenith vector (ECEF)"
+	      Position		      [70, 213, 100, 227]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      Ports		      []
+	      Position		      [520, 55, 540, 75]
+	      StatesWhenEnabling      "reset"
+	    }
+	    Block {
+	      BlockType		      Abs
+	      Name		      "Abs"
+	      Position		      [510, 185, 540, 215]
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Dot Product"
+	      Ports		      [2, 1]
+	      Position		      [435, 162, 465, 238]
+	      SourceBlock	      "simulink/Math\nOperations/Dot Product"
+	      SourceType	      "Dot Product"
+	      InputSameDT	      on
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Mean solar flux\n(1366.9 [W/m^2])"
+	      Position		      [235, 114, 310, 146]
+	      Value		      "sun_flux"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [345, 24, 375, 166]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      Ports		      [2, 1]
+	      Position		      [580, 190, 610, 230]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      Ports		      [2, 1]
+	      Position		      [660, 200, 690, 240]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Sun vector \nto unit vector"
+	      Ports		      [1, 1]
+	      Position		      [185, 39, 285, 81]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Zentih vector\nto unit vector"
+	      Ports		      [1, 1]
+	      Position		      [185, 199, 285, 241]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "zenith2ref(u, mrm)"
+	      Position		      [350, 280, 410, 310]
+	      MATLABFcn		      "zenith2ref(u, mrm)*2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Albedo vector (I)"
+	      Position		      [740, 213, 770, 227]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      DstBlock		      "Albedo vector (I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Abs"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Dot Product"
+	      SrcPort		      1
+	      DstBlock		      "Abs"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sun vector \nto unit vector"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mean solar flux\n(1366.9 [W/m^2])"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 85]
+	      DstBlock		      "Dot Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "zenith2ref(u, mrm)"
+	      SrcPort		      1
+	      Points		      [150, 0]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Zentih vector\nto unit vector"
+	      SrcPort		      1
+	      Points		      [0, 0; 30, 0]
+	      Branch {
+		Points			[0, 75]
+		Branch {
+		  Points		  [0, 75; 310, 0; 0, -140]
+		  DstBlock		  "Product2"
+		  DstPort		  2
+		}
+		Branch {
+		  DstBlock		  "zenith2ref(u, mrm)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Dot Product"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Earth -> Sun vector (ECEF)"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Sun vector \nto unit vector"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Zenith vector (ECEF)"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Zentih vector\nto unit vector"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      Name		      "Projection onto\nthe zenith vector"
+	      Position		      [450, 140]
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "fov matrix albedo"
+	  Ports			  [4, 1, 1]
+	  Position		  [250, 356, 415, 514]
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "fov matrix albedo"
+	    Location		    [60, 503, 1204, 971]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Zenith vector (ECEF)"
+	      Position		      [60, 53, 90, 67]
+	      NamePlacement	      "alternate"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Earth -> Sun vector (ECEF)"
+	      Position		      [60, 78, 90, 92]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q(I->S)"
+	      Position		      [60, 168, 90, 182]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q(I->E)"
+	      Position		      [60, 228, 90, 242]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      Ports		      []
+	      Position		      [675, 30, 695, 50]
+	      StatesWhenEnabling      "reset"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Albedo projection"
+	      Ports		      [3, 1]
+	      Position		      [440, 43, 590, 217]
+	      SourceBlock	      "sensor_emulation_lib/Sensor Emulation/S"
+"un sensors/sun sensor model/Albedo projection"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      Ports		      [1, 2]
+	      Position		      [625, 100, 630, 160]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Earth Albedo\nModel"
+	      Ports		      [2, 1]
+	      Position		      [205, 46, 295, 99]
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      MaskType		      "Earth Albedo Model"
+	      MaskDescription	      "Calculate Earth Albedo using static dat"
+"a from the EP/TOMS spacecraft."
+	      MaskHelp		      "<b>Input</b><br>\nSat: Vector to satell"
+"ite in ECEF [m]<br>\nSun: Vector to the Sun in ECEF [m]<p>\n<b>Parameters</b>"
+"<br>\nReflectivity Data (EPR Struct): TOMS Reflectivity data [E.U].<br>\nRedu"
+"ction factor: Reduce data resolution by this factor.<br>\nSample Time (-1 for"
+" inherited): Sample Time [s]. The block cannot inherit continuous sample time"
+".<br>\nEnable: Enable or disable albedo calculation<p>\n<b>Output</b><br>\nAl"
+"bedo: Fraction of solar irradiance received on the satellite. The incoming so"
+"lar irradiance is 1366.5 W/m^2<p>\n"
+	      MaskPromptString	      "Reflectivity Data (EPR Struct):|Reducti"
+"on factor:|Sample Time (-1 for inherited):|Enable:"
+	      MaskStyleString	      "edit,edit,edit,checkbox"
+	      MaskTunableValueString  "on,on,on,on"
+	      MaskCallbackString      "|||enable = strcmp(get_param(gcb,'enabl"
+"e'),'on');"
+	      MaskEnableString	      "on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on"
+	      MaskVarAliasString      ",,,"
+	      MaskVariables	      "eprdata=@1;redfac=@2;Ts=@3;enable=@4;"
+	      MaskInitialization      "global sy;\nglobal sx;\nsy = round(180/"
+"redfac);\nsx = round(288/redfac);\n"
+	      MaskDisplay	      "image(imread('private/albedoicon.png'))"
+";\nport_label('output', 1, 'Albedo');\nport_label('input', 1, 'Sat');\nport_l"
+"abel('input', 2, 'Sun');"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "load('lib/space_environment_emulation/a"
+"lbedo/toolbox/epr_data/2003/ga030101-031231')|10|1|on"
+	      MaskTabNameString	      ",,,"
+	      System {
+		Name			"Earth Albedo\nModel"
+		Location		[359, 481, 916, 781]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "r_sat_ecef"
+		  Position		  [55, 143, 85, 157]
+		  BackgroundColor	  "yellow"
+		  Port			  "1"
+		  IconDisplay		  "Port number"
+		  SampleTime		  "Ts"
+		  LatchInput		  off
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "r_sun_ecef"
+		  Position		  [100, 178, 130, 192]
+		  BackgroundColor	  "yellow"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  SampleTime		  "Ts"
+		  LatchInput		  off
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Albedo"
+		  Ports			  [2, 1, 1]
+		  Position		  [210, 132, 330, 203]
+		  TreatAsAtomicUnit	  off
+		  MinAlgLoopOccurrences	  off
+		  RTWSystemCode		  "Auto"
+		  System {
+		    Name		    "Albedo"
+		    Location		    [486, 695, 906, 947]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "r_sat_ecef"
+		    Position		    [65, 98, 95, 112]
+		    BackgroundColor	    "yellow"
+		    Port		    "1"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "3"
+		    LatchInput		    off
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "r_sun_ecef"
+		    Position		    [120, 118, 150, 132]
+		    BackgroundColor	    "yellow"
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "3"
+		    LatchInput		    off
+		    }
+		    Block {
+		    BlockType		    EnablePort
+		    Name		    "Enable"
+		    Ports		    []
+		    Position		    [320, 40, 340, 60]
+		    StatesWhenEnabling	    "reset"
+		    }
+		    Block {
+		    BlockType		    MATLABFcn
+		    Name		    "AlbedoFcn"
+		    Position		    [220, 100, 280, 130]
+		    MATLABFcn		    "albedo_onboard_wrapper(u(1:3),u(4"
+":6),eprdata,redfac)"
+		    OutputDimensions	    "floor([180 288]./redfac)"
+		    OutputSignalType	    "real"
+		    Output1D		    off
+		    }
+		    Block {
+		    BlockType		    Mux
+		    Name		    "Mux"
+		    Ports		    [2, 1]
+		    Position		    [185, 96, 190, 134]
+		    ShowName		    off
+		    Inputs		    "2"
+		    DisplayOption	    "bar"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "a"
+		    Position		    [315, 108, 345, 122]
+		    BackgroundColor	    "darkGreen"
+		    IconDisplay		    "Port number"
+		    BusOutputAsStruct	    off
+		    OutputWhenDisabled	    "reset"
+		    InitialOutput	    "0"
+		    }
+		    Line {
+		    SrcBlock		    "Mux"
+		    SrcPort		    1
+		    DstBlock		    "AlbedoFcn"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "r_sat_ecef"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "AlbedoFcn"
+		    SrcPort		    1
+		    DstBlock		    "a"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "r_sun_ecef"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "On"
+		  Position		  [242, 90, 298, 105]
+		  Orientation		  "down"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  Value			  "enable"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold1"
+		  Position		  [160, 176, 180, 194]
+		  ShowName		  off
+		  SampleTime		  "Ts"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold2"
+		  Position		  [160, 141, 180, 159]
+		  ShowName		  off
+		  SampleTime		  "Ts"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "a"
+		  Position		  [365, 163, 395, 177]
+		  BackgroundColor	  "darkGreen"
+		  IconDisplay		  "Port number"
+		  BusOutputAsStruct	  off
+		}
+		Line {
+		  SrcBlock		  "Zero-Order\nHold1"
+		  SrcPort		  1
+		  DstBlock		  "Albedo"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Zero-Order\nHold2"
+		  SrcPort		  1
+		  DstBlock		  "Albedo"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "r_sun_ecef"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Albedo"
+		  SrcPort		  1
+		  DstBlock		  "a"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "r_sat_ecef"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "On"
+		  SrcPort		  1
+		  DstBlock		  "Albedo"
+		  DstPort		  enable
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Quaternion inverter1"
+	      Ports		      [1, 1]
+	      Position		      [135, 154, 235, 196]
+	      SourceBlock	      "components_lib/Math utilities/Quaternio"
+"n operations/Quaternion inverter"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Rotation of q1 by q2"
+	      Ports		      [2, 1]
+	      Position		      [305, 164, 390, 206]
+	      SourceBlock	      "components_lib/Math utilities/Quaternio"
+"n operations/Rotation of q1 by q2"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [670, 105, 690, 125]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Vector rotation by q4"
+	      Ports		      [2, 1]
+	      Position		      [765, 84, 865, 126]
+	      SourceBlock	      "components_lib/Math utilities/Quaternio"
+"n operations/Vector rotation by q"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Zenith to nadir "
+	      Position		      [335, 115, 365, 145]
+	      Gain		      "-1"
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Albedo vector (I)"
+	      Position		      [915, 98, 945, 112]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Earth -> Sun vector (ECEF)"
+	      SrcPort		      1
+	      DstBlock		      "Earth Albedo\nModel"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Zenith vector (ECEF)"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      Branch {
+		Points			[0, 70]
+		DstBlock		"Zenith to nadir "
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Earth Albedo\nModel"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Vector rotation by q4"
+	      SrcPort		      1
+	      DstBlock		      "Albedo vector (I)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "q(I->E)"
+	      SrcPort		      1
+	      Points		      [155, 0; 0, -40]
+	      DstBlock		      "Rotation of q1 by q2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "q(I->S)"
+	      SrcPort		      1
+	      DstBlock		      "Quaternion inverter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Earth Albedo\nModel"
+	      SrcPort		      1
+	      DstBlock		      "Albedo projection"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Zenith to nadir "
+	      SrcPort		      1
+	      DstBlock		      "Albedo projection"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Quaternion inverter1"
+	      SrcPort		      1
+	      Points		      [0, 0; 35, 0]
+	      Branch {
+		DstBlock		"Rotation of q1 by q2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 95; 455, 0; 0, -175]
+		DstBlock		"Vector rotation by q4"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Rotation of q1 by q2"
+	      SrcPort		      1
+	      DstBlock		      "Albedo projection"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Albedo projection"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      Points		      [45, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Vector rotation by q4"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Albedo vector (I)"
+	  Position		  [550, 153, 580, 167]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "On1"
+	  SrcPort		  1
+	  DstBlock		  "cos dependent albedo"
+	  DstPort		  enable
+	}
+	Line {
+	  SrcBlock		  "fov matrix albedo"
+	  SrcPort		  1
+	  Points		  [70, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "cos dependent albedo"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "On"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "fov matrix albedo"
+	  DstPort		  enable
+	}
+	Line {
+	  SrcBlock		  "Zenith vector (ECEF)"
+	  SrcPort		  1
+	  Points		  [0, 0; 90, 0]
+	  Branch {
+	    Points		    [0, 175]
+	    DstBlock		    "fov matrix albedo"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "cos dependent albedo"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Earth -> Sun vector (ECEF)"
+	  SrcPort		  1
+	  Points		  [0, 0; 65, 0]
+	  Branch {
+	    Points		    [0, 295]
+	    DstBlock		    "fov matrix albedo"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "cos dependent albedo"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "q(I->E)"
+	  SrcPort		  1
+	  DstBlock		  "fov matrix albedo"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "q(I->S)"
+	  SrcPort		  1
+	  DstBlock		  "fov matrix albedo"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Albedo vector (I)"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}
