@@ -1,0 +1,2936 @@
+Model {
+  Name			  "mag_field_model_test"
+  Version		  6.2
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.12"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed May 18 21:39:34 2005"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "rals"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat May 28 13:41:48 2005"
+  ModelVersionFormat	  "1.%<AutoIncrement:12>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.1.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.1.0"
+	  StartTime		  "0.0"
+	  StopTime		  "1000"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "VariableStepDiscrete"
+	  SolverName		  "VariableStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.1.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.1.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.1.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.1.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      ShowOutputPort	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "mag_field_model_test"
+    Location		    [170, 190, 1379, 925]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "(IGRF) Magnetic field"
+      Ports		      [2, 1]
+      Position		      [470, 144, 635, 231]
+      AncestorBlock	      "orbit_and_magfield_models_lib/Orbit and Magneti"
+"c field models/(IGRF) Magnetic field"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"(IGRF) Magnetic field"
+	Location		[919, 578, 1417, 858]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Spacecraft position R_sc(I)"
+	  Position		  [50, 123, 80, 137]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Earth rotation q(I->E)"
+	  Position		  [50, 103, 80, 117]
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Magnetic field model"
+	  Ports			  [1, 1]
+	  Position		  [250, 100, 320, 140]
+	  LinkData {
+	    BlockName		    "S-Function"
+	    DialogParameters {
+	      Parameters	      "2002,modelorder"
+	    }
+	  }
+	  SourceBlock		  "magnetic_field_model_lib/Msgnetic field mod"
+"el"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "B(I / E)"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T->Gauss"
+	  Position		  [365, 104, 390, 136]
+	  Gain			  "1e4"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vector rotation by q"
+	  Ports			  [2, 1]
+	  Position		  [150, 99, 215, 141]
+	  SourceBlock		  "components_lib/Math utilities/Vector operat"
+"ions/Vector rotation by q"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Magnetic field vector B(E)"
+	  Position		  [430, 113, 460, 127]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Spacecraft position R_sc(I)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Earth rotation q(I->E)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector rotation by q"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field model"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "B(I / E)"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Magnetic field model"
+	  SrcPort		  1
+	  DstBlock		  "T->Gauss"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T->Gauss"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field vector B(E)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "(IGRF) Magnetic field time delay"
+      Ports		      [2, 1]
+      Position		      [470, 259, 635, 346]
+      AncestorBlock	      "orbit_and_magfield_models_lib/Orbit and Magneti"
+"c field models/(IGRF) Magnetic field"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"(IGRF) Magnetic field time delay"
+	Location		[919, 578, 1417, 858]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Spacecraft position R_sc(I)"
+	  Position		  [50, 123, 80, 137]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Earth rotation q(I->E)"
+	  Position		  [50, 103, 80, 117]
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Magnetic field model"
+	  Ports			  [1, 1]
+	  Position		  [250, 100, 320, 140]
+	  LinkData {
+	    BlockName		    "S-Function"
+	    DialogParameters {
+	      Parameters	      "2002,modelorder"
+	    }
+	  }
+	  SourceBlock		  "magnetic_field_model_lib/Msgnetic field mod"
+"el"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "B(I / E)"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T->Gauss"
+	  Position		  [365, 104, 390, 136]
+	  Gain			  "1e4"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vector rotation by q"
+	  Ports			  [2, 1]
+	  Position		  [150, 99, 215, 141]
+	  SourceBlock		  "components_lib/Math utilities/Vector operat"
+"ions/Vector rotation by q"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Magnetic field vector B(E)"
+	  Position		  [430, 113, 460, 127]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Spacecraft position R_sc(I)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Earth rotation q(I->E)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector rotation by q"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field model"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "B(I / E)"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Magnetic field model"
+	  SrcPort		  1
+	  DstBlock		  "T->Gauss"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T->Gauss"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field vector B(E)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "(IGRF) Magnetic field2"
+      Ports		      [2, 1]
+      Position		      [465, 544, 630, 631]
+      AncestorBlock	      "orbit_and_magfield_models_lib/Orbit and Magneti"
+"c field models/(IGRF) Magnetic field"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"(IGRF) Magnetic field2"
+	Location		[919, 578, 1417, 858]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Spacecraft position R_sc(I)"
+	  Position		  [50, 123, 80, 137]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Earth rotation q(I->E)"
+	  Position		  [50, 103, 80, 117]
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Magnetic field model"
+	  Ports			  [1, 1]
+	  Position		  [250, 100, 320, 140]
+	  LinkData {
+	    BlockName		    "S-Function"
+	    DialogParameters {
+	      Parameters	      "2002,modelorder"
+	    }
+	  }
+	  SourceBlock		  "magnetic_field_model_lib/Msgnetic field mod"
+"el"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "B(I / E)"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T->Gauss"
+	  Position		  [365, 104, 390, 136]
+	  Gain			  "1e4"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vector rotation by q"
+	  Ports			  [2, 1]
+	  Position		  [150, 99, 215, 141]
+	  SourceBlock		  "components_lib/Math utilities/Vector operat"
+"ions/Vector rotation by q"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Magnetic field vector B(E)"
+	  Position		  [430, 113, 460, 127]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Spacecraft position R_sc(I)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Earth rotation q(I->E)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector rotation by q"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field model"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "B(I / E)"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Magnetic field model"
+	  SrcPort		  1
+	  DstBlock		  "T->Gauss"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T->Gauss"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field vector B(E)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ephemeris"
+      Ports		      [1, 3]
+      Position		      [260, 18, 425, 92]
+      SourceBlock	      "ephemeris_lib/Ephemeris"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Error\nSGP4/IGRF <-> \nÿrsted mag"
+      Ports		      [2]
+      Position		      [870, 361, 915, 419]
+      Location		      [138, 119, 1171, 1031]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      TimeRange		      "10000"
+      YMin		      "0~85.5"
+      YMax		      "45000~94.5"
+      SaveName		      "ONBOARDerror1"
+      DataFormat	      "Structure"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Error\nÿrsted mag <-> \nÿrsted pos/IGRF\n"
+      Ports		      [2]
+      Position		      [870, 546, 915, 604]
+      Location		      [436, 174, 1469, 1086]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      TimeRange		      "10000"
+      YMin		      "0~85.5"
+      YMax		      "45000~94.5"
+      SaveName		      "ONBOARDerror2"
+      DataFormat	      "Structure"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Error \nSGP4/IGRF <-> \nSGP4(delay)/IGRF"
+      Ports		      [2]
+      Position		      [870, 176, 915, 234]
+      FontName		      "Arial"
+      Location		      [143, 174, 1176, 1086]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      TimeRange		      "10000"
+      YMin		      "0~0.8"
+      YMax		      "900~2"
+      SaveName		      "ONBOARDerror"
+      DataFormat	      "Structure"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SGP4 position"
+      Ports		      [1, 1]
+      Position		      [260, 129, 425, 201]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"SGP4 position"
+	Location		[489, 779, 1386, 1198]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "JD"
+	  Position		  [320, 13, 350, 27]
+	  BackgroundColor	  "darkGreen"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  " S-Function"
+	  Ports			  [1, 1]
+	  Position		  [630, 185, 680, 215]
+	  FunctionName		  "sgp4S"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [705, 153, 710, 242]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "[3 3]"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain\n1440"
+	  Position		  [508, 120, 542, 170]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Gain			  "1440"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [600, 181, 605, 219]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [515, 70, 535, 90]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+|"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TLE and time\ninitialization2"
+	  Ports			  [1, 2]
+	  Position		  [270, 64, 365, 186]
+	  ShowName		  off
+	  FontSize		  12
+	  SourceBlock		  "sgp4_igrf_lib/Orbit and Magnetic field mode"
+"ls/TLE and time\ninitialization1"
+	  SourceType		  ""
+	  ShowPortLabels	  on
+	  satname		  "'Orsted'"
+	  YYDDD			  "02039"
+	  JulianDay		  "2452275.5+40.69255057"
+	  xndt2o		  "0.00002748*0"
+	  xndd6o		  "0"
+	  bstar			  "0.00071190"
+	  xincl			  "96.4788"
+	  xnodeo		  "112.1945"
+	  eo			  "0.0148615"
+	  omegao		  "71.6037"
+	  xmo			  "290.1241"
+	  xno			  "14.43891950"
+	  ts			  "1"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  Position		  [840, 210, 860, 230]
+	  ShowName		  off
+	  FontSize		  12
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "enable?"
+	  Position		  [145, 115, 250, 135]
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "km -> m"
+	  Position		  [745, 158, 815, 192]
+	  Gain			  "1000"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "km/s -> m/s"
+	  Position		  [745, 204, 820, 236]
+	  Gain			  "1000"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Position (I)"
+	  Position		  [845, 167, 875, 183]
+	  BackgroundColor	  "yellow"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "JD"
+	  SrcPort		  1
+	  Points		  [170, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "km -> m"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Position (I)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "km/s -> m/s"
+	  SrcPort		  1
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  " S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " S-Function"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  Points		  [0, 0]
+	  DstBlock		  "km/s -> m/s"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "km -> m"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TLE and time\ninitialization2"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -15]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Gain\n1440"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain\n1440"
+	  SrcPort		  1
+	  Points		  [0, 15]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TLE and time\ninitialization2"
+	  SrcPort		  2
+	  Points		  [105, 0; 0, 55]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "enable?"
+	  SrcPort		  1
+	  DstBlock		  "TLE and time\ninitialization2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SGP4 position with time delay"
+      Ports		      [1, 1]
+      Position		      [260, 244, 425, 316]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"SGP4 position with time delay"
+	Location		[489, 779, 1386, 1198]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "JD"
+	  Position		  [320, 13, 350, 27]
+	  BackgroundColor	  "darkGreen"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  " S-Function"
+	  Ports			  [1, 1]
+	  Position		  [630, 185, 680, 215]
+	  FunctionName		  "sgp4S"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [705, 153, 710, 242]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "[3 3]"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain\n1440"
+	  Position		  [508, 120, 542, 170]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Gain			  "1440"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [600, 181, 605, 219]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [515, 70, 535, 90]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+|"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TLE and time\ninitialization2"
+	  Ports			  [1, 2]
+	  Position		  [270, 64, 365, 186]
+	  ShowName		  off
+	  FontSize		  12
+	  SourceBlock		  "sgp4_igrf_lib/Orbit and Magnetic field mode"
+"ls/TLE and time\ninitialization1"
+	  SourceType		  ""
+	  ShowPortLabels	  on
+	  satname		  "'Orsted'"
+	  YYDDD			  "02039"
+	  JulianDay		  "2452275.5+40.69255057"
+	  xndt2o		  "0.00002748*0"
+	  xndd6o		  "0"
+	  bstar			  "0.00071190"
+	  xincl			  "96.4788"
+	  xnodeo		  "112.1945"
+	  eo			  "0.0148615"
+	  omegao		  "71.6037"
+	  xmo			  "290.1241"
+	  xno			  "14.43891950"
+	  ts			  "1"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  Position		  [840, 210, 860, 230]
+	  ShowName		  off
+	  FontSize		  12
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "enable?"
+	  Position		  [145, 115, 250, 135]
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "km -> m"
+	  Position		  [745, 158, 815, 192]
+	  Gain			  "1000"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "km/s -> m/s"
+	  Position		  [745, 204, 820, 236]
+	  Gain			  "1000"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Position (I)"
+	  Position		  [845, 167, 875, 183]
+	  BackgroundColor	  "yellow"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "JD"
+	  SrcPort		  1
+	  Points		  [170, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "km -> m"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Position (I)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "km/s -> m/s"
+	  SrcPort		  1
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  " S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " S-Function"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  Points		  [0, 0]
+	  DstBlock		  "km/s -> m/s"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "km -> m"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TLE and time\ninitialization2"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -15]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Gain\n1440"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain\n1440"
+	  SrcPort		  1
+	  Points		  [0, 15]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TLE and time\ninitialization2"
+	  SrcPort		  2
+	  Points		  [105, 0; 0, 55]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "enable?"
+	  SrcPort		  1
+	  DstBlock		  "TLE and time\ninitialization2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SGP4/IGRF <-> \nSGP4(delay)/IGRF"
+      Ports		      [2, 2]
+      Position		      [695, 175, 830, 235]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"SGP4/IGRF <-> \nSGP4(delay)/IGRF"
+	Location		[873, 658, 1397, 1051]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vector 1"
+	  Position		  [25, 25, 55, 40]
+	  Orientation		  "down"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vector 2"
+	  Position		  [30, 178, 60, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Calculating Angle\nbetween Vectors1"
+	  Ports			  [2, 1]
+	  Position		  [175, 140, 270, 200]
+	  FontSize		  12
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "Calculating Angle\nbetween Vectors1"
+	    Location		    [714, 740, 1192, 925]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vector1"
+	      Position		      [15, 23, 45, 37]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vector2"
+	      Position		      [15, 98, 45, 112]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Dot Product"
+	      Ports		      [2, 1]
+	      Position		      [220, 51, 250, 84]
+	      ShowName		      off
+	      SourceBlock	      "simulink/Math\nOperations/Dot Product"
+	      SourceType	      "Dot Product"
+	      InputSameDT	      on
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      Position		      [335, 55, 365, 85]
+	      ShowName		      off
+	      Gain		      "(180/pi)"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction"
+	      Ports		      [1, 1]
+	      Position		      [275, 51, 310, 89]
+	      ShowName		      off
+	      Operator		      "acos"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "to unit vector"
+	      Ports		      [1, 1]
+	      Position		      [70, 13, 130, 47]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "to unit vector1"
+	      Ports		      [1, 1]
+	      Position		      [70, 88, 130, 122]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Angle (Degrees)"
+	      Position		      [395, 63, 425, 77]
+	      BackgroundColor	      "yellow"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Angle (Degrees)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Dot Product"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Trigonometric\nFunction"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vector1"
+	      SrcPort		      1
+	      DstBlock		      "to unit vector"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vector2"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "to unit vector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "to unit vector"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, 30]
+	      DstBlock		      "Dot Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "to unit vector1"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -30]
+	      DstBlock		      "Dot Product"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [70, 46, 115, 74]
+	  MATLABFcn		  "norm"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn1"
+	  Position		  [118, 90, 192, 130]
+	  Orientation		  "up"
+	  MATLABFcn		  "norm"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [145, 50, 165, 70]
+	  ShowName		  off
+	  FontSize		  12
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error, magnitude"
+	  Position		  [270, 53, 300, 67]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error, phase"
+	  Position		  [295, 163, 325, 177]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Error, magnitude"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector 2"
+	  SrcPort		  1
+	  Points		  [90, 0]
+	  Branch {
+	    DstBlock		    "Calculating Angle\nbetween Vectors1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "MATLAB Fcn1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Vector 1"
+	  SrcPort		  1
+	  Points		  [0, 0; 0, 15]
+	  Branch {
+	    DstBlock		    "MATLAB Fcn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Calculating Angle\nbetween Vectors1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Calculating Angle\nbetween Vectors1"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Error, phase"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn1"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SGP4/IGRF <-> \nÿrsted mag"
+      Ports		      [2, 2]
+      Position		      [700, 360, 835, 420]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"SGP4/IGRF <-> \nÿrsted mag"
+	Location		[873, 658, 1397, 1051]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vector 1"
+	  Position		  [70, 45, 100, 60]
+	  Orientation		  "down"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vector 2"
+	  Position		  [75, 198, 105, 212]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Calculating Angle\nbetween Vectors1"
+	  Ports			  [2, 1]
+	  Position		  [220, 160, 315, 220]
+	  FontSize		  12
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "Calculating Angle\nbetween Vectors1"
+	    Location		    [714, 740, 1192, 925]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vector1"
+	      Position		      [15, 23, 45, 37]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vector2"
+	      Position		      [15, 98, 45, 112]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Dot Product"
+	      Ports		      [2, 1]
+	      Position		      [220, 51, 250, 84]
+	      ShowName		      off
+	      SourceBlock	      "simulink/Math\nOperations/Dot Product"
+	      SourceType	      "Dot Product"
+	      InputSameDT	      on
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      Position		      [335, 55, 365, 85]
+	      ShowName		      off
+	      Gain		      "(180/pi)"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction"
+	      Ports		      [1, 1]
+	      Position		      [275, 51, 310, 89]
+	      ShowName		      off
+	      Operator		      "acos"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "to unit vector"
+	      Ports		      [1, 1]
+	      Position		      [70, 13, 130, 47]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "to unit vector1"
+	      Ports		      [1, 1]
+	      Position		      [70, 88, 130, 122]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Angle (Degrees)"
+	      Position		      [395, 63, 425, 77]
+	      BackgroundColor	      "yellow"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Angle (Degrees)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Dot Product"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Trigonometric\nFunction"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vector1"
+	      SrcPort		      1
+	      DstBlock		      "to unit vector"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vector2"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "to unit vector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "to unit vector"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, 30]
+	      DstBlock		      "Dot Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "to unit vector1"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -30]
+	      DstBlock		      "Dot Product"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [115, 66, 160, 94]
+	  MATLABFcn		  "norm"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn1"
+	  Position		  [163, 115, 237, 155]
+	  Orientation		  "up"
+	  MATLABFcn		  "norm"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [190, 70, 210, 90]
+	  ShowName		  off
+	  FontSize		  12
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error, magnitude"
+	  Position		  [315, 73, 345, 87]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error, phase"
+	  Position		  [340, 183, 370, 197]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Error, magnitude"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector 2"
+	  SrcPort		  1
+	  Points		  [0, 0; 90, 0]
+	  Branch {
+	    DstBlock		    "Calculating Angle\nbetween Vectors1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "MATLAB Fcn1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Vector 1"
+	  SrcPort		  1
+	  Points		  [0, 0; 0, 15]
+	  Branch {
+	    DstBlock		    "MATLAB Fcn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Calculating Angle\nbetween Vectors1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Calculating Angle\nbetween Vectors1"
+	  SrcPort		  1
+	  DstBlock		  "Error, phase"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn1"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [195, 270, 215, 290]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "+-|"
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator10"
+      Position		      [440, 45, 460, 65]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator9"
+      Position		      [440, 20, 460, 40]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [870, 520, 1105, 540]
+      VariableName	      "mag_error_orsted_mag_orsted_pos_igrf"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      Position		      [870, 649, 1105, 671]
+      NamePlacement	      "alternate"
+      VariableName	      "phase_error_orsted_mag_orsted_pos_igrf"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      Position		      [870, 334, 1105, 356]
+      VariableName	      "mag_error_sgp4_igrf_orsted_mag"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      Position		      [870, 464, 1105, 486]
+      VariableName	      "phase_error_sgp4_igrf_orsted_mag"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace5"
+      Position		      [870, 150, 1105, 170]
+      FontName		      "Arial"
+      VariableName	      "mag_error_orsted_spg4_igrf_sgp4_delay_igrf"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      Position		      [870, 279, 1105, 301]
+      FontName		      "Arial"
+      VariableName	      "phase_error_orsted_spg4_igrf_sgp4_delay_igrf"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "delay [s]"
+      Position		      [30, 264, 65, 296]
+      Value		      "delay"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "seconds -> JD"
+      Position		      [125, 265, 155, 295]
+      NamePlacement	      "alternate"
+      Gain		      "1/(24*60*60)"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ÿrsted Magnetic field"
+      Ports		      [0, 1]
+      Position		      [260, 369, 425, 441]
+      AncestorBlock	      "orbit_and_magfield_models_lib/Orbit and Magneti"
+"c field models/ÿrsted Magnetic field"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"ÿrsted Magnetic field"
+	Location		[694, 784, 1192, 1084]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Gain
+	  Name			  "nT->Gauss"
+	  Position		  [245, 94, 270, 126]
+	  Gain			  "1e-5"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "ÿrsted magnetic field (E)"
+	  Position		  [90, 98, 155, 122]
+	  VariableName		  "[oersted_data.time.sample_number oersted_da"
+"ta.mag.ECEFRF(:,1) oersted_data.mag.ECEFRF(:,2) oersted_data.mag.ECEFRF(:,3)]"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Magnetic field vector B(E)"
+	  Position		  [355, 103, 385, 117]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "ÿrsted magnetic field (E)"
+	  SrcPort		  1
+	  DstBlock		  "nT->Gauss"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "nT->Gauss"
+	  SrcPort		  1
+	  DstBlock		  "Magnetic field vector B(E)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ÿrsted mag <-> \nÿrsted pos/IGRF"
+      Ports		      [2, 2]
+      Position		      [700, 545, 835, 605]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"ÿrsted mag <-> \nÿrsted pos/IGRF"
+	Location		[873, 658, 1397, 1051]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vector 1"
+	  Position		  [45, 30, 75, 45]
+	  Orientation		  "down"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vector 2"
+	  Position		  [50, 183, 80, 197]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Calculating Angle\nbetween Vectors1"
+	  Ports			  [2, 1]
+	  Position		  [195, 145, 290, 205]
+	  FontSize		  12
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "Calculating Angle\nbetween Vectors1"
+	    Location		    [714, 740, 1192, 925]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vector1"
+	      Position		      [15, 23, 45, 37]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vector2"
+	      Position		      [15, 98, 45, 112]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Dot Product"
+	      Ports		      [2, 1]
+	      Position		      [220, 51, 250, 84]
+	      ShowName		      off
+	      SourceBlock	      "simulink/Math\nOperations/Dot Product"
+	      SourceType	      "Dot Product"
+	      InputSameDT	      on
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      Position		      [335, 55, 365, 85]
+	      ShowName		      off
+	      Gain		      "(180/pi)"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction"
+	      Ports		      [1, 1]
+	      Position		      [275, 51, 310, 89]
+	      ShowName		      off
+	      Operator		      "acos"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "to unit vector"
+	      Ports		      [1, 1]
+	      Position		      [70, 13, 130, 47]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "to unit vector1"
+	      Ports		      [1, 1]
+	      Position		      [70, 88, 130, 122]
+	      SourceBlock	      "components_lib/Math utilities/Vector op"
+"erations/to unit vector"
+	      SourceType	      "SubSystem"
+	      ShowPortLabels	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Angle (Degrees)"
+	      Position		      [395, 63, 425, 77]
+	      BackgroundColor	      "yellow"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Angle (Degrees)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Dot Product"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Trigonometric\nFunction"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vector1"
+	      SrcPort		      1
+	      DstBlock		      "to unit vector"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vector2"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "to unit vector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "to unit vector"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, 30]
+	      DstBlock		      "Dot Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "to unit vector1"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -30]
+	      DstBlock		      "Dot Product"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [90, 51, 135, 79]
+	  MATLABFcn		  "norm"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn1"
+	  Position		  [138, 100, 212, 140]
+	  Orientation		  "up"
+	  MATLABFcn		  "norm"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [165, 55, 185, 75]
+	  ShowName		  off
+	  FontSize		  12
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error, magnitude"
+	  Position		  [290, 58, 320, 72]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error, phase"
+	  Position		  [315, 168, 345, 182]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Error, magnitude"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector 2"
+	  SrcPort		  1
+	  Points		  [0, 0; 90, 0]
+	  Branch {
+	    DstBlock		    "Calculating Angle\nbetween Vectors1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "MATLAB Fcn1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Vector 1"
+	  SrcPort		  1
+	  Points		  [0, 0; 0, 15]
+	  Branch {
+	    DstBlock		    "MATLAB Fcn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Calculating Angle\nbetween Vectors1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Calculating Angle\nbetween Vectors1"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Error, phase"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn1"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ÿrsted position"
+      Ports		      [0, 1]
+      Position		      [260, 530, 425, 600]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"ÿrsted position"
+	Location		[534, 525, 869, 681]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "ÿrsted position (I)"
+	  Position		  [80, 23, 145, 47]
+	  VariableName		  "[oersted_data.time.sample_number oersted_da"
+"ta.pos.ECIRF(:,1) oersted_data.pos.ECIRF(:,2) oersted_data.pos.ECIRF(:,3) ]"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Position R(I)"
+	  Position		  [215, 28, 245, 42]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "ÿrsted position (I)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Position R(I)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ÿrsted time"
+      Ports		      [0, 1]
+      Position		      [15, 16, 180, 94]
+      AncestorBlock	      "orbit_and_magfield_models_lib/Orbit and Magneti"
+"c field models/ÿrsted time"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"ÿrsted time"
+	Location		[421, 301, 861, 496]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Day of Oersted-Data  (JD)"
+	  Position		  [25, 91, 145, 119]
+	  FontSize		  12
+	  Value			  "2452315.5"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "JD and sec. to Julian Date"
+	  Ports			  [2, 1]
+	  Position		  [175, 31, 300, 129]
+	  FontSize		  12
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "JD and sec. to Julian Date"
+	    Location		    [202, 423, 700, 723]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Second of Day"
+	      Position		      [45, 63, 75, 77]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Day as Julian Date"
+	      Position		      [45, 113, 75, 127]
+	      BackgroundColor	      "darkGreen"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Calc. TimeString"
+	      Ports		      [1, 1]
+	      Position		      [130, 58, 200, 82]
+	      FunctionName	      "Qcontinuum"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Sec2Day"
+	      Position		      [250, 52, 280, 88]
+	      Gain		      "1/86400"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [305, 110, 325, 130]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "++|"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Julian Date (Day)"
+	      Position		      [395, 113, 425, 127]
+	      BackgroundColor	      "yellow"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Calc. TimeString"
+	      SrcPort		      1
+	      DstBlock		      "Sec2Day"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sec2Day"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Day as Julian Date"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Second of Day"
+	      SrcPort		      1
+	      DstBlock		      "Calc. TimeString"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Julian Date (Day)"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "Seconds of Day (Orsted data)"
+	  Position		  [25, 39, 145, 71]
+	  FontSize		  12
+	  VariableName		  "[oersted_data.time.sample_number oersted_da"
+"ta.time.second oersted_data.time.day]"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Simulation time t(JD)"
+	  Position		  [355, 73, 385, 87]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "JD and sec. to Julian Date"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Simulation time t(JD)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Day of Oersted-Data  (JD)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "JD and sec. to Julian Date"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Seconds of Day (Orsted data)"
+	  SrcPort		  1
+	  DstBlock		  "JD and sec. to Julian Date"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "ÿrsted time"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	DstBlock		"Ephemeris"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 110]
+	Branch {
+	  DstBlock		  "SGP4 position"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "delay [s]"
+      SrcPort		      1
+      DstBlock		      "seconds -> JD"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "seconds -> JD"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "SGP4 position with time delay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ephemeris"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "Terminator9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ephemeris"
+      SrcPort		      2
+      DstBlock		      "Terminator10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SGP4 position"
+      SrcPort		      1
+      DstBlock		      "(IGRF) Magnetic field"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SGP4 position with time delay"
+      SrcPort		      1
+      DstBlock		      "(IGRF) Magnetic field time delay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ephemeris"
+      SrcPort		      3
+      Points		      [15, 0; 0, 130]
+      Branch {
+	DstBlock		"(IGRF) Magnetic field"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 115]
+	Branch {
+	  DstBlock		  "(IGRF) Magnetic field time delay"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 285]
+	  DstBlock		  "(IGRF) Magnetic field2"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "ÿrsted position"
+      SrcPort		      1
+      DstBlock		      "(IGRF) Magnetic field2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SGP4/IGRF <-> \nSGP4(delay)/IGRF"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	DstBlock		"Error \nSGP4/IGRF <-> \nSGP4(delay)/IGRF"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"To Workspace5"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "SGP4/IGRF <-> \nSGP4(delay)/IGRF"
+      SrcPort		      2
+      Points		      [0, 0; 10, 0]
+      Branch {
+	DstBlock		"Error \nSGP4/IGRF <-> \nSGP4(delay)/IGRF"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"To Workspace6"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "(IGRF) Magnetic field"
+      SrcPort		      1
+      DstBlock		      "SGP4/IGRF <-> \nSGP4(delay)/IGRF"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "(IGRF) Magnetic field time delay"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, -85]
+	DstBlock		"SGP4/IGRF <-> \nSGP4(delay)/IGRF"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"SGP4/IGRF <-> \nÿrsted mag"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "SGP4/IGRF <-> \nÿrsted mag"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Error\nSGP4/IGRF <-> \nÿrsted mag"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"To Workspace3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "SGP4/IGRF <-> \nÿrsted mag"
+      SrcPort		      2
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Error\nSGP4/IGRF <-> \nÿrsted mag"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"To Workspace4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "ÿrsted mag <-> \nÿrsted pos/IGRF"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Error\nÿrsted mag <-> \nÿrsted pos/IGRF\n"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "ÿrsted mag <-> \nÿrsted pos/IGRF"
+      SrcPort		      2
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Error\nÿrsted mag <-> \nÿrsted pos/IGRF\n"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "ÿrsted Magnetic field"
+      SrcPort		      1
+      Points		      [245, 0]
+      Branch {
+	DstBlock		"SGP4/IGRF <-> \nÿrsted mag"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 155]
+	DstBlock		"ÿrsted mag <-> \nÿrsted pos/IGRF"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "(IGRF) Magnetic field2"
+      SrcPort		      1
+      DstBlock		      "ÿrsted mag <-> \nÿrsted pos/IGRF"
+      DstPort		      2
+    }
+  }
+}

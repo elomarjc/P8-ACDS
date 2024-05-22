@@ -1,0 +1,1297 @@
+Model {
+  Name			  "satellite_behaviour"
+  Version		  6.3
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.149"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  PreLoadFcn		  "\n"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  StartFcn		  "\n\n"
+  Created		  "Tue Feb 07 09:22:32 2006"
+  Creator		  "krage"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "mnkr02"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue May 30 20:14:01 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:149>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.1.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.1.0"
+	  StartTime		  "0.0"
+	  StopTime		  "1000"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.1.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.1.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.1.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.1.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      DigitalClock
+      SampleTime	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "satellite_behaviour"
+    Location		    [33, 80, 1298, 747]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Animation"
+      Ports		      [5]
+      Position		      [950, 333, 1030, 487]
+      SourceBlock	      "components_lib/Other model utilities/AAUSAT-II "
+"Animation"
+      SourceType	      "AAUSAT-II Animation"
+      ShowPortLabels	      on
+      u1		      "[-20000000 20000000 -20000000 20000000 -2000000"
+"0 20000000]"
+      u2		      "50"
+      u3		      "1000000"
+      u20		      on
+      u18		      "15"
+      u4		      "6378000"
+      u11		      "80"
+      u12		      on
+      u13		      "'earth280.jpg'"
+      u17		      "180"
+      u5		      "Fixed position"
+      u6		      "[70000000 70000000 70000000]"
+      u7		      "8"
+      u9		      off
+      u10		      on
+      u16		      off
+      u14		      on
+      u15		      on
+      u8		      on
+      u19		      off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [35, 255, 65, 285]
+      Value		      "[0 10000*2*pi/60 0]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [35, 80, 65, 110]
+      Value		      "[0 0 0]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [35, 195, 65, 225]
+      Value		      "273"
+    }
+    Block {
+      BlockType		      DigitalClock
+      Name		      "Digital Clock"
+      Position		      [25, 563, 90, 587]
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [145, 460, 235, 490]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1]
+      Position		      [145, 510, 235, 540]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display2"
+      Ports		      [1]
+      Position		      [120, 560, 260, 590]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Euler angles"
+      Ports		      [1]
+      Position		      [1090, 229, 1120, 261]
+      Floating		      off
+      Location		      [504, 309, 982, 762]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "-3.5"
+      YMax		      "3.5"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From"
+      Position		      [25, 469, 115, 481]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Sim_time_JD"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      Position		      [655, 139, 745, 151]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Omega_S"
+      Port {
+	PortNumber		1
+	Name			"Angular velocity in SBRF"
+	PropagatedSignals	", , "
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      From
+      Name		      "From16"
+      Position		      [20, 519, 110, 531]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Eclipse"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      Position		      [805, 344, 895, 356]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_SC_I"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From4"
+      Position		      [805, 374, 895, 386]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "q_I_S"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From5"
+      Position		      [805, 404, 895, 416]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Vel__SC_I"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      Position		      [805, 434, 895, 446]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "Pos_Sun_I"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From7"
+      Position		      [750, 474, 840, 486]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "q_I_E"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From8"
+      Position		      [655, 179, 745, 191]
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "q_I_S"
+      Port {
+	PortNumber		1
+	Name			"Attitude quaternion in SBRF"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Magnetic field"
+      Ports		      [0, 1]
+      Position		      [15, 130, 105, 170]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskHideContents	      off
+      System {
+	Name			"Magnetic field"
+	Location		[-10, 414, 370, 518]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  Position		  [30, 64, 120, 76]
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "Mag_I"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From9"
+	  Position		  [25, 29, 115, 41]
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "q_I_S"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vector rotation by q"
+	  Ports			  [2, 1]
+	  Position		  [200, 39, 300, 81]
+	  SourceBlock		  "components_lib/Math utilities/Quaternion op"
+"erations/Vector rotation by q"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  "on"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "B(S)"
+	  Position		  [325, 53, 355, 67]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "From9"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, 15]
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Vector rotation by q"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Vector rotation by q"
+	  SrcPort		  1
+	  DstBlock		  "B(S)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info"
+      Ports		      []
+      Position		      [41, 20, 251, 78]
+      ShowName		      off
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ShowPortLabels	      on
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "sun to eclipse : 2452315.560376\n32 sec. before"
+" : 2452315.56\neclipse to sun : 2452315.513363"
+      MaskDisplayString	      "sun to eclipse : 2452315.560376\\n32 sec. befor"
+"e : 2452315.56\\neclipse to sun : 2452315.513363"
+      HorizontalTextAlignment "Center"
+      LeftAlignmentValue      "0.5"
+      SourceBlockDiagram      "satellite_behaviour"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "NSO"
+      Tag		      "AAUSAT-II Model"
+      Description	      "AAUSAT-II Model"
+      Ports		      [4, 4]
+      Position		      [375, 118, 630, 377]
+      SourceBlock	      "components_lib/NSO"
+      SourceType	      ""
+      ShowPortLabels	      on
+      r_com_s		      "[0.05 0.05 0.15]"
+      sat_temp_start	      "0"
+      r_com_s_deployed	      "[0.05 0.05 0.125]"
+      mass_sc		      "3"
+      Dim		      "[0.1 0.1 0.3]"
+      inertia_c		      "[25 25 5]/1e3"
+      inertia_d		      "[42.3 42.3 28.4]/1e3"
+      init_jd		      "2452315.56"
+      q_s_c		      "[0 0 0 1]"
+      q_init_s_i	      "[sqrt(0.5) 0 0 sqrt(0.5)] "
+      w_init_s		      "[0.1 0.1 0.1]*0"
+      Cd		      "2"
+      rho		      "9.25e-13"
+      enable_sensor_emulation off
+      alb_emu_enabled	      off
+      enable_dist	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "NSO magnetorquers"
+      Ports		      [3, 1]
+      Position		      [210, 110, 285, 190]
+      SourceBlock	      "components_lib/Actuator Emulation/NSO magnetorq"
+"uers"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "NSO momentum wheels"
+      Ports		      [1, 3]
+      Position		      [195, 213, 300, 327]
+      SourceBlock	      "components_lib/Actuator Emulation/NSO momentum "
+"wheels"
+      SourceType	      ""
+      ShowPortLabels	      on
+      w_mw_i		      "[1078.6 1078.6 1078.6] *0.5"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [2]
+      Position		      [900, 126, 945, 204]
+      Floating		      off
+      Location		      [281, 164, 759, 617]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      YMin		      "-5~-5"
+      YMax		      "5~5"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      Position		      [90, 375, 120, 405]
+      Time		      "500"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "angular momentum MW"
+      Ports		      [1]
+      Position		      [465, 424, 495, 456]
+      Floating		      off
+      Location		      [704, 381, 1182, 834]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "0"
+      YMax		      "0.0045"
+      SaveName		      "ScopeData4"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "omega MW"
+      Ports		      [1]
+      Position		      [455, 484, 485, 516]
+      Floating		      off
+      Location		      [541, 229, 1019, 682]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "0"
+      YMax		      "1100"
+      SaveName		      "ScopeData5"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "quaternion2euler"
+      Ports		      [1, 1]
+      Position		      [875, 223, 1010, 267]
+      SourceBlock	      "components_lib/Math utilities/Quaternion operat"
+"ions/quaternion2euler"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      Port {
+	PortNumber		1
+	Name			"Euler angles"
+	PropagatedSignals	", , "
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "rotation angle z-axis"
+      Position		      [855, 465, 915, 495]
+      MATLABFcn		      "2*acos(u(4))"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "torque MT"
+      Ports		      [1]
+      Position		      [450, 34, 480, 66]
+      Floating		      off
+      Location		      [506, 515, 984, 968]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "-1"
+      YMax		      "1"
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "torque MW"
+      Ports		      [1]
+      Position		      [515, 69, 545, 101]
+      Floating		      off
+      Location		      [541, 229, 1019, 682]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "-0.0045"
+      YMax		      "0.003"
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Line {
+      Name		      "Angular velocity in SBRF"
+      Labels		      [2, 0]
+      SrcBlock		      "From1"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Attitude quaternion in SBRF"
+      SrcBlock		      "From8"
+      SrcPort		      1
+      Points		      [0, 0; 105, 0]
+      Branch {
+	Points			[0, 60]
+	DstBlock		"quaternion2euler"
+	DstPort			1
+      }
+      Branch {
+	Labels			[-1, 1]
+	DstBlock		"Scope"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "Euler angles"
+      Labels		      [0, 0]
+      SrcBlock		      "quaternion2euler"
+      SrcPort		      1
+      DstBlock		      "Euler angles"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From16"
+      SrcPort		      1
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From7"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "rotation angle z-axis"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From3"
+      SrcPort		      1
+      DstBlock		      "Animation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From4"
+      SrcPort		      1
+      DstBlock		      "Animation"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From5"
+      SrcPort		      1
+      DstBlock		      "Animation"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "Animation"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "rotation angle z-axis"
+      SrcPort		      1
+      Points		      [10, 0; 0, -10]
+      DstBlock		      "Animation"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Digital Clock"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "Display2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "NSO magnetorquers"
+      SrcPort		      1
+      Points		      [0, 0; 35, 0]
+      Branch {
+	DstBlock		"NSO"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -100]
+	DstBlock		"torque MT"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "NSO momentum wheels"
+      SrcPort		      3
+      Points		      [20, 0; 0, -30; 20, 0]
+      Branch {
+	DstBlock		"NSO"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, 160]
+	DstBlock		"angular momentum MW"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "NSO momentum wheels"
+      SrcPort		      2
+      Points		      [10, 0; 0, -55; 30, 0]
+      Branch {
+	DstBlock		"NSO"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -130]
+	DstBlock		"torque MW"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Magnetic field"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "NSO magnetorquers"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "NSO momentum wheels"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [75, 0; 0, 30]
+      DstBlock		      "NSO magnetorquers"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [60, 0; 0, -35]
+      DstBlock		      "NSO magnetorquers"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "NSO momentum wheels"
+      SrcPort		      1
+      Points		      [30, 0; 0, 270]
+      DstBlock		      "omega MW"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Step"
+      SrcPort		      1
+      Points		      [180, 0; 0, -45]
+      DstBlock		      "NSO"
+      DstPort		      4
+    }
+    Annotation {
+      Name		      "Simulation Time"
+      Position		      [125, 432]
+      UseDisplayTextAsClickCallback off
+      FontName		      "courier"
+      FontSize		      14
+    }
+    Annotation {
+      Name		      "Angular velocity and Attitude display"
+      Position		      [873, 111]
+      UseDisplayTextAsClickCallback off
+      FontName		      "courier"
+      FontSize		      14
+    }
+    Annotation {
+      Name		      "Animation of satellite orbit and attitude "
+      Position		      [914, 316]
+      UseDisplayTextAsClickCallback off
+      FontName		      "courier"
+      FontSize		      14
+    }
+  }
+}
