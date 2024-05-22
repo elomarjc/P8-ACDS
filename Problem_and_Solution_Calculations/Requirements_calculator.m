@@ -18,7 +18,7 @@ satellite_type = 2; % 1 = 1U, 2 = 2U
 if satellite_type == 1
 satellite_inertia_matrix = diag([0.0020,0.0020,0.0020]); % kg*m^2, Satellite moment of inertia, gotten from AAUSAT3
 else
-    satellite_inertia_matrix = diag([0.0088,0.0088,0.0020]);
+    satellite_inertia_matrix = diag([0.0088,0.0088,0.0040]);
 end
 % Camera information (16 mm Telephoto Lens for RaspberryPi HQ camera) --------------------------------------
 
