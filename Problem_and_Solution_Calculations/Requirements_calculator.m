@@ -18,7 +18,7 @@ satellite_type = 2; % 1 = 1U, 2 = 2U
 if satellite_type == 1
 satellite_inertia_matrix = diag([0.0020,0.0020,0.0020]); % kg*m^2, Satellite moment of inertia, gotten from AAUSAT3
 else
-    satellite_inertia_matrix = diag([0.0088,0.0088,0.0040]);
+    satellite_inertia_matrix = diag([0.0088,0.0088,0.0044]);
 end
 % Camera information (16 mm Telephoto Lens for RaspberryPi HQ camera) --------------------------------------
 
@@ -99,7 +99,7 @@ f1 = figure(1);
 clf(f1);
 subplot(2,2,1);
 hold on
-plot(simulation_time_t,simulation_angle_to_nadir_f(simulation_time_t)*180/pi,"Color",[255,165,0]/255,"DisplayName","\theta(t)","LineWidth",2);
+plot(simulation_time_t,simulation_angle_to_nadir_f(simulation_time_t)*180/pi,"Color",[255,165,0]/255,"DisplayName","\theta(t)","LineWidth",2), fontsize(15,"points");
 plot([0,simulation_time_end],[pass_angle_to_nadir_start,pass_angle_to_nadir_start]*180/pi,"b--","DisplayName","\theta_0");
 xlim([min(simulation_time_t),max(simulation_time_t)]);
 xlabel("Time [s]");
@@ -109,7 +109,7 @@ legend
 grid on
 subplot(2,2,2);
 hold on
-plot(simulation_time_t,simulation_distance_target_to_satellite_f(simulation_time_t)*1e-3,"g","DisplayName","d(t)","LineWidth",2);
+plot(simulation_time_t,simulation_distance_target_to_satellite_f(simulation_time_t)*1e-3,"g","DisplayName","d(t)","LineWidth",2), fontsize(15,"points");
 plot([0,simulation_time_end],[orbit_perigee,orbit_perigee]*1e-3,"b--","DisplayName","perigee");
 xlim([min(simulation_time_t),max(simulation_time_t)]);
 xlabel("Time [s]");
@@ -119,7 +119,7 @@ legend
 grid on
 subplot(2,2,3);
 hold on
-plot(simulation_time_t,simulation_angular_speed_to_nadir_f(simulation_time_t),"b","DisplayName","w_\theta(t)","LineWidth",2);
+plot(simulation_time_t,simulation_angular_speed_to_nadir_f(simulation_time_t),"b","DisplayName","w_\theta(t)","LineWidth",2), fontsize(15,"points");
 xlim([min(simulation_time_t),max(simulation_time_t)]);
 xlabel("Time [s]");
 ylabel("Angular Speed [rad/s]");
@@ -128,7 +128,7 @@ legend
 grid on
 subplot(2,2,4);
 hold on
-plot(simulation_time_t,simulation_angular_acceleration_to_nadir_f(simulation_time_t)*1e3,"Color",[	179, 206, 229]/255,"DisplayName","\alpha_\theta(t)","LineWidth",2);
+plot(simulation_time_t,simulation_angular_acceleration_to_nadir_f(simulation_time_t)*1e3,"Color",[	179, 206, 229]/255,"DisplayName","\alpha_\theta(t)","LineWidth",2), fontsize(15,"points");
 xlim([min(simulation_time_t),max(simulation_time_t)]);
 xlabel("Time [s]");
 ylabel("Angular Accel [mrad/s^2]");
@@ -143,7 +143,7 @@ subplot(1,2,1);
 hold on
 grid on
 title("Torque applied to statellite");
-plot(simulation_time_t,simulation_torque_required_f(simulation_time_t)*1e9,"Color",[	179, 206, 229]/255,"LineWidth",2,"DisplayName","Applied Torque");
+plot(simulation_time_t,simulation_torque_required_f(simulation_time_t)*1e9,"Color",[	179, 206, 229]/255,"LineWidth",2,"DisplayName","Applied Torque"), fontsize(15,"points");
 xlabel("Time [s]");
 ylabel("Torque[nNm]");
 legend
@@ -151,7 +151,7 @@ subplot(1,2,2);
 hold on
 grid on
 title("Energy supplied");
-plot(simulation_time_t,simulation_energy_f(simulation_time_t)*1e6,"LineWidth",2,"Color",[200,200,51]/255,"DisplayName","Supplied Energy");
+plot(simulation_time_t,simulation_energy_f(simulation_time_t)*1e6,"LineWidth",2,"Color",[200,200,51]/255,"DisplayName","Supplied Energy"), fontsize(15,"points");
 xlabel("Time [s]");
 ylabel("Energy[uJ]");
 legend
