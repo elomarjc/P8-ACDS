@@ -56,17 +56,17 @@ B_int = [B;zeros(3,3)];
 
 Q = diag([0.05,0.05,0.05,0.001,0.001,0.001,1e-3,1e-3,1e-3]);
 R = diag([1e11,1e11,1e11]);
-K = lqr(ss(A_int,B_int,eye(9),zeros(9,3)),Q,R);
+Ko = lqr(ss(A_int,B_int,eye(9),zeros(9,3)),Q,R);
 
-Ki= K(:,(end-2):end);
-Kp =K(:,1:(end-3));
+Ki= Ko(:,(end-2):end);
+Kp =Ko(:,1:(end-3));
 N = Nu+Kp*Nx
 
 
 sys_int_tt = ss([A-B*Kp, -B*Ki;[zeros(3),eye(3),zeros(3)]],[B*N;-eye(3)],eye(9),zeros(9,3));
 
 
-step(K*sys_int_tt*.5)
+step(Ko*sys_int_tt*.5)
 
 
 

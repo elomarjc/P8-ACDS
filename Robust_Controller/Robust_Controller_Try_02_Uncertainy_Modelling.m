@@ -1,6 +1,7 @@
 close all
 clc
 addpath("functions\")
+Robust_Controller_Try_01
 
 %% Uncertainty: There is a 5% parametric uncertainty in the inertia matrix
 % Parametric uncertainty in the inertia matrix
@@ -51,6 +52,7 @@ sys_tracking = ss(sys_ol.A-sys_ol.B*K,sys_ol.B*N,sys_ol.C,sys_ol.D)
 
 [stabmarg,wcu] = robstab(sys_tracking);
 stabmarg
+figure(1);
 stepplot(sys_tracking);
 
 [stabmarg,wcu] = robstab(sys_tracking);
@@ -66,4 +68,5 @@ N = Nu+Kp*Nx;
 stabmarg
 
 sys_int_tt = ss([sys_ol.A-sys_ol.B*Kp, -sys_ol.B*Ki;[zeros(3),eye(3),zeros(3)]],[sys_ol.B*N;-eye(3)],eye(9),zeros(9,3));
+figure(2);
 stepplot(sys_int_tt)
