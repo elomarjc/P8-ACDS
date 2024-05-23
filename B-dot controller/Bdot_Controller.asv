@@ -42,17 +42,16 @@ DataMinMom = DataMinMom - 105.9E-3;
 %% printing
 f1 = figure(1);
 plot(DataBdotSatRot), hold on, grid on, fontsize(15,"points")
-xline(n,'--','Color','black'), hold on
-plot(DataMinRot,'--','Color','black'), hold on
-plot(DataMaxRot,'--','Color','black'), title("Satellite rotations"), xlabel("time [s]","FontSize",16), ylabel("angular velocity [rad/s]"), legend("X","Y","Z","req:B2", 'fontsize', 15), hold off
+xline(n,'--'), 
+yline([DataMinRot,DataMaxRot],'--'), title("Satellite rotations"), xlabel("time [s]","FontSize",16), ylabel("angular velocity [rad/s]"), legend("X","Y","Z","req:B2","Max","Min", 'fontsize', 15), hold off
 
 f2 =figure(2);
 plot(DataBdotMoment), hold on, grid on, fontsize(16,"points")
-plot(DataMaxMom,'--','Color',[0,0,0]), hold on
-plot(DataMinMom,'--','Color',[0,0,0]), title("Magnetic moment"), xlabel("time [s]"), ylabel("mag. moment [mA m^2]"), legend("X","Y","Z","Max","Min", 'fontsize', 15), hold off
+plot(DataMaxMom), hold on
+plot(DataMinMom), title("Magnetic moment"), xlabel("time [s]"), ylabel("mag. moment [mA m^2]"), legend("X","Y","Z","Max","Min", 'fontsize', 15), hold off
 
 f3 =figure(3);
 plot(DataBdotSatRot), hold on, grid on, fontsize(15,"points") 
-title("Satellite rotations")
-yline([n3,-n3],'--'), xlabel("time [s]","FontSize",16), ylabel("angular velocity [rad/s]"), legend("X","Y","Z","Req:B1","Req:B1", 'fontsize', 15), hold off
+title("Satellite rotations"), xlabel("time [s]","FontSize",16), ylabel("angular velocity [rad/s]"), legend("X","Y","Z","req:B1", 'fontsize', 15), hold off
+yline([n3,-n3],'--')
 %% test
