@@ -65,7 +65,7 @@ fprintf("Gravity effect:\n");
 earth_mass = 5.972e24; %kg
 earth_radii = 6.371e6; % m
 gravitational_constant = 6.67e-11; % N m^2/kg^2
-max_torque_gravity = 3*earth_mass*gravitational_constant/2/(orbit_perigee+earth_radii)^3*max(max(satellite_inertia_matrix));
+max_torque_gravity = 3*earth_mass*gravitational_constant/2/(orbit_perigee+earth_radii)^3*norm(satellite_inertia_matrix);
 fprintf("Worst gravity torque: %.2f nNm\n",max_torque_gravity*1e9);
 
 
